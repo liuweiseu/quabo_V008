@@ -1,0 +1,6 @@
+10:29:56 **** Incremental Build of configuration Debug for project quabo_service ****
+make all 
+make: Nothing to be done for 'all'.
+
+10:29:56 Build Finished (took 59ms)
+

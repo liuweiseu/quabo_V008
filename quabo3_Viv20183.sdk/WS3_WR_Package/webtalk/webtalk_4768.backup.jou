@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Jan 23 18:30:30 2019
+# Process ID: 4768
+# Current directory: C:/XilinxProjects/PANOSETI/quabo3_Viv20183/quabo3_Viv20183.sdk/WS3/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/XilinxProjects/PANOSETI/quabo3_Viv20183/quabo3_Viv20183.sdk/WS3/webtalk/webtalk.log
+# Journal file: C:/XilinxProjects/PANOSETI/quabo3_Viv20183/quabo3_Viv20183.sdk/WS3/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2018.3_AR71948 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 16 12:19:13 2019
+# Process ID: 16960
+# Current directory: C:/Users/rikra/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26928
+# Log file: C:/Users/rikra/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/rikra/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3_Viv20183/quabo3_Viv20183.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 981.109 ; gain = 363.133
+update_compile_order -fileset sources_1
+archive_project C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3_Viv20183/archive/quabo3_Viv20183_20190716.xpr.zip -temp_dir C:/junk -force -exclude_run_results -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/junk' for archiving project
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+WARNING: [Project 1-865] Could not find the file C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+WARNING: [IP_Flow 19-3571] IP 'base_mb_in_buf_ds_1bit_0_1' is restricted:
+* Module reference source file(s) not found.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_ilmb_v10_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_ilmb_v10_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_dlmb_v10_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_dlmb_v10_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlconcat_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlconcat_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlslice_0_1_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_0_1_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlslice_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlslice_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlslice_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_in_buf_ds_4bit_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_in_buf_ds_4bit_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_in_buf_ds_1bit_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_in_buf_ds_1bit_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_elapsed_time_gen_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_elapsed_time_gen_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_in_buf_ds_1bit_0_1_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_in_buf_ds_1bit_0_1_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_stim_gen_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_stim_gen_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlconcat_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlconcat_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xlslice_1_1_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_1_1_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_clk_wiz_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_clk_wiz_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_gpio_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_gpio_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_timer_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_timer_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_lmb_bram_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_lmb_bram_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_quad_spi_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_quad_spi_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_intc_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_intc_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_ilmb_bram_if_cntlr_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_ilmb_bram_if_cntlr_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_clk_wiz_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_clk_wiz_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_ethernet_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_ethernet_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_rst_clk_wiz_1_100M_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_rst_clk_wiz_1_100M_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_rst_clk_wiz_1_100M_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_rst_clk_wiz_1_100M_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_mdm_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_mdm_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_fifo_mm_s_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_fifo_mm_s_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_iic_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_iic_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_fifo_mm_s_PH_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_fifo_mm_s_PH_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xadc_wiz_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xadc_wiz_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_microblaze_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_microblaze_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_uartlite_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_uartlite_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_dlmb_bram_if_cntlr_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_dlmb_bram_if_cntlr_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_timebase_wdt_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_timebase_wdt_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_maroc_slow_control_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_maroc_slow_control_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_axi_ethernet_0_fifo_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_ethernet_0_fifo_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_xbar_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xbar_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_0b46_c_shift_ram_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_c_shift_ram_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_0b46_c_counter_binary_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_c_counter_binary_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_0b46_pcs_pma_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_pcs_pma_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_0b46_util_vector_logic_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_util_vector_logic_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_0b46_eth_buf_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_eth_buf_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_0b46_mac_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_mac_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'base_mb_maroc_dc_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'base_mb_maroc_dc_0_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_ilmb_v10_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_dlmb_v10_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlconcat_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_in_buf_ds_4bit_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_in_buf_ds_1bit_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_elapsed_time_gen_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_in_buf_ds_1bit_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_stim_gen_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlconcat_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xlslice_1_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_gpio_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_timer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_lmb_bram_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_quad_spi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_intc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_ilmb_bram_if_cntlr_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_clk_wiz_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_ethernet_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_rst_clk_wiz_1_100M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_rst_clk_wiz_1_100M_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_mdm_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_fifo_mm_s_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_iic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_fifo_mm_s_PH_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xadc_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_microblaze_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_uartlite_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_dlmb_bram_if_cntlr_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_timebase_wdt_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_maroc_slow_control_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_axi_ethernet_0_fifo_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_c_shift_ram_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_c_counter_binary_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_pcs_pma_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_util_vector_logic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_eth_buf_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_0b46_mac_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mb_maroc_dc_0_0_impl_1'...
+WARNING: [Coretcl 2-52] File 'C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp' does not exist
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_ethernet_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_ethernet_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_ethernet_0_fifo_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_ethernet_0_fifo_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_fifo_mm_s_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_fifo_mm_s_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_fifo_mm_s_PH_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_fifo_mm_s_PH_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_gpio_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_gpio_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_iic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_iic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_intc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_intc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_quad_spi_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_quad_spi_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_timebase_wdt_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_timebase_wdt_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_timer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_timer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_axi_uartlite_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_axi_uartlite_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_clk_wiz_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_clk_wiz_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_dlmb_bram_if_cntlr_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_dlmb_bram_if_cntlr_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_dlmb_v10_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_dlmb_v10_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_elapsed_time_gen_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_elapsed_time_gen_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_ilmb_bram_if_cntlr_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_ilmb_bram_if_cntlr_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_ilmb_v10_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_ilmb_v10_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_in_buf_ds_1bit_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_in_buf_ds_1bit_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_in_buf_ds_1bit_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_in_buf_ds_1bit_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_in_buf_ds_4bit_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_in_buf_ds_4bit_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_lmb_bram_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_lmb_bram_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_maroc_dc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_maroc_dc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_maroc_slow_control_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_maroc_slow_control_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_mdm_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_mdm_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_microblaze_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_microblaze_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_rst_clk_wiz_1_100M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_rst_clk_wiz_1_100M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_rst_clk_wiz_1_100M_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_rst_clk_wiz_1_100M_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_stim_gen_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_stim_gen_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xadc_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xadc_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlconcat_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlconcat_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlconcat_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlconcat_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlslice_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlslice_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlslice_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlslice_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlslice_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlslice_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlslice_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlslice_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mb_xlslice_1_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mb_xlslice_1_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_0b46_c_counter_binary_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_0b46_c_counter_binary_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_0b46_c_shift_ram_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_0b46_c_shift_ram_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_0b46_eth_buf_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_0b46_eth_buf_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_0b46_mac_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_0b46_mac_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_0b46_pcs_pma_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_0b46_pcs_pma_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_0b46_util_vector_logic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_0b46_util_vector_logic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: C:/XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp

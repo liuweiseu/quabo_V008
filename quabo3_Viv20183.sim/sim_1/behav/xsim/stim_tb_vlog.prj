@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../quabo3.srcs/sources_1/bd/base_mb/ipshared/4868" --include "../../../../quabo3.srcs/sources_1/bd/base_mb/ipshared/ec67/hdl" \
+"../../../../quabo3.srcs/sources_1/new/stim_gen.v" \
+"../../../../quabo3.srcs/sim_1/new/stim_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
