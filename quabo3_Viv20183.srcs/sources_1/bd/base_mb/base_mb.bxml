@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="base_mb" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1572546039"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1572546039"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1572546039"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1572546039"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1573239616"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1573239616"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1573239616"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1573239616"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -516,6 +516,62 @@
       </File>
       <File Name="ip/base_mb_Bit_22_22_0/base_mb_Bit_22_22_0.xci" Type="IP">
         <Instance HierarchyPath="Bit_23_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_PPS_IO_0_0/base_mb_PPS_IO_0_0.xci" Type="IP">
+        <Instance HierarchyPath="PPS_IO_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_xlslice_0_3/base_mb_xlslice_0_3.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_ETH_CORE_CTRL_0_0/base_mb_ETH_CORE_CTRL_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ETH_CORE_CTRL_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_AXI_Stream_Switch_0_0/base_mb_AXI_Stream_Switch_0_0.xci" Type="IP">
+        <Instance HierarchyPath="AXI_Stream_Switch_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_FIFO_for_AXIS_0_0/base_mb_FIFO_for_AXIS_0_0.xci" Type="IP">
+        <Instance HierarchyPath="FIFO_for_AXIS_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ethernet_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/base_mb_ETH_CORE_CTRL_0_2/base_mb_ETH_CORE_CTRL_0_2.xci" Type="IP">
+        <Instance HierarchyPath="ETH_CORE_CTRL_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

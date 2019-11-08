@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/synth_1'
+HD_PWD='/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

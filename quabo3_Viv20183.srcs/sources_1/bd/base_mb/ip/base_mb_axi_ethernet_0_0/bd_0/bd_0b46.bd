@@ -1099,6 +1099,30 @@
       }
     },
     "interface_nets": {
+      "s_axis_txc_1": {
+        "interface_ports": [
+          "s_axis_txc",
+          "eth_buf/AXI_STR_TXC"
+        ]
+      },
+      "pcs_pma_sfp": {
+        "interface_ports": [
+          "sfp",
+          "pcs_pma/sfp"
+        ]
+      },
+      "mac_gmii": {
+        "interface_ports": [
+          "mac/gmii",
+          "pcs_pma/gmii_pcs_pma"
+        ]
+      },
+      "eth_buf_S_AXI_2TEMAC": {
+        "interface_ports": [
+          "eth_buf/S_AXI_2TEMAC",
+          "mac/s_axi"
+        ]
+      },
       "eth_buf_TX_AXIS_MAC": {
         "interface_ports": [
           "eth_buf/TX_AXIS_MAC",
@@ -1139,30 +1163,6 @@
         "interface_ports": [
           "mgt_clk",
           "pcs_pma/gtrefclk_in"
-        ]
-      },
-      "eth_buf_S_AXI_2TEMAC": {
-        "interface_ports": [
-          "eth_buf/S_AXI_2TEMAC",
-          "mac/s_axi"
-        ]
-      },
-      "mac_gmii": {
-        "interface_ports": [
-          "mac/gmii",
-          "pcs_pma/gmii_pcs_pma"
-        ]
-      },
-      "pcs_pma_sfp": {
-        "interface_ports": [
-          "sfp",
-          "pcs_pma/sfp"
-        ]
-      },
-      "s_axis_txc_1": {
-        "interface_ports": [
-          "s_axis_txc",
-          "eth_buf/AXI_STR_TXC"
         ]
       }
     },

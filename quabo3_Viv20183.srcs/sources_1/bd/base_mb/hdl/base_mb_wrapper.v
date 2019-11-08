@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Sat Oct 26 22:32:34 2019
+//Date        : Fri Nov  8 11:00:14 2019
 //Host        : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target base_mb_wrapper.bd
 //Design      : base_mb_wrapper
@@ -56,11 +56,17 @@ module base_mb_wrapper
     or_trig3_0,
     pll20dac_cs_n_o_0,
     pll25dac_cs_n_o_0,
+    pps_inout,
     pps_o_0,
+    quabo_pos0,
     sfp_0_rxn,
     sfp_0_rxp,
     sfp_0_txn,
     sfp_0_txp,
+    sfp_1_rxn,
+    sfp_1_rxp,
+    sfp_1_txn,
+    sfp_1_txp,
     shutter_down_lim,
     shutter_open,
     shutter_power,
@@ -128,11 +134,17 @@ module base_mb_wrapper
   input [1:0]or_trig3_0;
   output pll20dac_cs_n_o_0;
   output pll25dac_cs_n_o_0;
+  inout pps_inout;
   output pps_o_0;
+  input quabo_pos0;
   input sfp_0_rxn;
   input sfp_0_rxp;
   output sfp_0_txn;
   output sfp_0_txp;
+  input sfp_1_rxn;
+  input sfp_1_rxp;
+  output sfp_1_txn;
+  output sfp_1_txp;
   input [0:0]shutter_down_lim;
   output [0:0]shutter_open;
   output [0:0]shutter_power;
@@ -207,11 +219,17 @@ module base_mb_wrapper
   wire [1:0]or_trig3_0;
   wire pll20dac_cs_n_o_0;
   wire pll25dac_cs_n_o_0;
+  wire pps_inout;
   wire pps_o_0;
+  wire quabo_pos0;
   wire sfp_0_rxn;
   wire sfp_0_rxp;
   wire sfp_0_txn;
   wire sfp_0_txp;
+  wire sfp_1_rxn;
+  wire sfp_1_rxp;
+  wire sfp_1_txn;
+  wire sfp_1_txp;
   wire [0:0]shutter_down_lim;
   wire [0:0]shutter_open;
   wire [0:0]shutter_power;
@@ -285,11 +303,17 @@ module base_mb_wrapper
         .or_trig3_0(or_trig3_0),
         .pll20dac_cs_n_o_0(pll20dac_cs_n_o_0),
         .pll25dac_cs_n_o_0(pll25dac_cs_n_o_0),
+        .pps_inout(pps_inout),
         .pps_o_0(pps_o_0),
+        .quabo_pos0(quabo_pos0),
         .sfp_0_rxn(sfp_0_rxn),
         .sfp_0_rxp(sfp_0_rxp),
         .sfp_0_txn(sfp_0_txn),
         .sfp_0_txp(sfp_0_txp),
+        .sfp_1_rxn(sfp_1_rxn),
+        .sfp_1_rxp(sfp_1_rxp),
+        .sfp_1_txn(sfp_1_txn),
+        .sfp_1_txp(sfp_1_txp),
         .shutter_down_lim(shutter_down_lim),
         .shutter_open(shutter_open),
         .shutter_power(shutter_power),

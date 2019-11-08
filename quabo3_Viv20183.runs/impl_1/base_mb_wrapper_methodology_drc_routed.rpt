@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Oct 30 12:58:30 2019
+| Date         : Fri Nov  8 11:19:55 2019
 | Host         : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_methodology -file base_mb_wrapper_methodology_drc_routed.rpt -pb base_mb_wrapper_methodology_drc_routed.pb -rpx base_mb_wrapper_methodology_drc_routed.rpx
 | Design       : base_mb_wrapper
@@ -23,17 +23,18 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1084
+             Violations found: 1134
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert                         | 16         |
-| PDRC-190  | Warning  | Suboptimally placed synchronized register chain      | 22         |
+| LUTAR-1   | Warning  | LUT drives async reset alert                         | 19         |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain      | 41         |
 | TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
-| TIMING-11 | Warning  | Inappropriate max delay with datapath only option    | 16         |
+| TIMING-11 | Warning  | Inappropriate max delay with datapath only option    | 32         |
 | TIMING-15 | Warning  | Large hold violation on inter-clock path             | 5          |
 | TIMING-17 | Warning  | Non-clocked sequential cell                          | 1000       |
+| TIMING-18 | Warning  | Missing input or output delay                        | 12         |
 | TIMING-20 | Warning  | Non-clocked latch                                    | 1          |
 | TIMING-24 | Warning  | Overridden Max delay datapath only                   | 2          |
 | TIMING-27 | Warning  | Invalid primary clock on hierarchical pin            | 2          |
@@ -59,177 +60,287 @@ Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/s2mm_prmry_reset_out_n_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE (the first 15 of 40 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/s2mm_prmry_reset_out_n_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE (the first 15 of 84 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#5 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/mm2s_prmry_reset_out_n_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst4_reg/PRE (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/mm2s_prmry_reset_out_n_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXD_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkB_reset_inst/async_rst4_reg/PRE (the first 15 of 40 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/mm2s_cntrl_reset_out_n_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/mm2s_cntrl_reset_out_n_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXC_AXSTREAM_TO_RXD_AXSTREAM/ClkB_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/TXD_AXSTREAM_TO_TXC_AXSTREAM/ClkA_reset_inst/async_rst4_reg/PRE (the first 15 of 40 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/DELAY_HOLD1/FDPE_PHTRIG_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/maroc_dc_0/inst/USR_LOGIC/FDPE_PHTRIG/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXD_AXSTREAM/ClkA_reset_inst/RESET2TEMACn_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst0_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst1_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst2_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst3_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/async_rst4_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/async_rst0_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/async_rst1_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/async_rst2_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/async_rst3_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/async_rst4_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/async_rst0_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/async_rst1_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/async_rst2_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/async_rst3_reg/CLR, base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/async_rst4_reg/CLR (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#8 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXC_AXSTREAM/ClkA_reset_inst/RESET2PCSPMA_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync1/PRE, base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync2/PRE, base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync3/PRE, base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync4/PRE, base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_RXCLIENT/ClkB_reset_inst/async_rst4_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst0_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst1_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst2_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst3_reg/PRE, base_mb_i/axi_ethernet_1/inst/eth_buf/U0/COMBINE_RESETS/AXI_RESET_TO_TXCLIENT/ClkB_reset_inst/async_rst4_reg/PRE (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#9 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/U_MDIO_WB/an_tx_val_o[13]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_idle_match/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_idle_match/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_idle_match/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_ready/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_ready/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_ready/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_an_tx_en/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_an_tx_en/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_an_tx_en/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_busy_o/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_busy_o/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_busy_o/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_error_o/sync_posedge.ppulse_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_error_o/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_error_o/sync_posedge.sync1_reg/CLR (the first 15 of 16 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MGT_RESET.RESET_INT_PIPE_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_PIPE_reg/PRE, base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#10 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_mcr_reset/sync_posedge.sync0_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_enable/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_enable/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_enable/sync_posedge.synced_o_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/DELAY_HOLD1/FDPE_PHTRIG_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/maroc_dc_0/inst/USR_LOGIC/FDPE_PHTRIG/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#11 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_power_down/sync0[7]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/almost_full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][3]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][4]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][5]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][6]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][3]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][4]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][5]/CLR (the first 15 of 66 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#12 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_SOFTPLL/U_Wrapped_Softpll/U_WB_SLAVE/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/U_MDIO_WB/an_tx_val_o[13]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_idle_match/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_idle_match/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_idle_match/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_ready/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_ready/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_ready/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_an_tx_en/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_an_tx_en/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_an_tx_en/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_busy_o/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_busy_o/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_busy_o/sync_posedge.synced_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_error_o/sync_posedge.ppulse_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_error_o/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_pcs_error_o/sync_posedge.sync1_reg/CLR (the first 15 of 16 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#13 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/gen_wr_streamers.cmp_xwr_streamers/U_STATS/U_Reset_Timestamper/pulse_ref_d2_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/gen_wr_streamers.cmp_xwr_streamers/U_STATS/U_Reset_Timestamper/pulse_ref_d2_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_mcr_reset/sync_posedge.sync0_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_enable/sync_posedge.sync0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_enable/sync_posedge.sync1_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_RX_PCS/U_sync_an_rx_enable/sync_posedge.synced_o_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#14 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_GTX_INST/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/U_Sync_Empty/sync0[7]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_in2out_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_in2out_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_in2out_reg[2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_out2in_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_out2in_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_out2in_reg[2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_p_d0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/in_ext_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/out_ext_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/q_p_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/ready_reg/PRE, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/almost_full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][1]/CLR (the first 15 of 76 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_sync_power_down/sync0[7]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/almost_full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][3]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][4]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][5]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[bin][6]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][3]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][4]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rcb_reg[gray][5]/CLR (the first 15 of 66 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#15 Warning
 LUT drives async reset alert  
-LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_GTX_INST/state[2]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[10]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[11]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[12]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[13]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[14]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[15]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[16]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[17]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[18]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[19]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[20]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[21]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[22]/CLR (the first 15 of 49 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_SOFTPLL/U_Wrapped_Softpll/U_WB_SLAVE/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/gen_wr_streamers.cmp_xwr_streamers/U_STATS/U_Reset_Timestamper/pulse_ref_d2_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/gen_wr_streamers.cmp_xwr_streamers/U_STATS/U_Reset_Timestamper/pulse_ref_d2_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_GTX_INST/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/U_Sync_Empty/sync0[7]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_in2out_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_in2out_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_in2out_reg[2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_out2in_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_out2in_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_out2in_reg[2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/d_p_d0_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/in_ext_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/out_ext_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/q_p_o_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_Sync_Done/ready_reg/PRE, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/almost_full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/full_int_reg/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][1]/CLR (the first 15 of 76 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_GTX_INST/state[2]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[10]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[11]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[12]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[13]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[14]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[15]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[16]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[17]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[18]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[19]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[20]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[21]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_Bitslide/counter_reg[22]/CLR (the first 15 of 49 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
 LUT drives async reset alert  
 LUT cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/master_rstn_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_rstlogic_reset/locked_count_reg[0]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_rstlogic_reset/locked_count_reg[1]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_rstlogic_reset/locked_count_reg[2]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_rstlogic_reset/locked_count_reg[3]/CLR, base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_rstlogic_reset/master_rstn_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X93Y148 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X80Y161 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X96Y159 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X101Y153 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X101Y143 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X96Y166 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X95Y157 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X89Y161 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X61Y123 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X66Y179 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X66Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X87Y175 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X78Y125 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X94Y175 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X87Y129 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X90Y179 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X93Y134 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X52Y138 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X81Y139 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X51Y138 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X71Y143 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X44Y139 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X72Y144 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X21Y141 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X69Y145 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X15Y150 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X56Y143 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X23Y145 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#15 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X57Y143 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X86Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#16 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst0_reg in site SLICE_X80Y144 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X87Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#17 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X70Y145 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X57Y139 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#18 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X92Y150 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X79Y137 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#19 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X105Y144 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X75Y137 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#20 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X28Y39 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst0_reg in site SLICE_X84Y144 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#21 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X4Y81 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X54Y139 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#22 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X27Y44 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X81Y164 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X96Y149 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#24 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X11Y164 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#25 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X10Y165 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#26 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X53Y167 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#27 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X37Y168 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#28 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X17Y173 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#29 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X36Y172 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#30 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X54Y162 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#31 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X53Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#32 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X12Y168 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#33 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X23Y163 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#34 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X17Y167 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#35 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_stats_reset/sync_rst0_reg in site SLICE_X45Y163 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_stats_reset/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#36 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X11Y167 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#37 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X69Y181 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/bd_cb17_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#38 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X85Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_1/inst/pcs_pma/inst/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#39 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X66Y42 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#40 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X12Y86 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#41 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X49Y49 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning
@@ -320,6 +431,86 @@ Related violations: <none>
 TIMING-11#16 Warning
 Inappropriate max delay with datapath only option  
 A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[9]/C and base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#17 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[0]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#18 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[10]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#19 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[11]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#20 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[12]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#21 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[13]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#22 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[14]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#23 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[15]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#24 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[1]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#25 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[2]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#26 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[3]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#27 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[4]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#28 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[5]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#29 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[6]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#30 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[7]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#31 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[8]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#32 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/rx_pause/pause_value_to_tx_reg[9]/C and base_mb_i/axi_ethernet_1/inst/mac/inst/bd_cb17_mac_0_core/flow/tx_pause/count_set_reg/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
 Related violations: <none>
 
 TIMING-15#1 Warning
@@ -5347,6 +5538,66 @@ Non-clocked sequential cell
 The clock pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/LM32_CORE/gen_profile_medium_icache.U_Wrapped_LM32/cpu/store_operand_x_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[0] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[1] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[2] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[3] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[4] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[5] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[6] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[7] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[8] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on board_loc[9] relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on pps_inout relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on quabo_pos0 relative to clock(s) base_mb_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
 TIMING-20#1 Warning
 Non-clocked latch  
 The latch base_mb_i/stim_gen_0/inst/stim_go_reg cannot be properly analyzed as its control pin base_mb_i/stim_gen_0/inst/stim_go_reg/G is not reached by a timing clock
@@ -5354,12 +5605,12 @@ Related violations: <none>
 
 TIMING-24#1 Warning
 Overridden Max delay datapath only  
-A set_clock_groups or a set_false path (see constraint position 83 in the Timing Constraints window in Vivado IDE) between clocks BIT_CLK_P[0] and clk_out1_base_mb_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 110). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+A set_clock_groups or a set_false path (see constraint position 116 in the Timing Constraints window in Vivado IDE) between clocks BIT_CLK_P[0] and clk_out1_base_mb_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 169). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
 Related violations: <none>
 
 TIMING-24#2 Warning
 Overridden Max delay datapath only  
-A set_clock_groups or a set_false path (see constraint position 83 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_base_mb_clk_wiz_1_0 and BIT_CLK_P[0] overrides a set_max_delay -datapath_only (position 112). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+A set_clock_groups or a set_false path (see constraint position 116 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_base_mb_clk_wiz_1_0 and BIT_CLK_P[0] overrides a set_max_delay -datapath_only (position 167). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
 Related violations: <none>
 
 TIMING-27#1 Warning
@@ -5374,92 +5625,92 @@ Related violations: <none>
 
 TIMING-28#1 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_10_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1]
+The auto-derived clock clk_10_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1]
 Related violations: <none>
 
 TIMING-28#2 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_320_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 81 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_320_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 114 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#3 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_320_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 84 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_320_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 117 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#4 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_320_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_320_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#5 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_ext_fbo is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst/CLKFBOUT]
+The auto-derived clock clk_ext_fbo is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst/CLKFBOUT]
 Related violations: <none>
 
 TIMING-28#6 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_ext_mul is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_ext_mul is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.gen_kintex7_ext_ref_pll.mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#7 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 81 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 114 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#8 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 83 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 116 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#9 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 84 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 117 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#10 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clk_out1_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#11 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out2_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 82 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT1]
+The auto-derived clock clk_out2_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 115 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT1]
 Related violations: <none>
 
 TIMING-28#12 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out2_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT1]
+The auto-derived clock clk_out2_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT1]
 Related violations: <none>
 
 TIMING-28#13 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clk_out3_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT2]
+The auto-derived clock clk_out3_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT2]
 Related violations: <none>
 
 TIMING-28#14 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clkfbout is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/core_clocking_i/mmcm_adv_inst/CLKFBOUT]
+The auto-derived clock clkfbout is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/core_clocking_i/mmcm_adv_inst/CLKFBOUT]
 Related violations: <none>
 
 TIMING-28#15 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clkfbout_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT]
+The auto-derived clock clkfbout_base_mb_clk_wiz_0_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT]
 Related violations: <none>
 
 TIMING-28#16 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clkfbout_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKFBOUT]
+The auto-derived clock clkfbout_base_mb_clk_wiz_1_0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/clk_wiz_1/inst/mmcm_adv_inst/CLKFBOUT]
 Related violations: <none>
 
 TIMING-28#17 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clkout0 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/core_clocking_i/mmcm_adv_inst/CLKOUT0]
+The auto-derived clock clkout0 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/core_clocking_i/mmcm_adv_inst/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#18 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock clkout1 is referenced by name inside timing constraint (see constraint position 85 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/core_clocking_i/mmcm_adv_inst/CLKOUT1]
+The auto-derived clock clkout1 is referenced by name inside timing constraint (see constraint position 118 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/core_clocking_i/mmcm_adv_inst/CLKOUT1]
 Related violations: <none>
 
 

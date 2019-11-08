@@ -574,6 +574,65 @@
   "../../../bd/base_mb/ip/base_mb_Bit_16_16_1/sim/base_mb_Bit_16_16_1.v" \
   "../../../bd/base_mb/ip/base_mb_Bit_21_21_0/sim/base_mb_Bit_21_21_0.v" \
   "../../../bd/base_mb/ip/base_mb_Bit_22_22_0/sim/base_mb_Bit_22_22_0.v" \
+  "../../../bd/base_mb/ip/base_mb_PPS_IO_0_0/sim/base_mb_PPS_IO_0_0.v" \
+  "../../../bd/base_mb/ip/base_mb_xlslice_0_3/sim/base_mb_xlslice_0_3.v" \
+  "../../../bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+  "../../../bd/base_mb/ipshared/ed0e/new/ETH_CORE_CTRL.v" \
+  "../../../bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/sim/base_mb_ETH_CORE_CTRL_0_0.v" \
+-endlib
+-makelib xcelium_lib/axis_infrastructure_v1_1_0 \
+  "../../../../quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axis_register_slice_v1_1_18 \
+  "../../../../quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axis_switch_v1_1_18 \
+  "../../../../quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/hdl/axis_switch_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/sim/axis_switch_0.v" \
+  "../../../bd/base_mb/ipshared/e7ae/new/AXI_Stream_Switch.v" \
+  "../../../bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/sim/base_mb_AXI_Stream_Switch_0_0.v" \
+  "../../../bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/sim/fifo_generator_1.v" \
+  "../../../bd/base_mb/ipshared/6850/new/FIFO_for_AXIS.v" \
+  "../../../bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/sim/base_mb_FIFO_for_AXIS_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/sim/bd_cb17_eth_buf_0.vhd" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_axi4_lite_ipif_top.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_axi4_lite_ipif_wrapper.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/statistics/bd_cb17_mac_0_vector_decode.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_block.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_cpll_railing.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_gtwizard_init.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_tx_startup_fsm.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_rx_startup_fsm.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_reset_wtd_timer.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_gtwizard.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_gtwizard_multi_gt.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_gtwizard_gt.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0_reset_sync.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0_sync_block.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/transceiver/bd_cb17_pcs_pma_0_transceiver.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0_block.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_3/sim/bd_cb17_xlconstant_phyadd_0.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_4/sim/bd_cb17_xlconstant_config_vec_0.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_5/sim/bd_cb17_xlconstant_config_val_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_6/sim/bd_cb17_c_shift_ram_0_0.vhd" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_7/sim/bd_cb17_c_counter_binary_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_8/sim/bd_cb17_xlconstant_0_0.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_9/sim/bd_cb17_util_vector_logic_0_0.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/sim/bd_cb17.v" \
+  "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/sim/base_mb_axi_ethernet_1_0.v" \
+  "../../../bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/sim/base_mb_ETH_CORE_CTRL_0_2.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

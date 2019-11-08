@@ -237,6 +237,72 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_Bit_21_
 # IP: bd/base_mb/ip/base_mb_Bit_22_22_0/base_mb_Bit_22_22_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_Bit_22_22_0 || ORIG_REF_NAME==base_mb_Bit_22_22_0} -quiet] -quiet
 
+# IP: bd/base_mb/ip/base_mb_PPS_IO_0_0/base_mb_PPS_IO_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_PPS_IO_0_0 || ORIG_REF_NAME==base_mb_PPS_IO_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_xlslice_0_3/base_mb_xlslice_0_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_xlslice_0_3 || ORIG_REF_NAME==base_mb_xlslice_0_3} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/base_mb_ETH_CORE_CTRL_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_ETH_CORE_CTRL_0_0 || ORIG_REF_NAME==base_mb_ETH_CORE_CTRL_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/ip/fifo_generator_0/fifo_generator_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/base_mb_AXI_Stream_Switch_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_AXI_Stream_Switch_0_0 || ORIG_REF_NAME==base_mb_AXI_Stream_Switch_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/axis_switch_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axis_switch_0 || ORIG_REF_NAME==axis_switch_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/base_mb_FIFO_for_AXIS_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_FIFO_for_AXIS_0_0 || ORIG_REF_NAME==base_mb_FIFO_for_AXIS_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_1 || ORIG_REF_NAME==fifo_generator_1} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_axi_ethernet_1_0 || ORIG_REF_NAME==base_mb_axi_ethernet_1_0} -quiet] -quiet
+
+# Block Designs: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/bd_cb17.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17 || ORIG_REF_NAME==bd_cb17} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_eth_buf_0 || ORIG_REF_NAME==bd_cb17_eth_buf_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/bd_cb17_mac_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_mac_0 || ORIG_REF_NAME==bd_cb17_mac_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/bd_cb17_pcs_pma_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_pcs_pma_0 || ORIG_REF_NAME==bd_cb17_pcs_pma_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_3/bd_cb17_xlconstant_phyadd_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_xlconstant_phyadd_0 || ORIG_REF_NAME==bd_cb17_xlconstant_phyadd_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_4/bd_cb17_xlconstant_config_vec_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_xlconstant_config_vec_0 || ORIG_REF_NAME==bd_cb17_xlconstant_config_vec_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_5/bd_cb17_xlconstant_config_val_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_xlconstant_config_val_0 || ORIG_REF_NAME==bd_cb17_xlconstant_config_val_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_6/bd_cb17_c_shift_ram_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_c_shift_ram_0_0 || ORIG_REF_NAME==bd_cb17_c_shift_ram_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_7/bd_cb17_c_counter_binary_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_c_counter_binary_0_0 || ORIG_REF_NAME==bd_cb17_c_counter_binary_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_8/bd_cb17_xlconstant_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_xlconstant_0_0 || ORIG_REF_NAME==bd_cb17_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_9/bd_cb17_util_vector_logic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_cb17_util_vector_logic_0_0 || ORIG_REF_NAME==bd_cb17_util_vector_logic_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/base_mb_ETH_CORE_CTRL_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_ETH_CORE_CTRL_0_2 || ORIG_REF_NAME==base_mb_ETH_CORE_CTRL_0_2} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] -quiet
+
 # XDC: bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_microblaze_0_0 || ORIG_REF_NAME==base_mb_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -389,5 +455,63 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_gpio_0_1 || ORIG_REF_NAME==base_mb_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/ip/fifo_generator_0/fifo_generator_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/ip/fifo_generator_0/fifo_generator_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/axis_switch_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_1 || ORIG_REF_NAME==fifo_generator_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_1 || ORIG_REF_NAME==fifo_generator_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_eth_buf_0 || ORIG_REF_NAME==bd_cb17_eth_buf_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/synth/bd_cb17_eth_buf_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_eth_buf_0 || ORIG_REF_NAME==bd_cb17_eth_buf_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_mac_0 || ORIG_REF_NAME==bd_cb17_mac_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_mac_0 || ORIG_REF_NAME==bd_cb17_mac_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_mac_0 || ORIG_REF_NAME==bd_cb17_mac_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/bd_cb17_pcs_pma_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_pcs_pma_0 || ORIG_REF_NAME==bd_cb17_pcs_pma_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_pcs_pma_0 || ORIG_REF_NAME==bd_cb17_pcs_pma_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_6/bd_cb17_c_shift_ram_0_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_7/bd_cb17_c_counter_binary_0_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/bd_cb17_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_ethernet_1_0 || ORIG_REF_NAME==base_mb_axi_ethernet_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/synth/base_mb_axi_ethernet_1_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/base_mb/base_mb_ooc.xdc

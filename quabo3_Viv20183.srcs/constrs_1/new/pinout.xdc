@@ -15,7 +15,10 @@ set_property PACKAGE_PIN H6 [get_ports mgt_clk_0_clk_p]
 set_property PACKAGE_PIN R4 [get_ports sfp_0_rxp]
 #To direct it to the mobo
 #set_property PACKAGE_PIN R4 [get_ports sfp_0_rxp]
-
+set_property PACKAGE_PIN N3 [get_ports sfp_1_rxn]
+set_property PACKAGE_PIN N4 [get_ports sfp_1_rxp]
+set_property PACKAGE_PIN M1 [get_ports sfp_1_txn]
+set_property PACKAGE_PIN M2 [get_ports sfp_1_txp]
 #This is the 10MHz reference from SMA1
 #set_property IOSTANDARD LVDS [get_ports SMA1_p]
 #set_property DIFF_TERM TRUE [get_ports SMA1_p]
@@ -588,6 +591,15 @@ set_property PACKAGE_PIN L18 [get_ports flash_dac]
 set_property IOSTANDARD LVDS [get_ports flash_led_p]
 set_property PACKAGE_PIN AA17 [get_ports flash_led_p]
 set_property PACKAGE_PIN AA18 [get_ports flash_led_n]
+
+set_property PACKAGE_PIN C26 [get_ports pps_inout]
+set_property IOSTANDARD LVCMOS33 [get_ports pps_inout]
+
+set_property PACKAGE_PIN H24 [get_ports quabo_pos0]
+set_property IOSTANDARD LVCMOS33 [get_ports quabo_pos0]
+
+#set_property PACKAGE_PIN H21 [get_ports quabo_pos1]
+#set_property IOSTANDARD LVCMOS33 [get_ports quabo_pos1]
 #White rabbit part
 #create_clock -period 8.000 -name TS_clk_125m_gtx_p_i_0 -waveform {0.000 4.000} [get_ports clk_125m_gtx_p_i_0]
 set_property PACKAGE_PIN F6 [get_ports clk_125m_gtx_p_i_0]
@@ -640,7 +652,7 @@ set_property PACKAGE_PIN F1 [get_ports user_sfp_0_sfp_txn_o]
 set_property PACKAGE_PIN F2 [get_ports user_sfp_0_sfp_txp_o]
 
 set_property IOSTANDARD LVCMOS33 [get_ports pps_o_0]
-set_property PACKAGE_PIN B20 [get_ports pps_o_0]
+set_property PACKAGE_PIN G24 [get_ports pps_o_0]
 
 set_property PACKAGE_PIN E21 [get_ports user_uart_0_uart_rxd_i]
 set_property IOSTANDARD LVCMOS33 [get_ports user_uart_0_uart_rxd_i]
