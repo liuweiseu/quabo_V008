@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date                      : Fri Nov  8 11:18:06 2019
+| Date                      : Fri Nov  8 21:45:55 2019
 | Host                      : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 | Command                   : report_io -file base_mb_wrapper_io_placed.rpt
 | Design                    : base_mb_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           382 |
+|           380 |
 +---------------+
 
 
@@ -315,8 +315,8 @@ Table of Contents
 | E18        | clk_20m_vcxo_i_0            | High Range       | IO_L13P_T2_MRCC_15           | INPUT         | LVCMOS33    |      15 |            |      |                      |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | E19        |                             | High Range       | VCCO_15                      | VCCO          |             |      15 |            |      |                      |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | E20        | hold1[3]                    | High Range       | IO_L17N_T2_A25_15            | OUTPUT        | LVCMOS33    |      15 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| E21        | user_uart_0_uart_rxd_i      | High Range       | IO_L9P_T1_DQS_14             | INPUT         | LVCMOS33    |      14 |            |      |                      |                 NONE |         | FIXED      | PULLDOWN  |          |      | NONE             |              |                   |              |
-| E22        | user_uart_0_uart_txd_o      | High Range       | IO_L9N_T1_DQS_D13_14         | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| E21        |                             | High Range       | IO_L9P_T1_DQS_14             | User IO       |             |      14 |            |      |                      |                      |         |            |           |          |      |                  |              |                   |              |
+| E22        |                             | High Range       | IO_L9N_T1_DQS_D13_14         | User IO       |             |      14 |            |      |                      |                      |         |            |           |          |      |                  |              |                   |              |
 | E23        | focus_up_lim[0]             | High Range       | IO_L12N_T1_MRCC_14           | INPUT         | LVCMOS33    |      14 |            |      |                      |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | E24        |                             |                  | GND                          | GND           |             |         |            |      |                      |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | E25        | user_sfp_0_sfp_los_i        | High Range       | IO_L15P_T2_DQS_RDWR_B_14     | INPUT         | LVCMOS33    |      14 |            |      |                      |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |

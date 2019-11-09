@@ -114,6 +114,8 @@ set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/qua
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_AXI_Stream_Switch_0_0/ip/axis_switch_0/axis_switch_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/synth/base_mb_axi_ethernet_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0_board.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/synth/bd_cb17_eth_buf_0.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0_ooc.xdc]
@@ -127,10 +129,12 @@ set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/qua
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_6/bd_cb17_c_shift_ram_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_7/bd_cb17_c_counter_binary_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/bd_cb17_ooc.xdc]
-set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/synth/base_mb_axi_ethernet_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_xbar_2/base_mb_xbar_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/base_mb_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

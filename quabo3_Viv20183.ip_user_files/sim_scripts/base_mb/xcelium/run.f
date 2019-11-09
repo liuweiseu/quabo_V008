@@ -635,6 +635,12 @@
   "../../../bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/sim/base_mb_ETH_CORE_CTRL_0_2.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_axi_uartlite_1_0/sim/base_mb_axi_uartlite_1_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_xbar_2/sim/base_mb_xbar_2.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
   glbl.v
 -endlib
 

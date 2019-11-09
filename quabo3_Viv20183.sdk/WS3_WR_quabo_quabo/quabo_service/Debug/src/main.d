@@ -39,6 +39,8 @@ src/main.o src/main.o: ../src/main.c \
  ../../standalone_bsp_0/microblaze_0/include/lwip/prot/ip.h \
  ../../standalone_bsp_0/microblaze_0/include/netif/xtopology.h \
  ../src/platform.h ../src/platform_config.h \
+ ../../standalone_bsp_0/microblaze_0/include/xuartlite.h \
+ ../../standalone_bsp_0/microblaze_0/include/xuartlite_l.h \
  ../../standalone_bsp_0/microblaze_0/include/lwip/udp.h \
  ../../standalone_bsp_0/microblaze_0/include/lwip/prot/udp.h \
  ../../standalone_bsp_0/microblaze_0/include/xil_cache.h \
@@ -140,6 +142,10 @@ src/main.o src/main.o: ../src/main.c \
 ../src/platform.h:
 
 ../src/platform_config.h:
+
+../../standalone_bsp_0/microblaze_0/include/xuartlite.h:
+
+../../standalone_bsp_0/microblaze_0/include/xuartlite_l.h:
 
 ../../standalone_bsp_0/microblaze_0/include/lwip/udp.h:
 

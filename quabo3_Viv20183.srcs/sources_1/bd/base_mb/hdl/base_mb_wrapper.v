@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Fri Nov  8 11:00:14 2019
+//Date        : Fri Nov  8 21:25:25 2019
 //Host        : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target base_mb_wrapper.bd
 //Design      : base_mb_wrapper
@@ -85,9 +85,7 @@ module base_mb_wrapper
     user_sfp_0_sfp_rxn_i,
     user_sfp_0_sfp_rxp_i,
     user_sfp_0_sfp_txn_o,
-    user_sfp_0_sfp_txp_o,
-    user_uart_0_uart_rxd_i,
-    user_uart_0_uart_txd_o);
+    user_sfp_0_sfp_txp_o);
   input [3:0]ADC_DIN_N;
   input [3:0]ADC_DIN_P;
   input [0:0]BIT_CLK_N;
@@ -164,8 +162,6 @@ module base_mb_wrapper
   input user_sfp_0_sfp_rxp_i;
   output user_sfp_0_sfp_txn_o;
   output user_sfp_0_sfp_txp_o;
-  input user_uart_0_uart_rxd_i;
-  output user_uart_0_uart_txd_o;
 
   wire [3:0]ADC_DIN_N;
   wire [3:0]ADC_DIN_P;
@@ -249,8 +245,6 @@ module base_mb_wrapper
   wire user_sfp_0_sfp_rxp_i;
   wire user_sfp_0_sfp_txn_o;
   wire user_sfp_0_sfp_txp_o;
-  wire user_uart_0_uart_rxd_i;
-  wire user_uart_0_uart_txd_o;
 
   base_mb base_mb_i
        (.ADC_DIN_N(ADC_DIN_N),
@@ -332,9 +326,7 @@ module base_mb_wrapper
         .user_sfp_0_sfp_rxn_i(user_sfp_0_sfp_rxn_i),
         .user_sfp_0_sfp_rxp_i(user_sfp_0_sfp_rxp_i),
         .user_sfp_0_sfp_txn_o(user_sfp_0_sfp_txn_o),
-        .user_sfp_0_sfp_txp_o(user_sfp_0_sfp_txp_o),
-        .user_uart_0_uart_rxd_i(user_uart_0_uart_rxd_i),
-        .user_uart_0_uart_txd_o(user_uart_0_uart_txd_o));
+        .user_sfp_0_sfp_txp_o(user_sfp_0_sfp_txp_o));
   IOBUF iic_main_scl_iobuf
        (.I(iic_main_scl_o),
         .IO(iic_main_scl_io),

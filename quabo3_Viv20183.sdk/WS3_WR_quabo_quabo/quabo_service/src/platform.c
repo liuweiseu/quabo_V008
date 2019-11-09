@@ -131,6 +131,7 @@ void platform_setup_interrupts()
 	XIntc_Enable(intcp, PLATFORM_TIMER_INTERRUPT_INTR);
 	XIntc_Enable(intcp, XPAR_INTC_0_AXIETHERNET_0_VEC_ID);
 	XIntc_Enable(intcp, 5);
+	XIntc_Enable(intcp, 6);
 #endif
 
 

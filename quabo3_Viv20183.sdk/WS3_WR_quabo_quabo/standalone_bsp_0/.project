@@ -3,7 +3,6 @@
 	<name>standalone_bsp_0</name>
 	<comment>Created by SDK v2018.3</comment>
 	<projects>
-		<project>base_mb_wrapper_hw_platform_1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

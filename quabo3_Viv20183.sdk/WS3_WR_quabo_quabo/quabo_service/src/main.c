@@ -33,6 +33,9 @@
 #include "xil_printf.h"
 #endif
 
+#include "xuartlite.h"
+#include "xuartlite_l.h"
+
 #include "lwip/udp.h"
 #include "lwipopts.h"
 #include "xil_cache.h"

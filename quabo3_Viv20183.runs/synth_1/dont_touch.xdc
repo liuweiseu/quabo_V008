@@ -303,6 +303,15 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_ETH_COR
 # IP: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xci
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] -quiet
 
+# IP: bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_axi_uartlite_1_0 || ORIG_REF_NAME==base_mb_axi_uartlite_1_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_xbar_2/base_mb_xbar_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_xbar_2 || ORIG_REF_NAME==base_mb_xbar_2} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_interconnect_0_1/base_mb_axi_interconnect_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_axi_interconnect_0_1 || ORIG_REF_NAME==base_mb_axi_interconnect_0_1} -quiet] -quiet
+
 # XDC: bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_microblaze_0_0 || ORIG_REF_NAME==base_mb_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -470,6 +479,11 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1_clocks.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_1 || ORIG_REF_NAME==fifo_generator_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_ethernet_1_0 || ORIG_REF_NAME==base_mb_axi_ethernet_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/synth/base_mb_axi_ethernet_1_0_ooc.xdc
+
 # XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_cb17_eth_buf_0 || ORIG_REF_NAME==bd_cb17_eth_buf_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -503,15 +517,20 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/bd_cb17_ooc.xdc
 
-# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_ethernet_1_0 || ORIG_REF_NAME==base_mb_axi_ethernet_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/base_mb/ip/base_mb_axi_ethernet_1_0/synth/base_mb_axi_ethernet_1_0_ooc.xdc
-
 # XDC: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_uartlite_1_0 || ORIG_REF_NAME==base_mb_axi_uartlite_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_uartlite_1_0 || ORIG_REF_NAME==base_mb_axi_uartlite_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_xbar_2/base_mb_xbar_2_ooc.xdc
 
 # XDC: bd/base_mb/base_mb_ooc.xdc
