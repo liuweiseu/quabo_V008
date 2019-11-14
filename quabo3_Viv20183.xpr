@@ -23,8 +23,8 @@
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="ExampleProject" Val="TRUE"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/quabo3_Viv20183.ipdefs/ip_repo_0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../Project/Vivado_Project/IP_Cores_PanoSETI"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../home/wei/Software/Vivado/install/Vivado/ip_repo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../Project/Vivado_Project/IP_Cores_PanoSETI"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -43,13 +43,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="49"/>
-    <Option Name="WTModelSimExportSim" Val="49"/>
-    <Option Name="WTQuestaExportSim" Val="49"/>
-    <Option Name="WTIesExportSim" Val="49"/>
-    <Option Name="WTVcsExportSim" Val="49"/>
-    <Option Name="WTRivieraExportSim" Val="49"/>
-    <Option Name="WTActivehdlExportSim" Val="49"/>
+    <Option Name="WTXSimExportSim" Val="59"/>
+    <Option Name="WTModelSimExportSim" Val="59"/>
+    <Option Name="WTQuestaExportSim" Val="59"/>
+    <Option Name="WTIesExportSim" Val="59"/>
+    <Option Name="WTVcsExportSim" Val="59"/>
+    <Option Name="WTRivieraExportSim" Val="59"/>
+    <Option Name="WTActivehdlExportSim" Val="59"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -248,13 +248,6 @@
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
       <Filter Type="Utils"/>
-      <File Path="$PPRDIR/../../../XilinxProjects/PANOSETI/QuadrantBoard/quabo3/checkpoints/checkpoint_4.dcp">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedInSteps" Val="impl_1"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>

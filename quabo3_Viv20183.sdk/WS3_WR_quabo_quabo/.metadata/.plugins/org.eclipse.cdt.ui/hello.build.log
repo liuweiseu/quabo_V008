@@ -1,4 +1,4 @@
-22:15:44 **** Auto Build of configuration Debug for project hello ****
+14:39:48 **** Auto Build of configuration Debug for project hello ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
@@ -18,9 +18,9 @@ Finished building target: hello.elf
 Invoking: MicroBlaze Print Size
 mb-size hello.elf  |tee "hello.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   3140	    352	   3108	   6600	   19c8	hello.elf
+   3148	    368	   3108	   6624	   19e0	hello.elf
 Finished building: hello.elf.size
  
 
-22:15:45 Build Finished (took 361ms)
+14:39:48 Build Finished (took 212ms)
 

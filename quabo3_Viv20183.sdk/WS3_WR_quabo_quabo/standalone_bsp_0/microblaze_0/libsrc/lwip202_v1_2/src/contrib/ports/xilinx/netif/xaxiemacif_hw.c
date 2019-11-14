@@ -69,6 +69,7 @@ void init_axiemac(xaxiemacif_s *xaxiemac, struct netif *netif)
 	options |= XAE_RECEIVER_ENABLE_OPTION;
 	options |= XAE_FCS_STRIP_OPTION;
 	options |= XAE_MULTICAST_OPTION;
+	options |= XAE_EXT_MULTICAST_OPTION;
 	XAxiEthernet_SetOptions(xaxiemacp, options);
 	XAxiEthernet_ClearOptions(xaxiemacp, ~options);
 

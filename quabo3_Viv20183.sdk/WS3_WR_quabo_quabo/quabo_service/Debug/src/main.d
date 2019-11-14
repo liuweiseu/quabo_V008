@@ -59,7 +59,9 @@ src/main.o src/main.o: ../src/main.c \
  ../../standalone_bsp_0/microblaze_0/include/xwdttb_l.h \
  ../../standalone_bsp_0/microblaze_0/include/xwdttb_hw.h \
  ../../standalone_bsp_0/microblaze_0/include/xintc.h \
- ../../standalone_bsp_0/microblaze_0/include/xintc_l.h
+ ../../standalone_bsp_0/microblaze_0/include/xintc_l.h \
+ ../src/EthCore_Configuration.h \
+ ../../standalone_bsp_0/microblaze_0/include/xil_types.h
 
 ../../standalone_bsp_0/microblaze_0/include/xparameters.h:
 
@@ -184,3 +186,7 @@ src/main.o src/main.o: ../src/main.c \
 ../../standalone_bsp_0/microblaze_0/include/xintc.h:
 
 ../../standalone_bsp_0/microblaze_0/include/xintc_l.h:
+
+../src/EthCore_Configuration.h:
+
+../../standalone_bsp_0/microblaze_0/include/xil_types.h:

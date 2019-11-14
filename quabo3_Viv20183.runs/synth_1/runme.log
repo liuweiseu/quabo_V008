@@ -14,16 +14,16 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/wei/DATA/LW/quabo_V008
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/wei/DATA/LW/Project/Vivado_Project/IP_Cores_PanoSETI'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/Software/Vivado/install/Vivado/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1388.992 ; gain = 0.000 ; free physical = 12507 ; free virtual = 33075
-add_files: Time (s): cpu = 00:00:38 ; elapsed = 00:00:17 . Memory (MB): peak = 2078.352 ; gain = 689.359 ; free physical = 12441 ; free virtual = 33009
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1390.000 ; gain = 0.000 ; free physical = 17087 ; free virtual = 35810
+add_files: Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2078.359 ; gain = 688.359 ; free physical = 17018 ; free virtual = 35742
 Command: synth_design -top base_mb_wrapper -part xc7k160tffg676-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27869 
+INFO: Helper process launched with PID 10911 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 2078.352 ; gain = 0.000 ; free physical = 12137 ; free virtual = 32865
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 2078.359 ; gain = 0.000 ; free physical = 16615 ; free virtual = 35595
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-2048] function gpo_bit_used does not always return a value [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ipshared/304c/hdl/axi_iic_v2_0_vh_rfs.vhd:1139]
 INFO: [Synth 8-6157] synthesizing module 'base_mb_wrapper' [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/hdl/base_mb_wrapper.v:12]
@@ -10476,7 +10476,7 @@ WARNING: [Synth 8-3331] design base_mb_xadc_wiz_0_0_interrupt_control has unconn
 WARNING: [Synth 8-3331] design base_mb_xadc_wiz_0_0_interrupt_control has unconnected port Bus2IP_Data[6]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:09:36 ; elapsed = 00:10:05 . Memory (MB): peak = 3165.719 ; gain = 1087.367 ; free physical = 10935 ; free virtual = 31980
+Finished RTL Elaboration : Time (s): cpu = 00:09:31 ; elapsed = 00:09:59 . Memory (MB): peak = 3166.578 ; gain = 1088.219 ; free physical = 14920 ; free virtual = 34407
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -10590,10 +10590,10 @@ INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instan
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:09:41 ; elapsed = 00:10:11 . Memory (MB): peak = 3165.719 ; gain = 1087.367 ; free physical = 10943 ; free virtual = 32159
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:35 ; elapsed = 00:10:05 . Memory (MB): peak = 3166.578 ; gain = 1088.219 ; free physical = 14928 ; free virtual = 34586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:09:41 ; elapsed = 00:10:11 . Memory (MB): peak = 3165.719 ; gain = 1087.367 ; free physical = 10943 ; free virtual = 32159
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:09:35 ; elapsed = 00:10:05 . Memory (MB): peak = 3166.578 ; gain = 1088.219 ; free physical = 14928 ; free virtual = 34586
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2522 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -10696,6 +10696,14 @@ Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/b
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'base_mb_i/FIFO_for_AXIS_0/inst/fifo_for_axis/U0'
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'base_mb_i/FIFO_for_AXIS_0/inst/fifo_for_axis/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_board.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_board.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc] for cell 'base_mb_i/axi_ethernet_1/inst'
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/base_mb_axi_ethernet_1_0_board.xdc] for cell 'base_mb_i/axi_ethernet_1/inst'
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/bd_cb17_eth_buf_0_board.xdc] for cell 'base_mb_i/axi_ethernet_1/inst/eth_buf/U0'
@@ -10716,16 +10724,8 @@ Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/b
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0.xdc] for cell 'base_mb_i/axi_ethernet_1/inst/pcs_pma/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_2/synth/bd_cb17_pcs_pma_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_mb_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/base_mb_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_board.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0_board.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_1_0/base_mb_axi_uartlite_1_0.xdc] for cell 'base_mb_i/axi_uartlite_1/U0'
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3197.734 ; gain = 0.000 ; free physical = 10359 ; free virtual = 31607
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3198.594 ; gain = 0.000 ; free physical = 14356 ; free virtual = 34035
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc]
 WARNING: [Vivado 12-584] No ports matched 'testpoint[*]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:499]
 WARNING: [Vivado 12-584] No ports matched 'testpoint[0]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:500]
@@ -10742,7 +10742,7 @@ Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/synth_1/don
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_mb_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/base_mb_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3197.734 ; gain = 0.000 ; free physical = 10353 ; free virtual = 31602
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3198.594 ; gain = 0.000 ; free physical = 14351 ; free virtual = 34030
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_mb_wrapper_propImpl.xdc].
@@ -10763,6 +10763,10 @@ Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/b
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_0/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'base_mb_i/FIFO_for_AXIS_0/inst/fifo_for_axis/U0'
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'base_mb_i/FIFO_for_AXIS_0/inst/fifo_for_axis/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
 Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/synth/bd_cb17_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_1/inst/eth_buf/U0'
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/synth/bd_cb17_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_1/inst/eth_buf/U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/synth/bd_cb17_eth_buf_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_mb_wrapper_propImpl.xdc].
@@ -10771,10 +10775,6 @@ Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/b
 Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_clocks.xdc] for cell 'base_mb_i/axi_ethernet_1/inst/mac/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_mb_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/base_mb_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'base_mb_i/ETH_CORE_CTRL_2/inst/eth_ctrl/U0'
 Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
 Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'base_mb_i/ETH_CORE_CTRL_0/inst/eth_ctrl/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
@@ -10943,10 +10943,10 @@ Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/x
 Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'base_mb_i/axi_fifo_mm_s_PH/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_mb_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/base_mb_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3197.734 ; gain = 0.000 ; free physical = 10353 ; free virtual = 31602
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3198.594 ; gain = 0.000 ; free physical = 14350 ; free virtual = 34031
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3197.734 ; gain = 0.000 ; free physical = 10352 ; free virtual = 31601
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3198.594 ; gain = 0.000 ; free physical = 14350 ; free virtual = 34030
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1922 instances were transformed.
   FD => FDRE: 239 instances
@@ -10967,10 +10967,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 320 instances
   SRL16 => SRL16E: 6 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3197.734 ; gain = 0.000 ; free physical = 10352 ; free virtual = 31601
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3197.734 ; gain = 0.000 ; free physical = 10351 ; free virtual = 31601
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3198.594 ; gain = 0.000 ; free physical = 14350 ; free virtual = 34030
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.50 . Memory (MB): peak = 3198.594 ; gain = 0.000 ; free physical = 14349 ; free virtual = 34030
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:10:13 ; elapsed = 00:10:49 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 10515 ; free virtual = 31936
+Finished Constraint Validation : Time (s): cpu = 00:10:06 ; elapsed = 00:10:42 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 14515 ; free virtual = 34367
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-802] inferred FSM for state register 'rxs_axistream_current_state_reg' in module 'rx_axistream_if'
@@ -12067,7 +12067,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'base_mb_xadc_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:10:43 ; elapsed = 00:11:25 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 8164 ; free virtual = 29912
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:10:36 ; elapsed = 00:11:17 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 12272 ; free virtual = 32394
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -12577,6 +12577,7 @@ WARNING: [Synth 8-3917] design xwr_streamers has port snmp_array_o[19][3] driven
 WARNING: [Synth 8-3917] design xwr_streamers has port snmp_array_o[19][2] driven by constant 1
 WARNING: [Synth 8-3917] design xwr_streamers has port snmp_array_o[19][1] driven by constant 1
 WARNING: [Synth 8-3917] design xwr_streamers has port snmp_array_o[19][0] driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ipshared/a7c9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1677]
 INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ipshared/a7c9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1677]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:642]
@@ -12603,7 +12604,7 @@ INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instan
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:34 ; elapsed = 00:12:19 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 7620 ; free virtual = 29752
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:25 ; elapsed = 00:12:08 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 11469 ; free virtual = 32071
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -12700,7 +12701,7 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'base_mb_i/clk_wiz_0/inst/
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 44 of /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0.xdc. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_1/synth/bd_cb17_mac_0.xdc:44]
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:48 ; elapsed = 00:12:33 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 7192 ; free virtual = 29568
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:38 ; elapsed = 00:12:22 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 11089 ; free virtual = 31920
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -12710,7 +12711,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:11:56 ; elapsed = 00:12:42 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 7072 ; free virtual = 29491
+Finished Timing Optimization : Time (s): cpu = 00:11:46 ; elapsed = 00:12:30 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 11055 ; free virtual = 31887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12808,7 +12809,7 @@ INFO: [Synth 8-6837] The timing for the instance base_mb_i/i_0/axi_fifo_mm_s_IM/
 INFO: [Synth 8-6837] The timing for the instance base_mb_i/i_0/axi_fifo_mm_s_PH/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:12:11 ; elapsed = 00:12:58 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6241 ; free virtual = 28770
+Finished Technology Mapping : Time (s): cpu = 00:12:00 ; elapsed = 00:12:45 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10218 ; free virtual = 31189
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12915,7 +12916,7 @@ WARNING: [Synth 8-5396] Clock pin D has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin D has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ipshared/e61b/modules/timing/dmtd_with_deglitcher.vhd:206]
 WARNING: [Synth 8-5410] Found another clock driver \U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_default_plls.gen_kintex7_default_plls.cmp_clk_dmtd_buf_i :O [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ipshared/e61b/platform/xilinx/xwrc_platform_xilinx.vhd:537]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:12:18 ; elapsed = 00:13:06 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6047 ; free virtual = 28760
+Finished IO Insertion : Time (s): cpu = 00:12:06 ; elapsed = 00:12:52 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10033 ; free virtual = 31187
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -12928,7 +12929,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:12:18 ; elapsed = 00:13:06 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6047 ; free virtual = 28760
+Finished Renaming Generated Instances : Time (s): cpu = 00:12:06 ; elapsed = 00:12:53 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10033 ; free virtual = 31187
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12940,25 +12941,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:26 ; elapsed = 00:13:14 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6026 ; free virtual = 28739
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:14 ; elapsed = 00:13:01 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10012 ; free virtual = 31166
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:12:27 ; elapsed = 00:13:15 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6026 ; free virtual = 28739
+Finished Renaming Generated Ports : Time (s): cpu = 00:12:15 ; elapsed = 00:13:01 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10012 ; free virtual = 31166
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:12:27 ; elapsed = 00:13:16 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6028 ; free virtual = 28741
+Finished Handling Custom Attributes : Time (s): cpu = 00:12:15 ; elapsed = 00:13:02 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10011 ; free virtual = 31165
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:12:28 ; elapsed = 00:13:16 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6028 ; free virtual = 28741
+Finished Renaming Generated Nets : Time (s): cpu = 00:12:16 ; elapsed = 00:13:02 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10011 ; free virtual = 31165
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -13081,11 +13082,11 @@ Report Cell Usage:
 |105   |OBUFDS          |     1|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:12:28 ; elapsed = 00:13:16 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 6028 ; free virtual = 28741
+Finished Writing Synthesis Report : Time (s): cpu = 00:12:16 ; elapsed = 00:13:02 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 10011 ; free virtual = 31165
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 716 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:12:01 ; elapsed = 00:12:48 . Memory (MB): peak = 3197.734 ; gain = 1087.367 ; free physical = 9129 ; free virtual = 31842
-Synthesis Optimization Complete : Time (s): cpu = 00:12:28 ; elapsed = 00:13:21 . Memory (MB): peak = 3197.734 ; gain = 1119.383 ; free physical = 9176 ; free virtual = 31842
+Synthesis Optimization Runtime : Time (s): cpu = 00:11:49 ; elapsed = 00:12:33 . Memory (MB): peak = 3198.594 ; gain = 1088.219 ; free physical = 13112 ; free virtual = 34269
+Synthesis Optimization Complete : Time (s): cpu = 00:12:16 ; elapsed = 00:13:05 . Memory (MB): peak = 3198.594 ; gain = 1120.234 ; free physical = 13159 ; free virtual = 34269
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 6317 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -13097,7 +13098,7 @@ Resolution: The tool has removed redundant IBUF. To resolve this warning, check 
 INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3221.746 ; gain = 0.000 ; free physical = 9126 ; free virtual = 31781
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3222.605 ; gain = 0.000 ; free physical = 13085 ; free virtual = 34198
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1640 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 133 instances
@@ -13119,13 +13120,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-2404 Infos, 685 Warnings, 0 Critical Warnings and 0 Errors encountered.
+2405 Infos, 685 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:12:42 ; elapsed = 00:13:38 . Memory (MB): peak = 3221.746 ; gain = 1143.395 ; free physical = 9301 ; free virtual = 31957
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3221.746 ; gain = 0.000 ; free physical = 9302 ; free virtual = 31958
+synth_design: Time (s): cpu = 00:12:29 ; elapsed = 00:13:22 . Memory (MB): peak = 3222.605 ; gain = 1144.246 ; free physical = 13261 ; free virtual = 34374
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3222.605 ; gain = 0.000 ; free physical = 13262 ; free virtual = 34374
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/synth_1/base_mb_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 3245.758 ; gain = 24.012 ; free physical = 9260 ; free virtual = 31964
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3246.617 ; gain = 24.012 ; free physical = 13217 ; free virtual = 34375
 INFO: [runtcl-4] Executing : report_utilization -file base_mb_wrapper_utilization_synth.rpt -pb base_mb_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 21:42:00 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 10:56:14 2019...

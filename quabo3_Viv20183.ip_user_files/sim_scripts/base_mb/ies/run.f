@@ -596,6 +596,13 @@
   "../../../bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/ip/fifo_generator_1/sim/fifo_generator_1.v" \
   "../../../bd/base_mb/ipshared/6850/new/FIFO_for_AXIS.v" \
   "../../../bd/base_mb/ip/base_mb_FIFO_for_AXIS_0_0/sim/base_mb_FIFO_for_AXIS_0_0.v" \
+  "../../../bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/sim/base_mb_ETH_CORE_CTRL_0_2.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_axi_uartlite_1_0/sim/base_mb_axi_uartlite_1_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/base_mb/ip/base_mb_xbar_2/sim/base_mb_xbar_2.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_0/sim/bd_cb17_eth_buf_0.vhd" \
@@ -632,13 +639,6 @@
   "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/ip/ip_9/sim/bd_cb17_util_vector_logic_0_0.v" \
   "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/bd_0/sim/bd_cb17.v" \
   "../../../bd/base_mb/ip/base_mb_axi_ethernet_1_0/sim/base_mb_axi_ethernet_1_0.v" \
-  "../../../bd/base_mb/ip/base_mb_ETH_CORE_CTRL_0_2/sim/base_mb_ETH_CORE_CTRL_0_2.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/base_mb/ip/base_mb_axi_uartlite_1_0/sim/base_mb_axi_uartlite_1_0.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/base_mb/ip/base_mb_xbar_2/sim/base_mb_xbar_2.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

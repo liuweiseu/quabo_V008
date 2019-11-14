@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Fri Nov  8 21:25:25 2019
+//Date        : Mon Nov 11 10:37:37 2019
 //Host        : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target base_mb_wrapper.bd
 //Design      : base_mb_wrapper

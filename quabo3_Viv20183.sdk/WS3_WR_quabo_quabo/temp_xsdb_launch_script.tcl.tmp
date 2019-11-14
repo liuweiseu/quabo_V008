@@ -1,0 +1,1 @@
+set xsdb_idle_timeout -1;source /home/wei/Software/Vivado/install/SDK/2018.3/scripts/xsdb/xsdb/xsdb-server.tcl

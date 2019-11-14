@@ -46,6 +46,8 @@
 #include "xwdttb.h"
 //#include "ip_addr.h"
 #include "xintc.h"
+
+#include "EthCore_Configuration.h"
 //This is set to 0 in lwipopts.h, but system doesn't see it
 #define LWIP_DHCP 0
 #if LWIP_DHCP==1
@@ -56,6 +58,9 @@
 //The SPI interface
 XSpi Spi; /* The instance of the SPI device */
 XSpi_Config *ConfigPtr;	/* Pointer to Configuration data */
+
+XUartLite UartLite;
+
 #define TMP125_SPI_MASK 0x01	//Temp sensor
 #define DAQADC_SPI_MASK 0x02	//The LTC2170
 #define HKADC_SPI_MASK 0x04		//The LTC2496
@@ -95,6 +100,8 @@ static XSysMon SysMonInst;
 
 //The MAROC_Slow_Control hardware module can be accessed through this address
 #define MAROC_SC XPAR_MAROC_SLOW_CONTROL_0_S00_AXI_BASEADDR
+
+#define XPAR_RS232_UART_BASEADDR XPAR_AXI_UARTLITE_0_BASEADDR
 /*
  * The interface to the slow control module
 wire [31:0] par_data_in = slv_reg0;
@@ -113,6 +120,10 @@ and slv_reg1 is the par_data_out (readback from the MAROCs)
 #define ACQ_MODE_PH 0x01
 #define ACQ_MODE_IM 0x02
 #define ADC_LATENCY_SKIP_VAL 10
+//UART_INTERRUPT
+#define UARTLITE_INTERRUPT_INTR 6
+
+#define ETH1_BASEADDRESS 0x40C40000U
  /* The interface to the maroc_dc module
 wire [2:0] adc_clk_phase_sel =  slave_reg8[13:11];
 wire [1:0] mode_enable = slave_reg8[10:9]; //00 for none, 01 for PH, 10 for IM, 11 for both
@@ -221,6 +232,8 @@ void InitRemap(u16* array);
 
 //This gets called when the WR interrupt is asserted, to indicate that MB can use the SPI bus
 void WR_int_callback();
+//This is for uart recv interrupt
+void UART_int_callback();
 
 //The udp pcb for sending and receiving command and housekeeping
 struct udp_pcb *cmd_pcb;
@@ -314,7 +327,9 @@ int main()
 
 	 	//Set up the LTC2170 in 1-lane, 12-bit mode
 	 	//SetupLTC2170();
-
+	 	//Initialize the UART which talks to the WR core
+		Status = XUartLite_Initialize(&UartLite, XPAR_AXI_UARTLITE_0_DEVICE_ID);
+		XUartLite_ResetFifos(&UartLite);
 	 	//Set up the XADC
 	 	InitXADC();
 	 	//Set up the GPIO
@@ -433,6 +448,8 @@ int main()
 		return -1;
 	}
 
+	EthCore_Init(ETH1_BASEADDRESS);
+
 	netif_set_default(echo_netif);
 
 	/* Register WR SPI access Interrupt handler */
@@ -440,8 +457,16 @@ int main()
 				WR_INTERRUPT_INTR,
 				(XInterruptHandler)WR_int_callback,
 				0);
+
+	/* Register UART Interrupt handler */
+	XIntc_RegisterHandler(XPAR_INTC_0_BASEADDR,
+			UARTLITE_INTERRUPT_INTR,
+			(XInterruptHandler)UART_int_callback,
+			0);
+	//XUartLite_EnableInterrupt(&UartLite);
 	/* now enable interrupts */
 	platform_enable_interrupts();
+	XUartLite_ResetFifos(&UartLite);
 
 	/* specify that the network if is up */
 	netif_set_up(echo_netif);
@@ -1782,4 +1807,35 @@ void WR_int_callback()
 	wr_int_arm = 0;
 	UpdateGPIO();
 	SPI_flag = 0;
+}
+
+//This gets called when the UART has received a character, so the MB can get it out of the FIFO quickly,
+//  to avoid FIFO overflow
+void UART_int_callback()
+{
+
+	u8 numbytes;
+	//Need to receive bytes one at a time so we can look for a CR
+	u8 buf;
+	numbytes = XUartLite_Recv(&UartLite,&buf, 1);
+	if(numbytes>0)
+	{
+		xil_printf("%c",buf);
+		XUartLite_ResetFifos(&UartLite);
+	}
+	/*if (numbytes > 1)
+	{
+		//Should be only 1
+		XUartLite_ResetFifos(&UartLite);
+		return;
+	}
+	if (numbytes)
+	{
+		if ((*(WR_UART_Rx_Buffer + WR_UART_Rx_ptr) == '\r') && (send_on_CR == 1))
+		{
+			xil_printf("Got CR");
+			//UART_Rx_flag = 1;
+		}
+		else WR_UART_Rx_ptr++;
+	}*/
 }
