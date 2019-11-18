@@ -1,4 +1,4 @@
-10:27:59 **** Build of configuration Debug for project hello ****
+21:54:40 **** Auto Build of configuration Debug for project hello ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
@@ -13,14 +13,10 @@ Finished building: ../src/platform.c
 Building target: hello.elf
 Invoking: MicroBlaze gcc linker
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-Finished building target: hello.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size hello.elf  |tee "hello.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   3140	    352	   3108	   6600	   19c8	hello.elf
-Finished building: hello.elf.size
- 
+/home/wei/Software/Vivado/install/SDK/2018.3/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld: cannot find -llwip4
+collect2: error: ld returned 1 exit status
+makefile:36: recipe for target 'hello.elf' failed
+make: *** [hello.elf] Error 1
 
-10:28:00 Build Finished (took 559ms)
+21:54:40 Build Finished (took 358ms)
 

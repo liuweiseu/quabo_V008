@@ -44,6 +44,8 @@
 
 #include "lwip/tcp.h"
 
+#include "tmrctr.h"
+
 #if LWIP_DHCP==1
 volatile int dhcp_timoutcntr = 24;
 void dhcp_fine_tmr();
@@ -107,7 +109,8 @@ void platform_setup_interrupts()
 	microblaze_register_handler((XInterruptHandler)XIntc_InterruptHandler, intcp);
 #endif
 
-	platform_setup_timer();
+	//platform_setup_timer();
+	init_tmrctr();
 
 #ifdef XPAR_ETHERNET_MAC_IP2INTC_IRPT_MASK
 	/* Enable timer and EMAC interrupts in the interrupt controller */

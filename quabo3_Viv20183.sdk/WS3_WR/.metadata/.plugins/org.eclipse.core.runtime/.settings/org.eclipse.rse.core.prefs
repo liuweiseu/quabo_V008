@@ -1,4 +1,3 @@
-activeuserprofiles=RIXLAB2018;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=rikra
-useridperkey=RIXLAB2018.Local\=rikra;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=wei
+useridperkey=Wei-Berkeley.Local\=wei;

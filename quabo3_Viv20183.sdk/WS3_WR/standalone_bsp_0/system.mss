@@ -16,7 +16,6 @@ BEGIN PROCESSOR
  PARAMETER DRIVER_VER = 2.8
  PARAMETER HW_INSTANCE = microblaze_0
  PARAMETER compiler_flags =  -mlittle-endian -mxl-soft-mul -mcpu=v11.0
- PARAMETER extra_compiler_flags = -ffunction-sections -fdata-sections -Wall -Wextra -g3
 END
 
 
@@ -131,6 +130,7 @@ BEGIN LIBRARY
  PARAMETER ip_reassembly = 0
  PARAMETER lwip_tcp = false
  PARAMETER mem_size = 16384
+ PARAMETER no_sys_no_timers = false
  PARAMETER pbuf_pool_size = 32
  PARAMETER tcp_queue_ooseq = 0
 END
