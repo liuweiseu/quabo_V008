@@ -4497,3 +4497,17 @@ con
 
 12:53:44 INFO  : Launch script is exported to file '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
 13:47:48 INFO  : Disconnected from the channel tcfchan#13.
+14:21:55 INFO  : Registering command handlers for SDK TCF services
+14:21:55 INFO  : Launching XSCT server: xsct -n -interactive /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/temp_xsdb_launch_script.tcl
+14:21:57 INFO  : XSCT server has started successfully.
+14:21:57 INFO  : Successfully done setting XSCT server connection channel  
+14:21:57 INFO  : Successfully done setting SDK workspace  
+14:21:57 INFO  : Processing command line option -hwspec /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/base_mb_wrapper.hdf.
+14:21:57 INFO  : Checking for hwspec changes in the project base_mb_wrapper_hw_platform_0.
+09:24:12 INFO  : Registering command handlers for SDK TCF services
+09:24:16 INFO  : Launching XSCT server: xsct -n -interactive /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/temp_xsdb_launch_script.tcl
+09:24:19 INFO  : XSCT server has started successfully.
+09:24:22 INFO  : Successfully done setting XSCT server connection channel  
+09:24:22 INFO  : Successfully done setting SDK workspace  
+09:24:22 INFO  : Processing command line option -hwspec /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/base_mb_wrapper.hdf.
+09:24:22 INFO  : Checking for hwspec changes in the project base_mb_wrapper_hw_platform_0.

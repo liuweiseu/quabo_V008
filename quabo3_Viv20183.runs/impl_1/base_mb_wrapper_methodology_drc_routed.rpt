@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Oct 30 12:58:30 2019
+| Date         : Tue Nov 19 07:33:27 2019
 | Host         : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_methodology -file base_mb_wrapper_methodology_drc_routed.rpt -pb base_mb_wrapper_methodology_drc_routed.pb -rpx base_mb_wrapper_methodology_drc_routed.rpx
 | Design       : base_mb_wrapper
@@ -124,112 +124,112 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X93Y148 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X76Y170 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X96Y159 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X81Y161 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X101Y143 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X100Y157 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X95Y157 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X92Y164 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X61Y123 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X40Y137 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X66Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X38Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X78Y125 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X74Y148 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X87Y129 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X72Y155 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_fragment_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X93Y134 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X78Y150 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/rx_undersized_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X81Y139 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst0_reg in site SLICE_X65Y153 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/stats_block.statistics_counters/tx_byte_counter/SYNC_STATS_RESET/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X71Y143 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X19Y148 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X72Y144 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X20Y147 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X69Y145 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X38Y148 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X56Y143 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X43Y147 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#15 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X57Y143 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X41Y149 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#16 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst0_reg in site SLICE_X80Y144 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst0_reg in site SLICE_X65Y146 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_stats_reset/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#17 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X70Y145 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X21Y149 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/mac/inst/bd_0b46_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#18 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X92Y150 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X77Y170 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0b46_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#19 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X105Y144 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X99Y151 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell base_mb_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#20 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X28Y39 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X28Y54 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#21 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X4Y81 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X19Y100 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#22 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X27Y44 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X19Y62 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning

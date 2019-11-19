@@ -508,7 +508,8 @@ set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets base_mb_i/clk_wiz_0/inst/c
 
 create_clock -period 8.000 -name mgt_clk_0_clk_p -waveform {0.000 4.000} [get_ports mgt_clk_0_clk_p]
 
-create_clock -period 16.667 -name {BIT_CLK_P[0]} -waveform {0.000 8.334} [get_ports {BIT_CLK_P[0]}]
+#create_clock -period 16.667 -name {BIT_CLK_P[0]} -waveform {0.000 8.334} [get_ports {BIT_CLK_P[0]}]
+create_clock -period 8 -name {BIT_CLK_P[0]} -waveform {0.000 4} [get_ports {BIT_CLK_P[0]}]
 set_input_delay -clock [get_clocks {BIT_CLK_P[0]}] -clock_fall -min -add_delay 3.000 [get_ports {ADC_DIN_N[*]}]
 set_input_delay -clock [get_clocks {BIT_CLK_P[0]}] -clock_fall -max -add_delay 5.333 [get_ports {ADC_DIN_N[*]}]
 set_input_delay -clock [get_clocks {BIT_CLK_P[0]}] -min -add_delay 3.000 [get_ports {ADC_DIN_N[*]}]

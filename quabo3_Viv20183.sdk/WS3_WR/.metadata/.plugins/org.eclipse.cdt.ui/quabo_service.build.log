@@ -1,4 +1,4 @@
-11:57:35 **** Build of configuration Debug for project quabo_service ****
+09:24:53 **** Build of configuration Debug for project quabo_service ****
 make all 
 Building file: ../src/main.c
 Invoking: MicroBlaze gcc compiler
@@ -69,5 +69,5 @@ mb-size quabo_service.elf  |tee "quabo_service.elf.size"
 Finished building: quabo_service.elf.size
  
 
-11:57:36 Build Finished (took 662ms)
+09:24:54 Build Finished (took 1s.262ms)
 

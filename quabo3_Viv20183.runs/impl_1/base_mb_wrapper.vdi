@@ -2,21 +2,20 @@
 # Vivado v2018.3_AR71948 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Oct 30 12:53:32 2019
-# Process ID: 23626
-# Current directory: /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1
+# Start of session at: Tue Nov 19 07:28:12 2019
+# Process ID: 31781
+# Current directory: /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1
 # Command line: vivado -log base_mb_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source base_mb_wrapper.tcl -notrace
-# Log file: /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper.vdi
-# Journal file: /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/vivado.jou
+# Log file: /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper.vdi
+# Journal file: /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source base_mb_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.ipdefs/ip_repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.ipdefs/ip_repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/Software/Vivado/install/Vivado/ip_repo'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/wei/DATA/LW/Project/Vivado_Project/IP_Cores_PanoSETI/wr_cores_panoseti'.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/home/wei/Software/Vivado/install/Vivado/ip_repo'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
-add_files: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1997.305 ; gain = 608.312 ; free physical = 12101 ; free virtual = 33480
+add_files: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 1997.305 ; gain = 606.305 ; free physical = 10316 ; free virtual = 31042
 Command: link_design -top base_mb_wrapper -part xc7k160tffg676-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
@@ -25,117 +24,117 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3_AR71948
 INFO: [Device 21-403] Loading part xc7k160tffg676-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc] for cell 'base_mb_i/microblaze_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc] for cell 'base_mb_i/microblaze_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_mdm_1_0/base_mb_mdm_1_0.xdc] for cell 'base_mb_i/mdm_1/U0'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_mdm_1_0/base_mb_mdm_1_0.xdc:50]
-get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2506.895 ; gain = 509.590 ; free physical = 11187 ; free virtual = 32586
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_mdm_1_0/base_mb_mdm_1_0.xdc] for cell 'base_mb_i/mdm_1/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0_board.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0_board.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
-INFO: [Timing 38-2] Deriving generated clocks [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0.xdc:57]
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0_board.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0_board.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_dlmb_v10_0/base_mb_dlmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/dlmb_v10/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_dlmb_v10_0/base_mb_dlmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/dlmb_v10/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ilmb_v10_0/base_mb_ilmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/ilmb_v10/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ilmb_v10_0/base_mb_ilmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/ilmb_v10/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/base_mb_axi_ethernet_0_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/base_mb_axi_ethernet_0_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/bd_0b46_eth_buf_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/bd_0b46_eth_buf_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/bd_0b46_pcs_pma_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/bd_0b46_pcs_pma_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/synth/bd_0b46_pcs_pma_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/synth/bd_0b46_pcs_pma_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0.xdc] for cell 'base_mb_i/axi_intc_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0.xdc] for cell 'base_mb_i/axi_intc_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timer_0_0/base_mb_axi_timer_0_0.xdc] for cell 'base_mb_i/axi_timer_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timer_0_0/base_mb_axi_timer_0_0.xdc] for cell 'base_mb_i/axi_timer_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_iic_0_0/base_mb_axi_iic_0_0_board.xdc] for cell 'base_mb_i/axi_iic_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_iic_0_0/base_mb_axi_iic_0_0_board.xdc] for cell 'base_mb_i/axi_iic_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_board.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_board.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0_board.xdc] for cell 'base_mb_i/GPIO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0_board.xdc] for cell 'base_mb_i/GPIO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0.xdc] for cell 'base_mb_i/GPIO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0.xdc] for cell 'base_mb_i/GPIO/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_xadc_wiz_0_0/base_mb_xadc_wiz_0_0.xdc] for cell 'base_mb_i/xadc_wiz_0/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_xadc_wiz_0_0/base_mb_xadc_wiz_0_0.xdc] for cell 'base_mb_i/xadc_wiz_0/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0_board.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0_board.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
-INFO: [Timing 38-2] Deriving generated clocks [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0.xdc:57]
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timebase_wdt_0_0/base_mb_axi_timebase_wdt_0_0.xdc] for cell 'base_mb_i/axi_timebase_wdt_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timebase_wdt_0_0/base_mb_axi_timebase_wdt_0_0.xdc] for cell 'base_mb_i/axi_timebase_wdt_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1_board.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1_board.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc]
-WARNING: [Vivado 12-584] No ports matched 'testpoint[*]'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:496]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:496]
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc] for cell 'base_mb_i/microblaze_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc] for cell 'base_mb_i/microblaze_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_mdm_1_0/base_mb_mdm_1_0.xdc] for cell 'base_mb_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_mdm_1_0/base_mb_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2506.402 ; gain = 509.098 ; free physical = 9417 ; free virtual = 30148
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_mdm_1_0/base_mb_mdm_1_0.xdc] for cell 'base_mb_i/mdm_1/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0_board.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0_board.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_1_0/base_mb_clk_wiz_1_0.xdc] for cell 'base_mb_i/clk_wiz_1/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_0/base_mb_rst_clk_wiz_1_100M_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0_board.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0_board.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_uartlite_0_0/base_mb_axi_uartlite_0_0.xdc] for cell 'base_mb_i/axi_uartlite_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_dlmb_v10_0/base_mb_dlmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_dlmb_v10_0/base_mb_dlmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ilmb_v10_0/base_mb_ilmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_ilmb_v10_0/base_mb_ilmb_v10_0.xdc] for cell 'base_mb_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/base_mb_axi_ethernet_0_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/base_mb_axi_ethernet_0_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/bd_0b46_eth_buf_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/bd_0b46_eth_buf_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/bd_0b46_pcs_pma_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/bd_0b46_pcs_pma_0_board.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/synth/bd_0b46_pcs_pma_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_2/synth/bd_0b46_pcs_pma_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/pcs_pma/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0.xdc] for cell 'base_mb_i/axi_intc_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0.xdc] for cell 'base_mb_i/axi_intc_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timer_0_0/base_mb_axi_timer_0_0.xdc] for cell 'base_mb_i/axi_timer_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timer_0_0/base_mb_axi_timer_0_0.xdc] for cell 'base_mb_i/axi_timer_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_iic_0_0/base_mb_axi_iic_0_0_board.xdc] for cell 'base_mb_i/axi_iic_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_iic_0_0/base_mb_axi_iic_0_0_board.xdc] for cell 'base_mb_i/axi_iic_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_board.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_board.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_slow_control_0_0/src/fifo_32by128/fifo_32by128.xdc] for cell 'base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_32by512/FIFO_32by512.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0_board.xdc] for cell 'base_mb_i/GPIO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0_board.xdc] for cell 'base_mb_i/GPIO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0.xdc] for cell 'base_mb_i/GPIO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_0/base_mb_axi_gpio_0_0.xdc] for cell 'base_mb_i/GPIO/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0_board.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_rst_clk_wiz_1_100M_1_0/base_mb_rst_clk_wiz_1_100M_1_0.xdc] for cell 'base_mb_i/rst_clk_wiz_1_100M_1/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_xadc_wiz_0_0/base_mb_xadc_wiz_0_0.xdc] for cell 'base_mb_i/xadc_wiz_0/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_xadc_wiz_0_0/base_mb_xadc_wiz_0_0.xdc] for cell 'base_mb_i/xadc_wiz_0/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0_board.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0_board.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_clk_wiz_0_0/base_mb_clk_wiz_0_0.xdc] for cell 'base_mb_i/clk_wiz_0/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timebase_wdt_0_0/base_mb_axi_timebase_wdt_0_0.xdc] for cell 'base_mb_i/axi_timebase_wdt_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_timebase_wdt_0_0/base_mb_axi_timebase_wdt_0_0.xdc] for cell 'base_mb_i/axi_timebase_wdt_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1_board.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1_board.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc] for cell 'base_mb_i/axi_gpio_mech/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'testpoint[*]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:496]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:496]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'testpoint[0]'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:497]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:497]
+WARNING: [Vivado 12-584] No ports matched 'testpoint[0]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:497]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:497]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'testpoint[1]'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:498]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:498]
+WARNING: [Vivado 12-584] No ports matched 'testpoint[1]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:498]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:498]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'testpoint[2]'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:499]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:499]
+WARNING: [Vivado 12-584] No ports matched 'testpoint[2]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:499]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:499]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'testpoint[3]'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:500]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:500]
+WARNING: [Vivado 12-584] No ports matched 'testpoint[3]'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:500]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:500]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'base_mb_i/clk_wiz_0/inst/clk_in1_base_mb_clk_wiz_0_0'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:504]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:504]
+WARNING: [Vivado 12-507] No nets matched 'base_mb_i/clk_wiz_0/inst/clk_in1_base_mb_clk_wiz_0_0'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:504]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:504]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'clock' objects. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:536]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'clock' objects. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:537]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-WARNING: [Vivado 12-507] No nets matched 'base_mb_i/clk_wiz_1/inst/clk_in1_base_mb_clk_wiz_1_0'. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:551]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:551]
+WARNING: [Vivado 12-507] No nets matched 'base_mb_i/clk_wiz_1/inst/clk_in1_base_mb_clk_wiz_1_0'. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:552]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc:552]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc]
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_clocks.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_clocks.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0_clocks.xdc] for cell 'base_mb_i/axi_intc_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0_clocks.xdc] for cell 'base_mb_i/axi_intc_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_clocks.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_clocks.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
-Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32_clocks.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
-Finished Parsing XDC File [/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32_clocks.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc]
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/eth_buf/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_clocks.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_clocks.xdc] for cell 'base_mb_i/axi_ethernet_0/inst/mac/inst'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0_clocks.xdc] for cell 'base_mb_i/axi_intc_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_intc_0_0/base_mb_axi_intc_0_0_clocks.xdc] for cell 'base_mb_i/axi_intc_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_clocks.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_0_0/base_mb_axi_quad_spi_0_0_clocks.xdc] for cell 'base_mb_i/axi_quad_spi_0/U0'
+Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32_clocks.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
+Finished Parsing XDC File [/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_maroc_dc_0_0/src/FIFO_64_to_32/FIFO_64_to_32_clocks.xdc] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0'
 Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
 Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
 Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
@@ -176,8 +175,8 @@ Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/x
 Finished Sourcing Tcl File [/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Generating merged BMM file for the design top 'base_mb_wrapper'...
-INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.sdk/WS3_WR/quabo_service/Debug/quabo_service.elf 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11243 ; free virtual = 32642
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/Debug/quabo_service.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9473 ; free virtual = 30205
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 636 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 5 instances
@@ -187,9 +186,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 336 instances
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 208 instances
 
-16 Infos, 8 Warnings, 7 Critical Warnings and 0 Errors encountered.
+17 Infos, 7 Warnings, 7 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:25 . Memory (MB): peak = 3095.176 ; gain = 1097.871 ; free physical = 11243 ; free virtual = 32642
+link_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:25 . Memory (MB): peak = 3070.672 ; gain = 1073.367 ; free physical = 9473 ; free virtual = 30205
 Command: opt_design -verbose
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
@@ -200,13 +199,13 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11237 ; free virtual = 32636
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9468 ; free virtual = 30200
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Ending Cache Timing Information Task | Checksum: 28c0c86f7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.99 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11190 ; free virtual = 32589
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9423 ; free virtual = 30155
 
 Starting Logic Optimization Task
 
@@ -611,7 +610,7 @@ INFO: [Opt 31-138] Pushed 5 inverter(s) to 10 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 1 Retarget | Checksum: 2766ebe0a
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11173 ; free virtual = 32573
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9378 ; free virtual = 30111
 INFO: [Opt 31-389] Phase Retarget created 324 cells and removed 500 cells
 INFO: [Opt 31-1021] In phase Retarget, 69 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -922,7 +921,7 @@ INFO: [Opt 31-442] LUT Reduction optimized 171 LUTs
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Phase 2 Constant propagation | Checksum: 28d944fb0
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11173 ; free virtual = 32573
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9378 ; free virtual = 30111
 INFO: [Opt 31-389] Phase Constant propagation created 171 cells and removed 302 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 36 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -12651,7 +12650,7 @@ INFO: [Opt 31-131] Removed net: base_mb_i/axi_ethernet_0/inst/util_vector_logic_
 INFO: [Opt 31-131] Removed net: base_mb_i/xlslice_3/Din
 Phase 3 Sweep | Checksum: 211d7cd7f
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11156 ; free virtual = 32570
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9387 ; free virtual = 30134
 INFO: [Opt 31-389] Phase Sweep created 57 cells and removed 1801 cells
 INFO: [Opt 31-1021] In phase Sweep, 122 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -12666,20 +12665,20 @@ INFO: [Opt 31-273] Cascaded BUFGCE cell base_mb_i/wrc_board_quabo_Light_0/U0/cmp
 INFO: [Opt 31-274] Optimized connectivity to 2 cascaded buffer cells
 Phase 4 BUFG optimization | Checksum: 296fda387
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11157 ; free virtual = 32571
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9389 ; free virtual = 30135
 INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 0 are BUFGs and removed 3 cells.
 
 Phase 5 Shift Register Optimization
 Phase 5 Shift Register Optimization | Checksum: 1d22d7279
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11156 ; free virtual = 32570
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9387 ; free virtual = 30134
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
 INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell base_mb_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/OTHER_RATIO_GENERATE.Shift_Reg[0]_i_3 driving pin base_mb_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/OTHER_RATIO_GENERATE.Serial_Dout_i_5/O of base_mb_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/OTHER_RATIO_GENERATE.Serial_Dout_i_5.
 Phase 6 Post Processing Netlist | Checksum: 19cacd34d
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11156 ; free virtual = 32570
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9387 ; free virtual = 30134
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 31 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -12701,10 +12700,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11156 ; free virtual = 32570
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9387 ; free virtual = 30134
 Ending Logic Optimization Task | Checksum: 2b295de4a
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3095.176 ; gain = 0.000 ; free physical = 11156 ; free virtual = 32570
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3070.672 ; gain = 0.000 ; free physical = 9387 ; free virtual = 30134
 
 Starting Power Optimization Task
 Begin power optimizations | Checksum: 2b295de4a
@@ -12712,25 +12711,25 @@ INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Pwropt 34-50] Optimizing power for module base_mb_wrapper ...
 INFO: [Pwropt 34-207] Design is in partially-placed state. Running in partially-placed mode.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.384 | TNS=0.000 |
-PSMgr Creation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:03 . Memory (MB): peak = 3221.922 ; gain = 126.746 ; free physical = 10555 ; free virtual = 31973
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.242 | TNS=-6.142 |
+PSMgr Creation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:03 . Memory (MB): peak = 3229.414 ; gain = 158.742 ; free physical = 8780 ; free virtual = 29530
 INFO: [Power 33-23] Power model is not available for STARTUPE2_FOR_QB
 Found 13884 new always-off flops by back propagation
-Pre-processing: Time (s): cpu = 00:00:19 ; elapsed = 00:00:04 . Memory (MB): peak = 3348.969 ; gain = 253.793 ; free physical = 10508 ; free virtual = 31925
+Pre-processing: Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 3358.461 ; gain = 287.789 ; free physical = 8745 ; free virtual = 29495
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
-Running Vector-less Activity Propagation...
-IDT: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3469.676 ; gain = 0.000 ; free physical = 10426 ; free virtual = 31843
+IDT: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3384.105 ; gain = 25.645 ; free physical = 8728 ; free virtual = 29479
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 INFO: [Pwropt 34-215] Skipped ODC enables for 395 nets in BRAM flops in bus-based analysis.
 INFO: [Pwropt 34-214] Skipped ODC enables for 44 nets in BRAM address flops in bus-based analysis.
-ODC: Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3510.688 ; gain = 41.012 ; free physical = 10441 ; free virtual = 31859
-Power optimization passes: Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 3510.688 ; gain = 415.512 ; free physical = 10437 ; free virtual = 31855
+ODC: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 3512.195 ; gain = 128.090 ; free physical = 8673 ; free virtual = 29424
+Power optimization passes: Time (s): cpu = 00:00:31 ; elapsed = 00:00:10 . Memory (MB): peak = 3512.195 ; gain = 441.523 ; free physical = 8670 ; free virtual = 29421
 
 INFO: [Pwropt 34-77] Creating clock enable groups ...
  Done
-Grouping enables: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10938 ; free virtual = 32356
+Grouping enables: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9170 ; free virtual = 29920
 
 
 Starting PowerOpt Patch Enables Task
@@ -12757,14 +12756,14 @@ Number of LUTs created for enable logic :
 Patching clock gating enables finished successfully.
 Ending PowerOpt Patch Enables Task | Checksum: 268c5f10e
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11033 ; free virtual = 32451
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9264 ; free virtual = 30015
 INFO: [Pwropt 34-30] Power optimization finished successfully.
 End power optimizations | Checksum: 268c5f10e
-Power optimization: Time (s): cpu = 00:00:38 ; elapsed = 00:00:18 . Memory (MB): peak = 3510.688 ; gain = 415.512 ; free physical = 11075 ; free virtual = 32493
-INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 8500752 bytes
+Power optimization: Time (s): cpu = 00:00:40 ; elapsed = 00:00:19 . Memory (MB): peak = 3512.195 ; gain = 441.523 ; free physical = 9307 ; free virtual = 30058
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 8500312 bytes
 Ending Power Optimization Task | Checksum: 268c5f10e
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:18 . Memory (MB): peak = 3510.688 ; gain = 415.512 ; free physical = 11075 ; free virtual = 32493
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:19 . Memory (MB): peak = 3512.195 ; gain = 441.523 ; free physical = 9307 ; free virtual = 30058
 
 Starting Final Cleanup Task
 
@@ -12779,35 +12778,35 @@ INFO: [Opt 31-50]   Mapped from LUT2 cell: base_mb_i/wrc_board_quabo_Light_0/U0/
 INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
 Ending Logic Optimization Task | Checksum: 20be83f51
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11078 ; free virtual = 32496
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9311 ; free virtual = 30061
 Ending Final Cleanup Task | Checksum: 20be83f51
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11077 ; free virtual = 32496
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9310 ; free virtual = 30061
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11077 ; free virtual = 32496
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9310 ; free virtual = 30061
 Ending Netlist Obfuscation Task | Checksum: 20be83f51
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11077 ; free virtual = 32496
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9310 ; free virtual = 30061
 INFO: [Common 17-83] Releasing license: Implementation
-12484 Infos, 10 Warnings, 7 Critical Warnings and 0 Errors encountered.
+12485 Infos, 9 Warnings, 7 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:34 . Memory (MB): peak = 3510.688 ; gain = 415.512 ; free physical = 11077 ; free virtual = 32496
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11077 ; free virtual = 32496
+opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:36 . Memory (MB): peak = 3512.195 ; gain = 441.523 ; free physical = 9310 ; free virtual = 30061
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9310 ; free virtual = 30061
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11055 ; free virtual = 32485
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11053 ; free virtual = 32487
-INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11035 ; free virtual = 32494
+Write XDEF Complete: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9302 ; free virtual = 30058
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9286 ; free virtual = 30053
+INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9263 ; free virtual = 30054
 INFO: [runtcl-4] Executing : report_drc -file base_mb_wrapper_drc_opted.rpt -pb base_mb_wrapper_drc_opted.pb -rpx base_mb_wrapper_drc_opted.rpx
 Command: report_drc -file base_mb_wrapper_drc_opted.rpt -pb base_mb_wrapper_drc_opted.pb -rpx base_mb_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design -directive ExtraTimingOpt
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
@@ -12830,6 +12829,7 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[8] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[4]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[9] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[5]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ENBWREN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/pwropt) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/SYSCON/regs_o_reg[gpsr_net_rst_o]_inv) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/TX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/TX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ENARDEN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/TX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/E[0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/regs_o_reg[tx_fifo_dat_wr_o]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/UART/U_Wrapped_UART/gen_vuart.U_VUART_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/UART/U_Wrapped_UART/gen_vuart.U_VUART_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ENARDEN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/UART/U_Wrapped_UART/gen_vuart.U_VUART_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/E[0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/UART/U_Wrapped_UART/U_WB_SLAVE/regs_o_reg[tdr_tx_data_wr_o]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[10] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][6]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/wcb_reg[bin][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[4] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/wcb_reg[bin][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -12848,7 +12848,6 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/ENARDEN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg_ENARDEN_cooolgate_en_sig_73) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/full_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/ENBWREN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rd_int) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/U_MDIO_WB/mdio_mcr_reset_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/ENBWREN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/rd_int) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/empty_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/WEA[0] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/we_int0) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/full_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/mem_reg/WEA[1] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/we_int0) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_PCS_1000BASEX/gen_16bit.U_TX_PCS/U_TX_FIFO/U_Inferred_FIFO/full_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 33 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -12860,11 +12859,11 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11026 ; free virtual = 32485
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9254 ; free virtual = 30045
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10d6f3464
 
-Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11026 ; free virtual = 32485
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 11026 ; free virtual = 32485
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9254 ; free virtual = 30045
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9254 ; free virtual = 30046
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'base_mb_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
@@ -12876,35 +12875,34 @@ WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. T
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17591c298
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10928 ; free virtual = 32391
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9183 ; free virtual = 29979
 
 Phase 1.3 Build Placer Netlist Model
 Phase 1.3 Build Placer Netlist Model | Checksum: 18c7bf02a
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10846 ; free virtual = 32311
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9101 ; free virtual = 29897
 
 Phase 1.4 Constrain Clocks/Macros
 Phase 1.4 Constrain Clocks/Macros | Checksum: 18c7bf02a
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10846 ; free virtual = 32311
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9098 ; free virtual = 29895
 Phase 1 Placer Initialization | Checksum: 18c7bf02a
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10846 ; free virtual = 32311
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9096 ; free virtual = 29893
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1c7708eba
+Phase 2.1 Floorplanning | Checksum: 2147ff7cd
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10816 ; free virtual = 32281
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9075 ; free virtual = 29872
 
 Phase 2.2 Physical Synthesis In Placer
-INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
-INFO: [Physopt 32-81] Processed net base_mb_i/maroc_dc_0/inst/USR_LOGIC/IM_SM/Q[0]. Replicated 9 times.
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
 INFO: [Physopt 32-81] Processed net base_mb_i/maroc_dc_0/inst/USR_LOGIC/IM_SM/Q[1]. Replicated 8 times.
-INFO: [Physopt 32-232] Optimized 2 nets. Created 17 new instances.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 17 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10789 ; free virtual = 32255
+INFO: [Physopt 32-232] Optimized 1 net. Created 8 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 8 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9039 ; free virtual = 29838
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
@@ -12913,7 +12911,7 @@ INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10789 ; free virtual = 32255
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9043 ; free virtual = 29841
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -12922,71 +12920,71 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 ----------------------------------------------------------------------------------------------------------------------------------------
-|  Very High Fanout              |           17  |              0  |                     2  |           0  |           1  |  00:00:01  |
+|  Very High Fanout              |            8  |              0  |                     1  |           0  |           1  |  00:00:01  |
 |  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                         |           17  |              0  |                     2  |           0  |           5  |  00:00:01  |
+|  Total                         |            8  |              0  |                     1  |           0  |           5  |  00:00:01  |
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2 Physical Synthesis In Placer | Checksum: 1bec72fb9
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1ff744f3b
 
-Time (s): cpu = 00:01:25 ; elapsed = 00:00:39 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10790 ; free virtual = 32257
-Phase 2 Global Placement | Checksum: 14a72807b
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:38 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9044 ; free virtual = 29843
+Phase 2 Global Placement | Checksum: 1b4a3072f
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:40 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10799 ; free virtual = 32266
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:39 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9055 ; free virtual = 29854
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 14a72807b
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b4a3072f
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:40 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10799 ; free virtual = 32266
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:39 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9055 ; free virtual = 29854
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 181e1e1ff
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 12b7331da
 
-Time (s): cpu = 00:01:37 ; elapsed = 00:00:44 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10792 ; free virtual = 32259
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:43 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9047 ; free virtual = 29846
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1d48669d3
+Phase 3.3 Area Swap Optimization | Checksum: 14ea61c6b
 
-Time (s): cpu = 00:01:38 ; elapsed = 00:00:45 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10794 ; free virtual = 32261
+Time (s): cpu = 00:01:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9047 ; free virtual = 29846
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 15169e1b9
+Phase 3.4 Pipeline Register Optimization | Checksum: 1867ca15a
 
-Time (s): cpu = 00:01:38 ; elapsed = 00:00:45 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10794 ; free virtual = 32261
+Time (s): cpu = 00:01:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9047 ; free virtual = 29846
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 10f7729f4
+Phase 3.5 Fast Optimization | Checksum: 1d24339ab
 
-Time (s): cpu = 00:01:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10793 ; free virtual = 32260
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:46 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9046 ; free virtual = 29845
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 2023d2dd8
+Phase 3.6 Small Shape Detail Placement | Checksum: 1aaee158b
 
-Time (s): cpu = 00:01:53 ; elapsed = 00:00:54 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10763 ; free virtual = 32230
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:53 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9016 ; free virtual = 29815
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 22252bc3e
+Phase 3.7 Re-assign LUT pins | Checksum: 1b399fa19
 
-Time (s): cpu = 00:01:54 ; elapsed = 00:00:55 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10765 ; free virtual = 32232
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:54 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9018 ; free virtual = 29817
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1f0c2fecf
+Phase 3.8 Pipeline Register Optimization | Checksum: 1e5023a0a
 
-Time (s): cpu = 00:01:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10764 ; free virtual = 32232
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:55 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9018 ; free virtual = 29817
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 1e02a0d19
+Phase 3.9 Fast Optimization | Checksum: 1409d75fc
 
-Time (s): cpu = 00:02:03 ; elapsed = 00:00:58 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10765 ; free virtual = 32233
-Phase 3 Detail Placement | Checksum: 1e02a0d19
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:57 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9018 ; free virtual = 29817
+Phase 3 Detail Placement | Checksum: 1409d75fc
 
-Time (s): cpu = 00:02:03 ; elapsed = 00:00:58 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10765 ; free virtual = 32233
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:57 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9018 ; free virtual = 29817
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -12994,63 +12992,63 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 18b6fb7c6
+Post Placement Optimization Initialization | Checksum: 1d4a6cfd5
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-33] Processed net base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_rstlogic_reset/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-33] Processed net base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/rst_net_n_o_reg_1, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
-Phase 4.1.1.1 BUFG Insertion | Checksum: 18b6fb7c6
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1d4a6cfd5
 
-Time (s): cpu = 00:02:16 ; elapsed = 00:01:02 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10770 ; free virtual = 32237
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.410. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: d7fe5111
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9023 ; free virtual = 29822
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.468. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 18458f65c
 
-Time (s): cpu = 00:02:41 ; elapsed = 00:01:26 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10766 ; free virtual = 32233
-Phase 4.1 Post Commit Optimization | Checksum: d7fe5111
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:46 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9020 ; free virtual = 29819
+Phase 4.1 Post Commit Optimization | Checksum: 18458f65c
 
-Time (s): cpu = 00:02:41 ; elapsed = 00:01:26 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10766 ; free virtual = 32233
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:47 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9020 ; free virtual = 29819
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: d7fe5111
+Phase 4.2 Post Placement Cleanup | Checksum: 18458f65c
 
-Time (s): cpu = 00:02:41 ; elapsed = 00:01:27 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10769 ; free virtual = 32237
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:47 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9022 ; free virtual = 29821
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: d7fe5111
+Phase 4.3 Placer Reporting | Checksum: 18458f65c
 
-Time (s): cpu = 00:02:42 ; elapsed = 00:01:27 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10770 ; free virtual = 32237
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:47 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9023 ; free virtual = 29822
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10770 ; free virtual = 32237
-Phase 4.4 Final Placement Cleanup | Checksum: 7311eaa2
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9023 ; free virtual = 29822
+Phase 4.4 Final Placement Cleanup | Checksum: 11f6c8fed
 
-Time (s): cpu = 00:02:42 ; elapsed = 00:01:27 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10770 ; free virtual = 32237
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 7311eaa2
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:47 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9023 ; free virtual = 29822
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 11f6c8fed
 
-Time (s): cpu = 00:02:42 ; elapsed = 00:01:27 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10770 ; free virtual = 32237
-Ending Placer Task | Checksum: 6f4b0867
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:48 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9023 ; free virtual = 29822
+Ending Placer Task | Checksum: 107e98ed9
 
-Time (s): cpu = 00:02:42 ; elapsed = 00:01:27 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10824 ; free virtual = 32291
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:48 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9081 ; free virtual = 29880
 INFO: [Common 17-83] Releasing license: Implementation
-12519 Infos, 44 Warnings, 8 Critical Warnings and 0 Errors encountered.
+12519 Infos, 43 Warnings, 8 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:02:46 ; elapsed = 00:01:30 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10824 ; free virtual = 32291
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10824 ; free virtual = 32291
+place_design: Time (s): cpu = 00:03:10 ; elapsed = 00:01:50 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9081 ; free virtual = 29880
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9081 ; free virtual = 29880
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10774 ; free virtual = 32286
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 9029 ; free virtual = 29870
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10675 ; free virtual = 32284
-INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10710 ; free virtual = 32293
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8926 ; free virtual = 29867
+INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8962 ; free virtual = 29876
 INFO: [runtcl-4] Executing : report_io -file base_mb_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10694 ; free virtual = 32277
+report_io: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8946 ; free virtual = 29861
 INFO: [runtcl-4] Executing : report_utilization -file base_mb_wrapper_utilization_placed.rpt -pb base_mb_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file base_mb_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10708 ; free virtual = 32293
+report_control_sets: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8960 ; free virtual = 29877
 Command: phys_opt_design -directive Explore
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
@@ -13058,18 +13056,18 @@ INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
-12529 Infos, 44 Warnings, 8 Critical Warnings and 0 Errors encountered.
+12529 Infos, 43 Warnings, 8 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10673 ; free virtual = 32258
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8923 ; free virtual = 29840
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10614 ; free virtual = 32240
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8865 ; free virtual = 29823
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10517 ; free virtual = 32244
-INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_physopt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10555 ; free virtual = 32256
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8760 ; free virtual = 29819
+INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8803 ; free virtual = 29836
 Command: route_design -directive Explore
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
@@ -13089,146 +13087,134 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Starting Routing Task
 INFO: [Route 35-270] Using Router directive 'Explore'.
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: 47d7b675 ConstDB: 0 ShapeSum: 277351f2 RouteDB: 0
+Checksum: PlaceDB: e0763ce7 ConstDB: 0 ShapeSum: 277351f2 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: ad46f782
+Phase 1 Build RT Design | Checksum: 1607bb1f7
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10323 ; free virtual = 32024
-Post Restoration Checksum: NetGraph: 9214d04d NumContArr: 1b322735 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8577 ; free virtual = 29610
+Post Restoration Checksum: NetGraph: b67f548d NumContArr: a9fc5d6a Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: ad46f782
+Phase 2.1 Create Timer | Checksum: 1607bb1f7
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10326 ; free virtual = 32028
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8580 ; free virtual = 29613
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: ad46f782
+Phase 2.2 Fix Topology Constraints | Checksum: 1607bb1f7
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10288 ; free virtual = 31990
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8542 ; free virtual = 29575
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: ad46f782
+Phase 2.3 Pre Route Cleanup | Checksum: 1607bb1f7
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10288 ; free virtual = 31990
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8542 ; free virtual = 29575
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: ba5223ed
+Phase 2.4 Update Timing | Checksum: 1477c718e
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:22 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10263 ; free virtual = 31964
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.181  | TNS=0.000  | WHS=-0.529 | THS=-1343.627|
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8518 ; free virtual = 29552
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.328  | TNS=0.000  | WHS=-0.529 | THS=-1048.048|
 
 
 Phase 2.5 Update Timing for Bus Skew
 
 Phase 2.5.1 Update Timing
-Phase 2.5.1 Update Timing | Checksum: 11a9a1493
+Phase 2.5.1 Update Timing | Checksum: 17c4c1db2
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:24 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10256 ; free virtual = 31958
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.181  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:24 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8511 ; free virtual = 29545
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.328  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 2.5 Update Timing for Bus Skew | Checksum: 9a8bd883
+Phase 2.5 Update Timing for Bus Skew | Checksum: 214fcb927
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10255 ; free virtual = 31958
-Phase 2 Router Initialization | Checksum: 181e81122
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:24 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8510 ; free virtual = 29545
+Phase 2 Router Initialization | Checksum: 14e0c8547
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10255 ; free virtual = 31958
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:25 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8510 ; free virtual = 29545
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1cb1f4be8
+Phase 3 Initial Routing | Checksum: 1012b9da0
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:29 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10246 ; free virtual = 31948
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:31 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8495 ; free virtual = 29530
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 3277
- Number of Nodes with overlaps = 245
- Number of Nodes with overlaps = 62
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.005 | TNS=-0.043 | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 14877dc7e
-
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31939
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 91
- Number of Nodes with overlaps = 44
- Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 3342
+ Number of Nodes with overlaps = 265
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 15
  Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.018 | TNS=-0.018 | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.098  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 29b01fdf2
+Phase 4.1 Global Iteration 0 | Checksum: 1f1fc9ee7
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10237 ; free virtual = 31942
-Phase 4 Rip-up And Reroute | Checksum: 29b01fdf2
+Time (s): cpu = 00:01:51 ; elapsed = 00:00:47 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8498 ; free virtual = 29533
+Phase 4 Rip-up And Reroute | Checksum: 1f1fc9ee7
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10232 ; free virtual = 31942
+Time (s): cpu = 00:01:51 ; elapsed = 00:00:47 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8498 ; free virtual = 29533
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 254da86ab
+Phase 5.1.1 Update Timing | Checksum: 15438f398
 
-Time (s): cpu = 00:01:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.005  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:48 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8499 ; free virtual = 29533
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.108  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 27526db47
+Phase 5.1 Delay CleanUp | Checksum: 1aa24c2ed
 
-Time (s): cpu = 00:01:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:48 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8498 ; free virtual = 29533
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 27526db47
+Phase 5.2 Clock Skew Optimization | Checksum: 1aa24c2ed
 
-Time (s): cpu = 00:01:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
-Phase 5 Delay and Skew Optimization | Checksum: 27526db47
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:48 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8498 ; free virtual = 29533
+Phase 5 Delay and Skew Optimization | Checksum: 1aa24c2ed
 
-Time (s): cpu = 00:01:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:48 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8498 ; free virtual = 29533
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 292559a54
+Phase 6.1.1 Update Timing | Checksum: 1a00b3f13
 
-Time (s): cpu = 00:01:56 ; elapsed = 00:00:54 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.005  | TNS=0.000  | WHS=-4.166 | THS=-20.777|
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:49 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8499 ; free virtual = 29534
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.108  | TNS=0.000  | WHS=-4.166 | THS=-20.774|
 
-Phase 6.1 Hold Fix Iter | Checksum: 1bd41702d
+Phase 6.1 Hold Fix Iter | Checksum: 1469c3112
 
-Time (s): cpu = 00:01:56 ; elapsed = 00:00:54 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
-Phase 6 Post Hold Fix | Checksum: 10d61d20d
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:49 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8499 ; free virtual = 29533
+Phase 6 Post Hold Fix | Checksum: 1cb27e500
 
-Time (s): cpu = 00:01:56 ; elapsed = 00:00:54 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:50 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8499 ; free virtual = 29533
 
 Phase 7 Timing Verification
 
 Phase 7.1 Update Timing
-Phase 7.1 Update Timing | Checksum: 1d62ae1ea
+Phase 7.1 Update Timing | Checksum: 17bcd230f
 
-Time (s): cpu = 00:02:01 ; elapsed = 00:00:56 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10237 ; free virtual = 31942
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.005  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:03 ; elapsed = 00:00:51 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8497 ; free virtual = 29532
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.108  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 7 Timing Verification | Checksum: 1d62ae1ea
+Phase 7 Timing Verification | Checksum: 17bcd230f
 
-Time (s): cpu = 00:02:02 ; elapsed = 00:00:56 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10237 ; free virtual = 31942
+Time (s): cpu = 00:02:03 ; elapsed = 00:00:51 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8497 ; free virtual = 29532
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 5.67121 %
-  Global Horizontal Routing Utilization  = 6.7578 %
+  Global Vertical Routing Utilization    = 5.82624 %
+  Global Horizontal Routing Utilization  = 6.78163 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -13237,64 +13223,64 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 8 Route finalize | Checksum: 1d62ae1ea
+Phase 8 Route finalize | Checksum: 17bcd230f
 
-Time (s): cpu = 00:02:02 ; elapsed = 00:00:56 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10237 ; free virtual = 31942
+Time (s): cpu = 00:02:03 ; elapsed = 00:00:51 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8497 ; free virtual = 29532
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 1d62ae1ea
+Phase 9 Verifying routed nets | Checksum: 17bcd230f
 
-Time (s): cpu = 00:02:02 ; elapsed = 00:00:56 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
+Time (s): cpu = 00:02:03 ; elapsed = 00:00:51 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8497 ; free virtual = 29531
 
 Phase 10 Depositing Routes
 INFO: [Route 35-467] Router swapped GT pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_xwrc_platform/gen_phy_kintex7.cmp_gtx/U_GTX_INST/gtxe2_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y4/GTREFCLK1
-Phase 10 Depositing Routes | Checksum: 2bb4d2d90
+Phase 10 Depositing Routes | Checksum: 1725eecf1
 
-Time (s): cpu = 00:02:04 ; elapsed = 00:00:58 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10236 ; free virtual = 31941
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:53 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8495 ; free virtual = 29529
 
 Phase 11 Post Router Timing
-INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.010  | TNS=0.000  | WHS=-4.166 | THS=-20.769|
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.113  | TNS=0.000  | WHS=-4.166 | THS=-20.769|
 
 CRITICAL WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
 Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
 INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
-Phase 11 Post Router Timing | Checksum: 234256e64
+Phase 11 Post Router Timing | Checksum: 19860d61b
 
-Time (s): cpu = 00:02:19 ; elapsed = 00:01:01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10225 ; free virtual = 31930
+Time (s): cpu = 00:02:22 ; elapsed = 00:00:56 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8481 ; free virtual = 29516
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:02:20 ; elapsed = 00:01:01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10395 ; free virtual = 32100
+Time (s): cpu = 00:02:22 ; elapsed = 00:00:56 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8649 ; free virtual = 29684
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-12549 Infos, 46 Warnings, 9 Critical Warnings and 0 Errors encountered.
+12548 Infos, 45 Warnings, 9 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:02:25 ; elapsed = 00:01:03 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10395 ; free virtual = 32100
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10395 ; free virtual = 32100
+route_design: Time (s): cpu = 00:02:27 ; elapsed = 00:00:58 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8649 ; free virtual = 29684
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8650 ; free virtual = 29685
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10343 ; free virtual = 32089
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8600 ; free virtual = 29676
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10206 ; free virtual = 32086
-INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10248 ; free virtual = 32092
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8464 ; free virtual = 29674
+INFO: [Common 17-1381] The checkpoint '/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8505 ; free virtual = 29679
 INFO: [runtcl-4] Executing : report_drc -file base_mb_wrapper_drc_routed.rpt -pb base_mb_wrapper_drc_routed.pb -rpx base_mb_wrapper_drc_routed.rpx
 Command: report_drc -file base_mb_wrapper_drc_routed.rpt -pb base_mb_wrapper_drc_routed.pb -rpx base_mb_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file base_mb_wrapper_methodology_drc_routed.rpt -pb base_mb_wrapper_methodology_drc_routed.pb -rpx base_mb_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file base_mb_wrapper_methodology_drc_routed.rpt -pb base_mb_wrapper_methodology_drc_routed.pb -rpx base_mb_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 8 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.runs/impl_1/base_mb_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:35 ; elapsed = 00:00:08 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 10031 ; free virtual = 31877
+report_methodology: Time (s): cpu = 00:00:35 ; elapsed = 00:00:08 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8292 ; free virtual = 29468
 INFO: [runtcl-4] Executing : report_power -file base_mb_wrapper_power_routed.rpt -pb base_mb_wrapper_power_summary_routed.pb -rpx base_mb_wrapper_power_routed.rpx
 Command: report_power -file base_mb_wrapper_power_routed.rpt -pb base_mb_wrapper_power_summary_routed.pb -rpx base_mb_wrapper_power_routed.rpx
 INFO: [Power 33-23] Power model is not available for STARTUPE2_FOR_QB
@@ -13304,9 +13290,9 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-12562 Infos, 47 Warnings, 9 Critical Warnings and 0 Errors encountered.
+12561 Infos, 46 Warnings, 9 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 3510.688 ; gain = 0.000 ; free physical = 9976 ; free virtual = 31849
+report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 3512.195 ; gain = 0.000 ; free physical = 8236 ; free virtual = 29438
 INFO: [runtcl-4] Executing : report_route_status -file base_mb_wrapper_route_status.rpt -pb base_mb_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file base_mb_wrapper_timing_summary_routed.rpt -pb base_mb_wrapper_timing_summary_routed.pb -rpx base_mb_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -13319,72 +13305,4 @@ INFO: [runtcl-4] Executing : report_clock_utilization -file base_mb_wrapper_cloc
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file base_mb_wrapper_bus_skew_routed.rpt -pb base_mb_wrapper_bus_skew_routed.pb -rpx base_mb_wrapper_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-INFO: [Memdata 28-167] Found XPM memory block base_mb_i/axi_fifo_mm_s_PH/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the base_mb_i/axi_fifo_mm_s_PH/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
-INFO: [Memdata 28-208] The XPM instance: <base_mb_i/axi_fifo_mm_s_PH/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <base_mb_i/axi_fifo_mm_s_PH>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
-INFO: [Memdata 28-167] Found XPM memory block base_mb_i/axi_fifo_mm_s_IM/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the base_mb_i/axi_fifo_mm_s_IM/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
-INFO: [Memdata 28-208] The XPM instance: <base_mb_i/axi_fifo_mm_s_IM/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <base_mb_i/axi_fifo_mm_s_IM>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
-INFO: [Memdata 28-208] The XPM instance: <base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <base_mb_i/axi_ethernet_0_fifo>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
-INFO: [Memdata 28-167] Found XPM memory block base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
-INFO: [Memdata 28-208] The XPM instance: <base_mb_i/axi_ethernet_0_fifo/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <base_mb_i/axi_ethernet_0_fifo>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
-Command: write_bitstream -force base_mb_wrapper.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
-Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
-INFO: [DRC 23-27] Running DRC with 8 threads
-WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/LM32_CORE/gen_profile_medium_icache.U_Wrapped_LM32/cpu/multiplier/result10 output base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/LM32_CORE/gen_profile_medium_icache.U_Wrapped_LM32/cpu/multiplier/result10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/LM32_CORE/gen_profile_medium_icache.U_Wrapped_LM32/cpu/multiplier/c00 multiplier stage base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/LM32_CORE/gen_profile_medium_icache.U_Wrapped_LM32/cpu/multiplier/c00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[10] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[6]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[11] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[7]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[12] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[8]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[13] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[9]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[14] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[10]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[4] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/D[0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[5] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[1]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[6] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[2]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[7] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[3]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[8] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[4]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ADDRBWRADDR[9] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/ab_i[5]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/ack_sreg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ENBWREN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/RX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/pwropt) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/PERIPH/SYSCON/regs_o_reg[gpsr_net_rst_o]_inv) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/TX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/TX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/gen_without_byte_enable_readfirst.ram_reg/ENARDEN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/TX_FIFO/U_Inferred_FIFO/U_FIFO_Ram/gen_single_clk.U_RAM_SC/E[0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/MINI_NIC/U_Wrapped_Minic/U_WB_Slave/regs_o_reg[tx_fifo_dat_wr_o]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[10] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][6]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[4] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[5] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][1]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[6] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][2]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[7] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][3]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[8] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][4]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRARDADDR[9] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin_n_0_][5]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/wcb_reg[bin][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[10] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[6]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[4] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[5] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[1]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[6] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[2]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[7] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[3]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[8] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[4]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ADDRBWRADDR[9] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin]_rep__0[5]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rcb_reg[bin][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ENARDEN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg_ENARDEN_cooolgate_en_sig_74) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/full_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/ENBWREN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/rd_int) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/empty_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/WEA[0] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/we_int0) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/full_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/mem_reg/WEA[1] (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/we_int0) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/U_Rx_Clock_Align_FIFO/U_FIFO/U_Inferred_FIFO/full_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_microcode_ram/gen_dual_clk.U_RAM_DC/gen_without_byte_enable_readfirst.ram_reg has an input control pin base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_microcode_ram/gen_dual_clk.U_RAM_DC/gen_without_byte_enable_readfirst.ram_reg/ENBWREN (net: base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_Rx_Path/gen_with_packet_filter.U_packet_filter/U_microcode_ram/gen_dual_clk.U_RAM_DC/WEBWE[0]) which is driven by a register (base_mb_i/wrc_board_quabo_Light_0/U0/cmp_xwrc_board_quabo/cmp_board_common/cmp_xwr_core/WRPC/U_Endpoint/U_Wrapped_Endpoint/U_WB_SLAVE/ep_pfcr0_enable_int_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC RTSTAT-10] No routable loads: 26 net(s) have no routable loads. The problem bus(es) and/or net(s) are base_mb_i/axi_ethernet_0/inst/eth_buf/U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO/I_BASIC_SFIFO/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i, base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO/I_BASIC_SFIFO/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, base_mb_i/axi_ethernet_0/inst/eth_buf/U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO/I_BASIC_SFIFO/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, base_mb_i/maroc_dc_0/inst/USR_LOGIC/PH_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, base_mb_i/maroc_dc_0/inst/USR_LOGIC/IMAGE_FIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, base_mb_i/maroc_slow_control_0/inst/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 26 listed).
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 36 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-Generating merged BMM file for the design top 'base_mb_wrapper'...
-INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.sdk/WS3_WR/quabo_service/Debug/quabo_service.elf 
-INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./base_mb_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/media/wei/DATA/LW/quabo_ V008/quabo3_V006_WR.xpr/quabo3_Viv20183/quabo3_Viv20183.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Oct 30 13:01:12 2019. For additional details about this file, please refer to the WebTalk help file at /home/wei/Software/Vivado/install/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-83] Releasing license: Implementation
-12590 Infos, 84 Warnings, 10 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:58 ; elapsed = 00:02:31 . Memory (MB): peak = 3661.016 ; gain = 150.328 ; free physical = 9882 ; free virtual = 31791
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 13:01:12 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 07:33:37 2019...

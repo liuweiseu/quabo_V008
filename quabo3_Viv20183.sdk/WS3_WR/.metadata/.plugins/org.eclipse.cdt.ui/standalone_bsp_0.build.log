@@ -1,4 +1,4 @@
-11:57:10 **** Build of project standalone_bsp_0 ****
+09:24:27 **** Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -35,7 +35,6 @@ make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER
 Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling tmrctr
-mb-ar: creating ../../../lib/libxil.a
 Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling standalone
@@ -45,18 +44,35 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
 Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling lwip src and adapter files
-contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
-contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
-  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
-           ^~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'low_level_output':
-contrib/ports/xilinx/netif/xaxiemacif.c:159:7: warning: implicit declaration of function 'is_tx_space_available' [-Wimplicit-function-declaration]
-   if (is_tx_space_available(xaxiemacif)) {
-       ^~~~~~~~~~~~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
-contrib/ports/xilinx/netif/xaxiemacif.c:681:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  netif->output = xaxiemacif_output;
-                ^
+lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_read_error':
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
+ casper_tftp_read_error(void *handle, void *buf, int bytes)
+                              ^~~~~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
+ casper_tftp_read_error(void *handle, void *buf, int bytes)
+                                            ^~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
+ casper_tftp_read_error(void *handle, void *buf, int bytes)
+                                                     ^~~~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_write_error':
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
+ casper_tftp_write_error(void *handle, struct pbuf *p)
+                               ^~~~~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
+ casper_tftp_write_error(void *handle, struct pbuf *p)
+                                                    ^
+lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_open':
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+   if(!strcmp("/help", fname) && !write) {
+       ^~~~~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+   } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
+              ^~~~~~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
+                                       ^~~~~~
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
+lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
 Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling llfifo
@@ -131,5 +147,5 @@ xwdttb.c:1225:5: note: declared here
      ^~~~~~~~~~~~~~~~~~~~~~
 Finished building libraries
 
-11:57:16 Build Finished (took 6s.322ms)
+09:24:38 Build Finished (took 11s.630ms)
 
