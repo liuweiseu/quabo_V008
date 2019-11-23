@@ -22,7 +22,8 @@ src/platform.o src/platform.o: ../src/platform.c \
  ../../standalone_bsp_0/microblaze_0/include/lwip/debug.h \
  ../../standalone_bsp_0/microblaze_0/include/lwip/arch.h \
  ../../standalone_bsp_0/microblaze_0/include/mb_interface.h \
- ../../standalone_bsp_0/microblaze_0/include/tmrctr.h
+ ../../standalone_bsp_0/microblaze_0/include/tmrctr.h \
+ ../../standalone_bsp_0/microblaze_0/include/spi.h
 
 ../../standalone_bsp_0/microblaze_0/include/arch/cc.h:
 
@@ -73,3 +74,5 @@ src/platform.o src/platform.o: ../src/platform.c \
 ../../standalone_bsp_0/microblaze_0/include/mb_interface.h:
 
 ../../standalone_bsp_0/microblaze_0/include/tmrctr.h:
+
+../../standalone_bsp_0/microblaze_0/include/spi.h:

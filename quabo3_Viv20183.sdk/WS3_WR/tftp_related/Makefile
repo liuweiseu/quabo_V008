@@ -26,7 +26,7 @@ OUTS = ./*.o
 OBJ_DIR = .
 LWIP_OBJ1 = $(LWIP_OBJS) $(ADAPTER_OBJS)
 VPATH = $(LWIP_DIR)/src/core/ $(LWIP_DIR)/src/core/ipv4/ $(LWIP_DIR)/src/core/ipv6 \
-	$(LWIP_DIR)/src/netif $(LWIP_DIR)/src/api $(PORT) $(PORT)/netif $(LWIP_DIR)/src/apps/tftp
+	$(LWIP_DIR)/src/netif $(LWIP_DIR)/src/api $(PORT) $(PORT)/netif $(LWIP_DIR)/src/apps/tftp $(LWIP_DIR)/src/casper_src
 INCLUDEFILES = $(ADAPTER_INCLUDES)
 
 libs: liblwip4.a

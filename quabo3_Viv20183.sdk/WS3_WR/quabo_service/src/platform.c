@@ -45,6 +45,7 @@
 #include "lwip/tcp.h"
 
 #include "tmrctr.h"
+#include "spi.h"
 
 #if LWIP_DHCP==1
 volatile int dhcp_timoutcntr = 24;
@@ -111,7 +112,7 @@ void platform_setup_interrupts()
 
 	//platform_setup_timer();
 	init_tmrctr();
-
+	init_spi();
 #ifdef XPAR_ETHERNET_MAC_IP2INTC_IRPT_MASK
 	/* Enable timer and EMAC interrupts in the interrupt controller */
 	XIntc_EnableIntr(XPAR_INTC_0_BASEADDR,

@@ -1,7 +1,103 @@
-11:20:41 **** Incremental Build of configuration Debug for project quabo_service ****
+Running Make libs in microblaze_0/libsrc/maroc_dc_v1_0/src
+make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling maroc_dc...
+maroc_dc_selftest.c: In function 'MAROC_DC_Reg_SelfTest':
+maroc_dc_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MAROC_DC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+maroc_dc_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling sysmon
+Running Make libs in microblaze_0/libsrc/wdttb_v4_3/src
+make -C microblaze_0/libsrc/wdttb_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling wdttb
+In file included from xwdttb.h:169:0,
+                 from xwdttb.c:83:
+xwdttb.c: In function 'XWdtTb_ProgramWDTWidth':
+../../../include/xil_assert.h:108:9: warning: 'return' with no value, in function returning non-void
+         return;                                    \
+         ^
+xwdttb.c:1228:2: note: in expansion of macro 'Xil_AssertVoid'
+  Xil_AssertVoid(InstancePtr != NULL);
+  ^~~~~~~~~~~~~~
+xwdttb.c:1225:5: note: declared here
+ u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
+     ^~~~~~~~~~~~~~~~~~~~~~
+Finished building libraries
+18:01:34 **** Incremental Build of configuration Debug for project quabo_service ****
 make all 
-make: Nothing to be done for 'all'.
-11:21:54 **** Auto Build of project standalone_bsp_1 ****
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:492:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+  udp_recv(cmd_pcb, recv_callback, NULL);
+                    ^~~~~~~~~~~~~
+In file included from ../src/main.c:36:0:
+../../standalone_bsp_0/microblaze_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+../src/main.c: In function 'Set_MAROC_registers':
+../src/main.c:887:6: warning: variable 'val2write' set but not used [-Wunused-but-set-variable]
+  u32 val2write;
+      ^~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:39:
+../src/main.c: In function 'GetHouseKeeping':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1122:7: note: in expansion of macro 'XSpi_ReadReg'
+  if ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0) return -1;
+       ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:27:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:39:
+../src/main.c: In function 'WR_int_callback':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1775:10: note: in expansion of macro 'XSpi_ReadReg'
+  while ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0);
+          ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:27:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+Finished building: ../src/platform_mb.c
+ 
+Building target: quabo_service.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../standalone_bsp_0/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: quabo_service.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quabo_service.elf  |tee "quabo_service.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94124	   1688	 161940	 257752	  3eed8	quabo_service.elf
+Finished building: quabo_service.elf.size
+ 
+18:05:23 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
@@ -11,6 +107,8 @@ Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
@@ -50,6 +148,9 @@ Compiling lwip src and adapter files
 Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling llfifo
+Running Make libs in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling hwicap
 Running Make libs in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling iic
@@ -120,184 +221,101 @@ xwdttb.c:1225:5: note: declared here
  u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
      ^~~~~~~~~~~~~~~~~~~~~~
 Finished building libraries
-11:22:03 **** Incremental Build of configuration Debug for project quabo_service ****
+18:05:30 **** Auto Build of configuration Debug for project quabo_service ****
 make all 
-make: Nothing to be done for 'all'.
-11:22:44 **** Clean-only build of configuration Debug for project quabo_service ****
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:492:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+  udp_recv(cmd_pcb, recv_callback, NULL);
+                    ^~~~~~~~~~~~~
+In file included from ../src/main.c:36:0:
+../../standalone_bsp_0/microblaze_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+../src/main.c: In function 'Set_MAROC_registers':
+../src/main.c:887:6: warning: variable 'val2write' set but not used [-Wunused-but-set-variable]
+  u32 val2write;
+      ^~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:39:
+../src/main.c: In function 'GetHouseKeeping':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1122:7: note: in expansion of macro 'XSpi_ReadReg'
+  if ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0) return -1;
+       ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:27:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:39:
+../src/main.c: In function 'WR_int_callback':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1775:10: note: in expansion of macro 'XSpi_ReadReg'
+  while ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0);
+          ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:27:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+Finished building: ../src/platform_mb.c
+ 
+Building target: quabo_service.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../standalone_bsp_0/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: quabo_service.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quabo_service.elf  |tee "quabo_service.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94128	   1688	 161936	 257752	  3eed8	quabo_service.elf
+Finished building: quabo_service.elf.size
+ 
+18:05:31 **** Clean-only build of configuration Debug for project quabo_service ****
 make clean 
 rm -rf  ./src/main.o ./src/platform.o ./src/platform_mb.o  ./src/main.d ./src/platform.d ./src/platform_mb.d  quabo_service.elf.size quabo_service.elf.size  quabo_service.elf
  
-11:22:44 **** Clean-only build of project standalone_bsp_1 ****
-11:22:44 **** Clean-only build of project standalone_bsp_0 ****
-make -k clean 
+18:05:31 **** Clean-only build of project standalone_bsp_0 ****
 make -k clean 
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
 make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
-make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s clean 
 make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
 make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
-make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 make -C microblaze_0/libsrc/spi_v4_4/src -s clean 
 make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
-make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
 make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
-make -C microblaze_0/libsrc/spi_v4_4/src -s clean 
-make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
 make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s clean 
-make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
 make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s clean 
 make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean 
-make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
 make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean 
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
-rm -f microblaze_0/lib/libxil.a
 make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-11:22:45 **** Build of project standalone_bsp_0 ****
-make -k all 
-Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling tmrctr
-mb-ar: creating ../../../lib/libxil.a
-Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling standalone
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling lwip src and adapter files
-contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
-contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
-  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
-           ^~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'low_level_output':
-contrib/ports/xilinx/netif/xaxiemacif.c:159:7: warning: implicit declaration of function 'is_tx_space_available' [-Wimplicit-function-declaration]
-   if (is_tx_space_available(xaxiemacif)) {
-       ^~~~~~~~~~~~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
-contrib/ports/xilinx/netif/xaxiemacif.c:681:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  netif->output = xaxiemacif_output;
-                ^
-Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling llfifo
-Running Make libs in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling iic
-Running Make libs in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling axiethernet
-xaxiethernet_g.c:71:2: warning: missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config {aka struct XAxiEthernet_Config}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xaxiethernet_g.c:37:0:
-xaxiethernet.h:791:5: note: 'AxiMcDmaChan_Cnt' declared here
-  u8 AxiMcDmaChan_Cnt;  /**< Axi MCDMA Channel Count */
-     ^~~~~~~~~~~~~~~~
-Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling uartlite
-Running Make libs in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling bram
-Running Make libs in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling spi
-Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling cpu
-Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling gpio
-Running Make libs in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_slow_control...
-maroc_slow_control_selftest.c: In function 'MAROC_SLOW_CONTROL_Reg_SelfTest':
-maroc_slow_control_selftest.c:52:67: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_SLOW_CONTROL_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                                   ^~
-maroc_slow_control_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling intc
-Running Make libs in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_dc...
-maroc_dc_selftest.c: In function 'MAROC_DC_Reg_SelfTest':
-maroc_dc_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_DC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                         ^~
-maroc_dc_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling sysmon
-Running Make libs in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling wdttb
-In file included from xwdttb.h:169:0,
-                 from xwdttb.c:83:
-xwdttb.c: In function 'XWdtTb_ProgramWDTWidth':
-../../../include/xil_assert.h:108:9: warning: 'return' with no value, in function returning non-void
-         return;                                    \
-         ^
-xwdttb.c:1228:2: note: in expansion of macro 'Xil_AssertVoid'
-  Xil_AssertVoid(InstancePtr != NULL);
-  ^~~~~~~~~~~~~~
-xwdttb.c:1225:5: note: declared here
- u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
-     ^~~~~~~~~~~~~~~~~~~~~~
-Finished building libraries
-11:22:51 **** Build of project standalone_bsp_1 ****
+18:05:32 **** Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
@@ -307,6 +325,8 @@ Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
@@ -344,35 +364,95 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
 Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling lwip src and adapter files
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_read_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_temp':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:787:21: warning: implicit declaration of function 'get_fpga_temp' [-Wimplicit-function-declaration]
+   float fpga_temp = get_fpga_temp();
+                     ^~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_flashcmd_binary':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1084:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     n = bytes < state->u32 ? bytes : state->u32;
+               ^
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1084:36: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+     n = bytes < state->u32 ? bytes : state->u32;
+                                    ^
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_write_fpga_words_ascii':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1310:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if(state->lidx >= sizeof(line_buf)) {
+                      ^~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_flashid_binary':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1543:25: warning: unused parameter 'state' [-Wunused-parameter]
+     struct tapcp_state *state, void *buf, int bytes)
+                         ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1543:47: warning: unused parameter 'bytes' [-Wunused-parameter]
+     struct tapcp_state *state, void *buf, int bytes)
+                                               ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_open_flashid':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1551:19: warning: unused parameter 'fname' [-Wunused-parameter]
+       const char *fname)
+                   ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1556:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1288:1: warning: 'casper_tapcp_write_fpga_words_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_write_fpga_words_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1243:1: warning: 'casper_tapcp_write_progdev' defined but not used [-Wunused-function]
+ casper_tapcp_write_progdev(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1185:1: warning: 'casper_tapcp_write_fpga_words_binary' defined but not used [-Wunused-function]
+ casper_tapcp_write_fpga_words_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:999:1: warning: 'casper_tapcp_read_fpga_words_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_read_fpga_words_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:964:1: warning: 'casper_tapcp_read_fpga_words_binary' defined but not used [-Wunused-function]
+ casper_tapcp_read_fpga_words_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:895:1: warning: 'casper_tapcp_read_mem_bytes_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_read_mem_bytes_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:868:1: warning: 'casper_tapcp_read_mem_bytes_binary' defined but not used [-Wunused-function]
+ casper_tapcp_read_mem_bytes_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:777:1: warning: 'casper_tapcp_read_temp' defined but not used [-Wunused-function]
+ casper_tapcp_read_temp(struct tapcp_state *state, void *buf, int bytes)
+ ^~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:760:1: warning: 'casper_tapcp_read_help' defined but not used [-Wunused-function]
+ casper_tapcp_read_help(struct tapcp_state *state, void *buf, int bytes)
+ ^~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:628:13: warning: 'tapcp_help_msg' defined but not used [-Wunused-variable]
+ static char tapcp_help_msg[] =
+             ^~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_read_error':
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                               ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                                             ^~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                                                      ^~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_write_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_write_error':
+lwip-2.0.2/src/casper_src/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
  casper_tftp_write_error(void *handle, struct pbuf *p)
                                ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
  casper_tftp_write_error(void *handle, struct pbuf *p)
                                                     ^
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_open':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_open':
+lwip-2.0.2/src/casper_src/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
    if(!strcmp("/help", fname) && !write) {
        ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
    } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
               ^~~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
    } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
                                        ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
 contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
 contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
   unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
@@ -388,6 +468,9 @@ contrib/ports/xilinx/netif/xaxiemacif.c:709:16: warning: assignment from incompa
 Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling llfifo
+Running Make libs in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling hwicap
 Running Make libs in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling iic
@@ -458,11 +541,11 @@ xwdttb.c:1225:5: note: declared here
  u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
      ^~~~~~~~~~~~~~~~~~~~~~
 Finished building libraries
-11:23:05 **** Build of configuration Debug for project quabo_service ****
+18:05:41 **** Build of configuration Debug for project quabo_service ****
 make all 
 Building file: ../src/main.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
 ../src/main.c:492:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
   udp_recv(cmd_pcb, recv_callback, NULL);
@@ -509,26 +592,26 @@ Finished building: ../src/main.c
  
 Building file: ../src/platform.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 Finished building: ../src/platform.c
  
 Building file: ../src/platform_mb.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
 Finished building: ../src/platform_mb.c
  
 Building target: quabo_service.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+mb-gcc -L../../standalone_bsp_0/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
 Finished building target: quabo_service.elf
  
 Invoking: MicroBlaze Print Size
 mb-size quabo_service.elf  |tee "quabo_service.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  88432	   1644	 161804	 251880	  3d7e8	quabo_service.elf
+  94128	   1688	 161936	 257752	  3eed8	quabo_service.elf
 Finished building: quabo_service.elf.size
  
-11:56:53 **** Auto Build of project standalone_bsp_1 ****
+18:08:56 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
@@ -538,6 +621,8 @@ Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
@@ -577,6 +662,9 @@ Compiling lwip src and adapter files
 Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling llfifo
+Running Make libs in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling hwicap
 Running Make libs in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling iic
@@ -647,16 +735,17 @@ xwdttb.c:1225:5: note: declared here
  u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
      ^~~~~~~~~~~~~~~~~~~~~~
 Finished building libraries
-11:57:02 **** Clean-only build of configuration Debug for project quabo_service ****
+18:09:03 **** Clean-only build of configuration Debug for project quabo_service ****
 make clean 
 rm -rf  ./src/main.o ./src/platform.o ./src/platform_mb.o  ./src/main.d ./src/platform.d ./src/platform_mb.d  quabo_service.elf.size quabo_service.elf.size  quabo_service.elf
  
-11:57:02 **** Clean-only build of project standalone_bsp_0 ****
+18:09:03 **** Clean-only build of project standalone_bsp_0 ****
 make -k clean 
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
 make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s clean 
 make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
 make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
@@ -670,332 +759,7 @@ make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean
 make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
 make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-11:57:03 **** Clean-only build of project standalone_bsp_1 ****
-make -k clean 
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
-make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
-make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
-make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
-make -C microblaze_0/libsrc/spi_v4_4/src -s clean 
-make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
-make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s clean 
-make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean 
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
-rm -f microblaze_0/lib/libxil.a
-11:57:03 **** Build of project standalone_bsp_0 ****
-make -k all 
-Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling tmrctr
-mb-ar: creating ../../../lib/libxil.a
-Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling standalone
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling lwip src and adapter files
-contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
-contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
-  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
-           ^~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'low_level_output':
-contrib/ports/xilinx/netif/xaxiemacif.c:159:7: warning: implicit declaration of function 'is_tx_space_available' [-Wimplicit-function-declaration]
-   if (is_tx_space_available(xaxiemacif)) {
-       ^~~~~~~~~~~~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
-contrib/ports/xilinx/netif/xaxiemacif.c:681:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  netif->output = xaxiemacif_output;
-                ^
-Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling llfifo
-Running Make libs in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling iic
-Running Make libs in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling axiethernet
-xaxiethernet_g.c:71:2: warning: missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config {aka struct XAxiEthernet_Config}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xaxiethernet_g.c:37:0:
-xaxiethernet.h:791:5: note: 'AxiMcDmaChan_Cnt' declared here
-  u8 AxiMcDmaChan_Cnt;  /**< Axi MCDMA Channel Count */
-     ^~~~~~~~~~~~~~~~
-Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling uartlite
-Running Make libs in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling bram
-Running Make libs in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling spi
-Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling cpu
-Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling gpio
-Running Make libs in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_slow_control...
-maroc_slow_control_selftest.c: In function 'MAROC_SLOW_CONTROL_Reg_SelfTest':
-maroc_slow_control_selftest.c:52:67: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_SLOW_CONTROL_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                                   ^~
-maroc_slow_control_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling intc
-Running Make libs in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_dc...
-maroc_dc_selftest.c: In function 'MAROC_DC_Reg_SelfTest':
-maroc_dc_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_DC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                         ^~
-maroc_dc_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling sysmon
-Running Make libs in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling wdttb
-In file included from xwdttb.h:169:0,
-                 from xwdttb.c:83:
-xwdttb.c: In function 'XWdtTb_ProgramWDTWidth':
-../../../include/xil_assert.h:108:9: warning: 'return' with no value, in function returning non-void
-         return;                                    \
-         ^
-xwdttb.c:1228:2: note: in expansion of macro 'Xil_AssertVoid'
-  Xil_AssertVoid(InstancePtr != NULL);
-  ^~~~~~~~~~~~~~
-xwdttb.c:1225:5: note: declared here
- u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
-     ^~~~~~~~~~~~~~~~~~~~~~
-Finished building libraries
-11:57:09 **** Clean-only build of configuration Debug for project quabo_service ****
-make clean 
-rm -rf  ./src/main.o ./src/platform.o ./src/platform_mb.o  ./src/main.d ./src/platform.d ./src/platform_mb.d  quabo_service.elf.size quabo_service.elf.size  quabo_service.elf
- 
-11:57:10 **** Clean-only build of project standalone_bsp_1 ****
-11:57:10 **** Clean-only build of project standalone_bsp_0 ****
-make -k clean 
-make -k clean 
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
-make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
-make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
-make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
-make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
-make -C microblaze_0/libsrc/spi_v4_4/src -s clean 
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
-make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
-make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
-make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s clean 
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
-make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
-make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean 
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
-make -C microblaze_0/libsrc/spi_v4_4/src -s clean 
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
-rm -f microblaze_0/lib/libxil.a
-make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
-make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s clean 
-make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean 
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
-rm -f microblaze_0/lib/libxil.a
-11:57:10 **** Build of project standalone_bsp_0 ****
-make -k all 
-Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling tmrctr
-mb-ar: creating ../../../lib/libxil.a
-Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling standalone
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling lwip src and adapter files
-contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
-contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
-  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
-           ^~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'low_level_output':
-contrib/ports/xilinx/netif/xaxiemacif.c:159:7: warning: implicit declaration of function 'is_tx_space_available' [-Wimplicit-function-declaration]
-   if (is_tx_space_available(xaxiemacif)) {
-       ^~~~~~~~~~~~~~~~~~~~~
-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
-contrib/ports/xilinx/netif/xaxiemacif.c:681:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
-  netif->output = xaxiemacif_output;
-                ^
-Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling llfifo
-Running Make libs in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling iic
-Running Make libs in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling axiethernet
-xaxiethernet_g.c:71:2: warning: missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config {aka struct XAxiEthernet_Config}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xaxiethernet_g.c:37:0:
-xaxiethernet.h:791:5: note: 'AxiMcDmaChan_Cnt' declared here
-  u8 AxiMcDmaChan_Cnt;  /**< Axi MCDMA Channel Count */
-     ^~~~~~~~~~~~~~~~
-Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling uartlite
-Running Make libs in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling bram
-Running Make libs in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling spi
-Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling cpu
-Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling gpio
-Running Make libs in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_slow_control...
-maroc_slow_control_selftest.c: In function 'MAROC_SLOW_CONTROL_Reg_SelfTest':
-maroc_slow_control_selftest.c:52:67: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_SLOW_CONTROL_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                                   ^~
-maroc_slow_control_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling intc
-Running Make libs in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_dc...
-maroc_dc_selftest.c: In function 'MAROC_DC_Reg_SelfTest':
-maroc_dc_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_DC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                         ^~
-maroc_dc_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling sysmon
-Running Make libs in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling wdttb
-In file included from xwdttb.h:169:0,
-                 from xwdttb.c:83:
-xwdttb.c: In function 'XWdtTb_ProgramWDTWidth':
-../../../include/xil_assert.h:108:9: warning: 'return' with no value, in function returning non-void
-         return;                                    \
-         ^
-xwdttb.c:1228:2: note: in expansion of macro 'Xil_AssertVoid'
-  Xil_AssertVoid(InstancePtr != NULL);
-  ^~~~~~~~~~~~~~
-xwdttb.c:1225:5: note: declared here
- u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
-     ^~~~~~~~~~~~~~~~~~~~~~
-Finished building libraries
-11:57:17 **** Build of project standalone_bsp_1 ****
+18:09:04 **** Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
@@ -1005,6 +769,8 @@ Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
@@ -1042,35 +808,95 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
 Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling lwip src and adapter files
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_read_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_temp':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:787:21: warning: implicit declaration of function 'get_fpga_temp' [-Wimplicit-function-declaration]
+   float fpga_temp = get_fpga_temp();
+                     ^~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_flashcmd_binary':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1084:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     n = bytes < state->u32 ? bytes : state->u32;
+               ^
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1084:36: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+     n = bytes < state->u32 ? bytes : state->u32;
+                                    ^
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_write_fpga_words_ascii':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1310:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if(state->lidx >= sizeof(line_buf)) {
+                      ^~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_flashid_binary':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1543:25: warning: unused parameter 'state' [-Wunused-parameter]
+     struct tapcp_state *state, void *buf, int bytes)
+                         ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1543:47: warning: unused parameter 'bytes' [-Wunused-parameter]
+     struct tapcp_state *state, void *buf, int bytes)
+                                               ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_open_flashid':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1551:19: warning: unused parameter 'fname' [-Wunused-parameter]
+       const char *fname)
+                   ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1556:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1288:1: warning: 'casper_tapcp_write_fpga_words_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_write_fpga_words_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1243:1: warning: 'casper_tapcp_write_progdev' defined but not used [-Wunused-function]
+ casper_tapcp_write_progdev(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1185:1: warning: 'casper_tapcp_write_fpga_words_binary' defined but not used [-Wunused-function]
+ casper_tapcp_write_fpga_words_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:999:1: warning: 'casper_tapcp_read_fpga_words_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_read_fpga_words_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:964:1: warning: 'casper_tapcp_read_fpga_words_binary' defined but not used [-Wunused-function]
+ casper_tapcp_read_fpga_words_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:895:1: warning: 'casper_tapcp_read_mem_bytes_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_read_mem_bytes_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:868:1: warning: 'casper_tapcp_read_mem_bytes_binary' defined but not used [-Wunused-function]
+ casper_tapcp_read_mem_bytes_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:777:1: warning: 'casper_tapcp_read_temp' defined but not used [-Wunused-function]
+ casper_tapcp_read_temp(struct tapcp_state *state, void *buf, int bytes)
+ ^~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:760:1: warning: 'casper_tapcp_read_help' defined but not used [-Wunused-function]
+ casper_tapcp_read_help(struct tapcp_state *state, void *buf, int bytes)
+ ^~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:628:13: warning: 'tapcp_help_msg' defined but not used [-Wunused-variable]
+ static char tapcp_help_msg[] =
+             ^~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_read_error':
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                               ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                                             ^~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                                                      ^~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_write_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_write_error':
+lwip-2.0.2/src/casper_src/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
  casper_tftp_write_error(void *handle, struct pbuf *p)
                                ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
  casper_tftp_write_error(void *handle, struct pbuf *p)
                                                     ^
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_open':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_open':
+lwip-2.0.2/src/casper_src/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
    if(!strcmp("/help", fname) && !write) {
        ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
    } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
               ^~~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
    } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
                                        ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
 contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
 contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
   unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
@@ -1086,6 +912,9 @@ contrib/ports/xilinx/netif/xaxiemacif.c:709:16: warning: assignment from incompa
 Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling llfifo
+Running Make libs in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling hwicap
 Running Make libs in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling iic
@@ -1156,225 +985,31 @@ xwdttb.c:1225:5: note: declared here
  u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
      ^~~~~~~~~~~~~~~~~~~~~~
 Finished building libraries
-11:57:35 **** Build of configuration Debug for project quabo_service ****
-make all 
-Building file: ../src/main.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:492:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
-  udp_recv(cmd_pcb, recv_callback, NULL);
-                    ^~~~~~~~~~~~~
-In file included from ../src/main.c:36:0:
-../../standalone_bsp_0/microblaze_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, short unsigned int)}'
- void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
-                  ^~~~~~~~
-../src/main.c: In function 'Set_MAROC_registers':
-../src/main.c:887:6: warning: variable 'val2write' set but not used [-Wunused-but-set-variable]
-  u32 val2write;
-      ^~~~~~~~~
-In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
-                 from ../src/main.c:39:
-../src/main.c: In function 'GetHouseKeeping':
-../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-  XSpi_In32((BaseAddress) + (RegOffset))
-            ^
-../src/main.c:1122:7: note: in expansion of macro 'XSpi_ReadReg'
-  if ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0) return -1;
-       ^~~~~~~~~~~~
-In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
-                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
-                 from ../src/main.c:27:
-../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
- static INLINE u32 Xil_In32(UINTPTR Addr)
-                   ^~~~~~~~
-In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
-                 from ../src/main.c:39:
-../src/main.c: In function 'WR_int_callback':
-../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-  XSpi_In32((BaseAddress) + (RegOffset))
-            ^
-../src/main.c:1775:10: note: in expansion of macro 'XSpi_ReadReg'
-  while ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0);
-          ^~~~~~~~~~~~
-In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
-                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
-                 from ../src/main.c:27:
-../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
- static INLINE u32 Xil_In32(UINTPTR Addr)
-                   ^~~~~~~~
-Finished building: ../src/main.c
+18:09:13 **** Clean-only build of configuration Debug for project quabo_service ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o ./src/platform_mb.o  ./src/main.d ./src/platform.d ./src/platform_mb.d  quabo_service.elf.size quabo_service.elf.size  quabo_service.elf
  
-Building file: ../src/platform.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building file: ../src/platform_mb.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
-Finished building: ../src/platform_mb.c
- 
-Building target: quabo_service.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-Finished building target: quabo_service.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size quabo_service.elf  |tee "quabo_service.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  88460	   1644	 161808	 251912	  3d808	quabo_service.elf
-Finished building: quabo_service.elf.size
- 
-09:24:27 **** Build of project standalone_bsp_0 ****
-make -k all 
-Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make include in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling tmrctr
-Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
-make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling standalone
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
-make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling lwip src and adapter files
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_read_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
- casper_tftp_read_error(void *handle, void *buf, int bytes)
-                              ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
- casper_tftp_read_error(void *handle, void *buf, int bytes)
-                                            ^~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
- casper_tftp_read_error(void *handle, void *buf, int bytes)
-                                                     ^~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_write_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
- casper_tftp_write_error(void *handle, struct pbuf *p)
-                               ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
- casper_tftp_write_error(void *handle, struct pbuf *p)
-                                                    ^
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_open':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
-   if(!strcmp("/help", fname) && !write) {
-       ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
-   } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
-              ^~~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-   } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
-                                       ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
-Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
-make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling llfifo
-Running Make libs in microblaze_0/libsrc/iic_v3_5/src
-make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling iic
-Running Make libs in microblaze_0/libsrc/axiethernet_v5_8/src
-make -C microblaze_0/libsrc/axiethernet_v5_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling axiethernet
-xaxiethernet_g.c:71:2: warning: missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config {aka struct XAxiEthernet_Config}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xaxiethernet_g.c:37:0:
-xaxiethernet.h:791:5: note: 'AxiMcDmaChan_Cnt' declared here
-  u8 AxiMcDmaChan_Cnt;  /**< Axi MCDMA Channel Count */
-     ^~~~~~~~~~~~~~~~
-Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling uartlite
-Running Make libs in microblaze_0/libsrc/bram_v4_2/src
-make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling bram
-Running Make libs in microblaze_0/libsrc/spi_v4_4/src
-make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling spi
-Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
-make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling cpu
-Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
-make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling gpio
-Running Make libs in microblaze_0/libsrc/maroc_slow_control_v1_0/src
-make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_slow_control...
-maroc_slow_control_selftest.c: In function 'MAROC_SLOW_CONTROL_Reg_SelfTest':
-maroc_slow_control_selftest.c:52:67: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_SLOW_CONTROL_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                                   ^~
-maroc_slow_control_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/intc_v3_8/src
-make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling intc
-Running Make libs in microblaze_0/libsrc/maroc_dc_v1_0/src
-make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling maroc_dc...
-maroc_dc_selftest.c: In function 'MAROC_DC_Reg_SelfTest':
-maroc_dc_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( MAROC_DC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                         ^~
-maroc_dc_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
-make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling sysmon
-Running Make libs in microblaze_0/libsrc/wdttb_v4_3/src
-make -C microblaze_0/libsrc/wdttb_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-Compiling wdttb
-In file included from xwdttb.h:169:0,
-                 from xwdttb.c:83:
-xwdttb.c: In function 'XWdtTb_ProgramWDTWidth':
-../../../include/xil_assert.h:108:9: warning: 'return' with no value, in function returning non-void
-         return;                                    \
-         ^
-xwdttb.c:1228:2: note: in expansion of macro 'Xil_AssertVoid'
-  Xil_AssertVoid(InstancePtr != NULL);
-  ^~~~~~~~~~~~~~
-xwdttb.c:1225:5: note: declared here
- u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
-     ^~~~~~~~~~~~~~~~~~~~~~
-Finished building libraries
-09:24:39 **** Build of project standalone_bsp_1 ****
+18:09:13 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/lwip202_v1_2/src -s clean 
+make -C microblaze_0/libsrc/llfifo_v5_2/src -s clean 
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s clean 
+make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
+make -C microblaze_0/libsrc/axiethernet_v5_8/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/spi_v4_4/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
+make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s clean 
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
+make -C microblaze_0/libsrc/wdttb_v4_3/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+18:09:14 **** Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
@@ -1384,6 +1019,8 @@ Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
@@ -1411,6 +1048,7 @@ make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER
 Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
 make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling tmrctr
+mb-ar: creating ../../../lib/libxil.a
 Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling standalone
@@ -1420,38 +1058,113 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
 Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
 make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling lwip src and adapter files
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_read_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_temp':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:787:21: warning: implicit declaration of function 'get_fpga_temp' [-Wimplicit-function-declaration]
+   float fpga_temp = get_fpga_temp();
+                     ^~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_flashcmd_binary':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1084:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     n = bytes < state->u32 ? bytes : state->u32;
+               ^
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1084:36: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+     n = bytes < state->u32 ? bytes : state->u32;
+                                    ^
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_write_fpga_words_ascii':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1310:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if(state->lidx >= sizeof(line_buf)) {
+                      ^~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_read_flashid_binary':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1543:25: warning: unused parameter 'state' [-Wunused-parameter]
+     struct tapcp_state *state, void *buf, int bytes)
+                         ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1543:47: warning: unused parameter 'bytes' [-Wunused-parameter]
+     struct tapcp_state *state, void *buf, int bytes)
+                                               ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c: In function 'casper_tapcp_open_flashid':
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1551:19: warning: unused parameter 'fname' [-Wunused-parameter]
+       const char *fname)
+                   ^~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1556:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1288:1: warning: 'casper_tapcp_write_fpga_words_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_write_fpga_words_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1243:1: warning: 'casper_tapcp_write_progdev' defined but not used [-Wunused-function]
+ casper_tapcp_write_progdev(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:1185:1: warning: 'casper_tapcp_write_fpga_words_binary' defined but not used [-Wunused-function]
+ casper_tapcp_write_fpga_words_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:999:1: warning: 'casper_tapcp_read_fpga_words_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_read_fpga_words_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:964:1: warning: 'casper_tapcp_read_fpga_words_binary' defined but not used [-Wunused-function]
+ casper_tapcp_read_fpga_words_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:895:1: warning: 'casper_tapcp_read_mem_bytes_ascii' defined but not used [-Wunused-function]
+ casper_tapcp_read_mem_bytes_ascii(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:868:1: warning: 'casper_tapcp_read_mem_bytes_binary' defined but not used [-Wunused-function]
+ casper_tapcp_read_mem_bytes_binary(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:777:1: warning: 'casper_tapcp_read_temp' defined but not used [-Wunused-function]
+ casper_tapcp_read_temp(struct tapcp_state *state, void *buf, int bytes)
+ ^~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:760:1: warning: 'casper_tapcp_read_help' defined but not used [-Wunused-function]
+ casper_tapcp_read_help(struct tapcp_state *state, void *buf, int bytes)
+ ^~~~~~~~~~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tapcp.c:628:13: warning: 'tapcp_help_msg' defined but not used [-Wunused-variable]
+ static char tapcp_help_msg[] =
+             ^~~~~~~~~~~~~~
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_read_error':
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:30: warning: unused parameter 'handle' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                               ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:44: warning: unused parameter 'buf' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                                             ^~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:31:53: warning: unused parameter 'bytes' [-Wunused-parameter]
  casper_tftp_read_error(void *handle, void *buf, int bytes)
                                                      ^~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_write_error':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_write_error':
+lwip-2.0.2/src/casper_src/casper_tftp.c:53:31: warning: unused parameter 'handle' [-Wunused-parameter]
  casper_tftp_write_error(void *handle, struct pbuf *p)
                                ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
+lwip-2.0.2/src/casper_src/casper_tftp.c:53:52: warning: unused parameter 'p' [-Wunused-parameter]
  casper_tftp_write_error(void *handle, struct pbuf *p)
                                                     ^
-lwip-2.0.2/src/apps/tftp/casper_tftp.c: In function 'casper_tftp_open':
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c: In function 'casper_tftp_open':
+lwip-2.0.2/src/casper_src/casper_tftp.c:88:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
    if(!strcmp("/help", fname) && !write) {
        ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:14: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
    } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
               ^~~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
    } else if(!strncmp("/fpga.", fname, strlen("/fpga."))) {
                                        ^~~~~~
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
-lwip-2.0.2/src/apps/tftp/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: warning: incompatible implicit declaration of built-in function 'strlen'
+lwip-2.0.2/src/casper_src/casper_tftp.c:101:39: note: include '<string.h>' or provide a declaration of 'strlen'
+contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
+contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
+  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
+           ^~~~~~~~~~~
+contrib/ports/xilinx/netif/xaxiemacif.c: In function 'low_level_output':
+contrib/ports/xilinx/netif/xaxiemacif.c:161:7: warning: implicit declaration of function 'is_tx_space_available' [-Wimplicit-function-declaration]
+   if (is_tx_space_available(xaxiemacif)) {
+       ^~~~~~~~~~~~~~~~~~~~~
+contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
+contrib/ports/xilinx/netif/xaxiemacif.c:709:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  netif->output = xaxiemacif_output;
+                ^
 Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
 make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling llfifo
+Running Make libs in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling hwicap
 Running Make libs in microblaze_0/libsrc/iic_v3_5/src
 make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
 Compiling iic
@@ -1522,11 +1235,11 @@ xwdttb.c:1225:5: note: declared here
  u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
      ^~~~~~~~~~~~~~~~~~~~~~
 Finished building libraries
-09:24:53 **** Build of configuration Debug for project quabo_service ****
+18:09:23 **** Build of configuration Debug for project quabo_service ****
 make all 
 Building file: ../src/main.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
 ../src/main.c:492:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
   udp_recv(cmd_pcb, recv_callback, NULL);
@@ -1573,22 +1286,217 @@ Finished building: ../src/main.c
  
 Building file: ../src/platform.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 Finished building: ../src/platform.c
  
 Building file: ../src/platform_mb.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform_mb.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
 Finished building: ../src/platform_mb.c
  
 Building target: quabo_service.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+mb-gcc -L../../standalone_bsp_0/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
 Finished building target: quabo_service.elf
  
 Invoking: MicroBlaze Print Size
 mb-size quabo_service.elf  |tee "quabo_service.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  88460	   1644	 161808	 251912	  3d808	quabo_service.elf
+  94124	   1688	 161940	 257752	  3eed8	quabo_service.elf
 Finished building: quabo_service.elf.size
  
+18:14:23 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/lwip202_v1_2/src
+make -C microblaze_0/libsrc/lwip202_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/llfifo_v5_2/src
+make -C microblaze_0/libsrc/llfifo_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/iic_v3_5/src
+make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/axiethernet_v5_8/src
+make -C microblaze_0/libsrc/axiethernet_v5_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/spi_v4_4/src
+make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/maroc_slow_control_v1_0/src
+make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/maroc_dc_v1_0/src
+make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make include in microblaze_0/libsrc/wdttb_v4_3/src
+make -C microblaze_0/libsrc/wdttb_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling tmrctr
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/lwip202_v1_2/src
+make -C microblaze_0/libsrc/lwip202_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling lwip src and adapter files
+contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
+contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
+  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
+           ^~~~~~~~~~~
+contrib/ports/xilinx/netif/xaxiemacif.c: In function 'low_level_output':
+contrib/ports/xilinx/netif/xaxiemacif.c:159:7: warning: implicit declaration of function 'is_tx_space_available' [-Wimplicit-function-declaration]
+   if (is_tx_space_available(xaxiemacif)) {
+       ^~~~~~~~~~~~~~~~~~~~~
+contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
+contrib/ports/xilinx/netif/xaxiemacif.c:681:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  netif->output = xaxiemacif_output;
+                ^
+Running Make libs in microblaze_0/libsrc/llfifo_v5_2/src
+make -C microblaze_0/libsrc/llfifo_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling llfifo
+Running Make libs in microblaze_0/libsrc/hwicap_v11_1/src
+make -C microblaze_0/libsrc/hwicap_v11_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling hwicap
+Running Make libs in microblaze_0/libsrc/iic_v3_5/src
+make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling iic
+Running Make libs in microblaze_0/libsrc/axiethernet_v5_8/src
+make -C microblaze_0/libsrc/axiethernet_v5_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling axiethernet
+xaxiethernet_g.c:71:2: warning: missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config {aka struct XAxiEthernet_Config}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xaxiethernet_g.c:37:0:
+xaxiethernet.h:791:5: note: 'AxiMcDmaChan_Cnt' declared here
+  u8 AxiMcDmaChan_Cnt;  /**< Axi MCDMA Channel Count */
+     ^~~~~~~~~~~~~~~~
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/spi_v4_4/src
+make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling spi
+Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling gpio
+Running Make libs in microblaze_0/libsrc/maroc_slow_control_v1_0/src
+make -C microblaze_0/libsrc/maroc_slow_control_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling maroc_slow_control...
+maroc_slow_control_selftest.c: In function 'MAROC_SLOW_CONTROL_Reg_SelfTest':
+maroc_slow_control_selftest.c:52:67: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MAROC_SLOW_CONTROL_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                   ^~
+maroc_slow_control_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/maroc_dc_v1_0/src
+make -C microblaze_0/libsrc/maroc_dc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling maroc_dc...
+maroc_dc_selftest.c: In function 'MAROC_DC_Reg_SelfTest':
+maroc_dc_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MAROC_DC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+maroc_dc_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling sysmon
+Running Make libs in microblaze_0/libsrc/wdttb_v4_3/src
+make -C microblaze_0/libsrc/wdttb_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra -g3"
+Compiling wdttb
+In file included from xwdttb.h:169:0,
+                 from xwdttb.c:83:
+xwdttb.c: In function 'XWdtTb_ProgramWDTWidth':
+../../../include/xil_assert.h:108:9: warning: 'return' with no value, in function returning non-void
+         return;                                    \
+         ^
+xwdttb.c:1228:2: note: in expansion of macro 'Xil_AssertVoid'
+  Xil_AssertVoid(InstancePtr != NULL);
+  ^~~~~~~~~~~~~~
+xwdttb.c:1225:5: note: declared here
+ u32 XWdtTb_ProgramWDTWidth(XWdtTb *InstancePtr, u32 width)
+     ^~~~~~~~~~~~~~~~~~~~~~
+Finished building libraries
+18:14:42 **** Auto Build of configuration Debug for project quabo_service ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/main.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:492:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+  udp_recv(cmd_pcb, recv_callback, NULL);
+                    ^~~~~~~~~~~~~
+In file included from ../src/main.c:36:0:
+../../standalone_bsp_0/microblaze_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+../src/main.c: In function 'Set_MAROC_registers':
+../src/main.c:887:6: warning: variable 'val2write' set but not used [-Wunused-but-set-variable]
+  u32 val2write;
+      ^~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:39:
+../src/main.c: In function 'GetHouseKeeping':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1122:7: note: in expansion of macro 'XSpi_ReadReg'
+  if ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0) return -1;
+       ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:27:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:39:
+../src/main.c: In function 'WR_int_callback':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1775:10: note: in expansion of macro 'XSpi_ReadReg'
+  while ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0);
+          ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:27:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -I"/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/src" -c -fmessage-length=0 -MT"src/platform.o" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+../src/platform.c:47:10: fatal error: tmrctr.h: No such file or directory
+ #include "tmrctr.h"
+          ^~~~~~~~~~
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/platform.o' failed
+make: *** [src/platform.o] Error 1

@@ -1,6 +1,91 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Nov 20 16:19:32 2019
+| Host         : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-1
+--------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_mb_wrc_board_quabo_Light_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of base_mb_wrc_board_quabo_Light_0_2 from user.org:user:wrc_board_quabo_Light:1.1 (Rev. 45) to user.org:user:wrc_board_quabo_Light:1.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Nov 20 16:16:14 2019
+| Host         : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-1
+--------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_mb_wrc_board_quabo_Light_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of base_mb_wrc_board_quabo_Light_0_2 (user.org:user:wrc_board_quabo_Light:1.1) from (Rev. 44) to (Rev. 45)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'base_mb_wrc_board_quabo_Light_0_2'.
+
+
+-Upgrade has removed interface 'falsh_spi'
+
+-Upgrade has added interface 'flash_spi' (Wei:user:flash_spi:1.0)
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Nov 20 16:05:34 2019
+| Host         : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-1
+--------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_mb_wrc_board_quabo_Light_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of base_mb_wrc_board_quabo_Light_0_2 (user.org:user:wrc_board_quabo_Light:1.1) from (Rev. 43) to (Rev. 44)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'base_mb_wrc_board_quabo_Light_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'spi_sclk_o'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
 | Date         : Thu Oct 24 11:27:01 2019
 | Host         : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 | Command      : upgrade_ip

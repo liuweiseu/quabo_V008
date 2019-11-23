@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3_AR71948 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Mon Nov 18 23:41:28 2019
+//Date        : Fri Nov 22 16:25:18 2019
 //Host        : Wei-Berkeley running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target base_mb_wrapper.bd
 //Design      : base_mb_wrapper
@@ -49,6 +49,8 @@ module base_mb_wrapper
     maroc_trig3_0,
     mgt_clk_0_clk_n,
     mgt_clk_0_clk_p,
+    miso_i_0,
+    mosi_o_0,
     onewire_b_0,
     or_trig0_0,
     or_trig1_0,
@@ -65,14 +67,13 @@ module base_mb_wrapper
     shutter_open,
     shutter_power,
     shutter_up_lim,
+    spi_sel_0,
+    ss_o_0,
     step_drive,
     stim_dac,
     stim_drive,
     uart_quabo_rxd,
     uart_quabo_txd,
-    user_falsh_spi_0_spi_miso_i,
-    user_falsh_spi_0_spi_mosi_o,
-    user_falsh_spi_0_spi_ncs_o,
     user_sfp_0_sfp_los_i,
     user_sfp_0_sfp_mod_def1_b,
     user_sfp_0_sfp_mod_def2_b,
@@ -121,6 +122,8 @@ module base_mb_wrapper
   input [63:0]maroc_trig3_0;
   input mgt_clk_0_clk_n;
   input mgt_clk_0_clk_p;
+  input miso_i_0;
+  output mosi_o_0;
   inout onewire_b_0;
   input [1:0]or_trig0_0;
   input [1:0]or_trig1_0;
@@ -137,14 +140,13 @@ module base_mb_wrapper
   output [0:0]shutter_open;
   output [0:0]shutter_power;
   input [0:0]shutter_up_lim;
+  input spi_sel_0;
+  output ss_o_0;
   output [3:0]step_drive;
   output stim_dac;
   output stim_drive;
   input uart_quabo_rxd;
   output uart_quabo_txd;
-  input user_falsh_spi_0_spi_miso_i;
-  output user_falsh_spi_0_spi_mosi_o;
-  output user_falsh_spi_0_spi_ncs_o;
   input user_sfp_0_sfp_los_i;
   inout user_sfp_0_sfp_mod_def1_b;
   inout user_sfp_0_sfp_mod_def2_b;
@@ -200,6 +202,8 @@ module base_mb_wrapper
   wire [63:0]maroc_trig3_0;
   wire mgt_clk_0_clk_n;
   wire mgt_clk_0_clk_p;
+  wire miso_i_0;
+  wire mosi_o_0;
   wire onewire_b_0;
   wire [1:0]or_trig0_0;
   wire [1:0]or_trig1_0;
@@ -216,14 +220,13 @@ module base_mb_wrapper
   wire [0:0]shutter_open;
   wire [0:0]shutter_power;
   wire [0:0]shutter_up_lim;
+  wire spi_sel_0;
+  wire ss_o_0;
   wire [3:0]step_drive;
   wire stim_dac;
   wire stim_drive;
   wire uart_quabo_rxd;
   wire uart_quabo_txd;
-  wire user_falsh_spi_0_spi_miso_i;
-  wire user_falsh_spi_0_spi_mosi_o;
-  wire user_falsh_spi_0_spi_ncs_o;
   wire user_sfp_0_sfp_los_i;
   wire user_sfp_0_sfp_mod_def1_b;
   wire user_sfp_0_sfp_mod_def2_b;
@@ -278,6 +281,8 @@ module base_mb_wrapper
         .maroc_trig3_0(maroc_trig3_0),
         .mgt_clk_0_clk_n(mgt_clk_0_clk_n),
         .mgt_clk_0_clk_p(mgt_clk_0_clk_p),
+        .miso_i_0(miso_i_0),
+        .mosi_o_0(mosi_o_0),
         .onewire_b_0(onewire_b_0),
         .or_trig0_0(or_trig0_0),
         .or_trig1_0(or_trig1_0),
@@ -294,14 +299,13 @@ module base_mb_wrapper
         .shutter_open(shutter_open),
         .shutter_power(shutter_power),
         .shutter_up_lim(shutter_up_lim),
+        .spi_sel_0(spi_sel_0),
+        .ss_o_0(ss_o_0),
         .step_drive(step_drive),
         .stim_dac(stim_dac),
         .stim_drive(stim_drive),
         .uart_quabo_rxd(uart_quabo_rxd),
         .uart_quabo_txd(uart_quabo_txd),
-        .user_falsh_spi_0_spi_miso_i(user_falsh_spi_0_spi_miso_i),
-        .user_falsh_spi_0_spi_mosi_o(user_falsh_spi_0_spi_mosi_o),
-        .user_falsh_spi_0_spi_ncs_o(user_falsh_spi_0_spi_ncs_o),
         .user_sfp_0_sfp_los_i(user_sfp_0_sfp_los_i),
         .user_sfp_0_sfp_mod_def1_b(user_sfp_0_sfp_mod_def1_b),
         .user_sfp_0_sfp_mod_def2_b(user_sfp_0_sfp_mod_def2_b),

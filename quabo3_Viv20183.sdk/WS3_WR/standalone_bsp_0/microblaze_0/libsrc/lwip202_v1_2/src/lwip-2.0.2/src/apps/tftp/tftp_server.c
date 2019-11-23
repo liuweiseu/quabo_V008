@@ -230,8 +230,7 @@ recv(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, u16
       char mode[TFTP_MAX_MODE_LEN];
       u16_t filename_end_offset;
       u16_t mode_end_offset;
-      int i = 0;
-      for(i = 0; i<TFTP_MAX_FILENAME_LEN;i++)filename[i] = 0;
+
       if(tftp_state.handle != NULL) {
         send_error(addr, port, TFTP_ERROR_ACCESS_VIOLATION, "Only one connection at a time is supported");
         break;

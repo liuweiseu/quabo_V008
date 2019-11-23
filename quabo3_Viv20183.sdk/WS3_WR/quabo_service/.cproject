@@ -34,9 +34,7 @@
 								<option id="xilinx.gnu.mb.compiler.inferred.usebarrel.1328297393" name="Use Barrel Shifter (-mxl-barrel-shift)" superClass="xilinx.gnu.mb.compiler.inferred.usebarrel" value="false" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.usepcmp.1560262438" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.compiler.inferred.usepcmp" value="false" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.compiler.inferred.mul.1953344667" name="Hardware Multiplier" superClass="xilinx.gnu.mb.compiler.inferred.mul" value="xilinx.gnu.mb.compiler.inferred.mul.none" valueType="enumerated"/>
-								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1495511815" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../standalone_bsp_1/microblaze_0/include"/>
-								</option>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1495511815" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath"/>
 								<option id="xilinx.gnu.compiler.inferred.swplatform.flags.992286475" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
 								<option id="xilinx.gnu.compiler.dircategory.includes.302566029" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/include"/>
@@ -69,14 +67,15 @@
 								<option id="xilinx.gnu.mb.linker.inferred.usebarrel.192495283" name="Use Barrel Shifter (-mxl-barrel-shift)" superClass="xilinx.gnu.mb.linker.inferred.usebarrel" value="false" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.usepcmp.1421244433" name="Use Pattern Compare (-mxl-pattern-compare)" superClass="xilinx.gnu.mb.linker.inferred.usepcmp" value="false" valueType="boolean"/>
 								<option id="xilinx.gnu.mb.linker.inferred.mul.181484421" name="Hardware Multiplier" superClass="xilinx.gnu.mb.linker.inferred.mul" value="xilinx.gnu.mb.linker.inferred.mul.none" valueType="enumerated"/>
-								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.1119857186" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
-									<listOptionValue builtIn="false" value="../../standalone_bsp_1/microblaze_0/lib"/>
-								</option>
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.1119857186" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths"/>
 								<option id="xilinx.gnu.linker.inferred.swplatform.flags.262217847" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
 									<listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
 								</option>
 								<option id="xilinx.gnu.c.linker.option.lscript.1062546953" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+								<option id="xilinx.gnu.c.link.option.paths.855491136" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../../standalone_bsp_0/microblaze_0/lib"/>
+								</option>
 								<inputType id="xilinx.gnu.linker.input.1967169484" superClass="xilinx.gnu.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -105,15 +104,16 @@
 					</folderInfo>
 					<folderInfo id="xilinx.gnu.mb.exe.debug.1237799902.2006444435" name="/" resourcePath="Debug">
 						<toolChain id="xilinx.gnu.mb.exe.debug.toolchain.969317325" name="Xilinx MicroBlaze GNU Toolchain" superClass="xilinx.gnu.mb.exe.debug.toolchain" unusedChildren="">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.mb" id="xilinx.mb.target.gnu.base.debug" isAbstract="false" name="Debug Platform" superClass="xilinx.mb.target.gnu.base.debug"/>
 							<tool id="xilinx.gnu.mb.c.toolchain.assembler.debug.575870132" name="MicroBlaze gcc assembler" superClass="xilinx.gnu.mb.c.toolchain.assembler.debug.999337933">
 								<inputType id="xilinx.gnu.assembler.input.420659023" superClass="xilinx.gnu.assembler.input"/>
 							</tool>
 							<tool id="xilinx.gnu.mb.c.toolchain.compiler.debug.1804119453" name="MicroBlaze gcc compiler" superClass="xilinx.gnu.mb.c.toolchain.compiler.debug.1863822130">
-								<option id="xilinx.gnu.compiler.dircategory.includes.1775493380" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<option id="xilinx.gnu.compiler.dircategory.includes.1775493380" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/quabo_service/src}&quot;"/>
 									<listOptionValue builtIn="false" value="../../standalone_bsp_1/microblaze_0/include"/>
 								</option>
-								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.466753757" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.466753757" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
 								<inputType id="xilinx.gnu.compiler.input.1732582020" name="C source files" superClass="xilinx.gnu.compiler.input"/>
 							</tool>
 							<tool id="xilinx.gnu.mb.cxx.toolchain.compiler.debug.1921560115" name="MicroBlaze g++ compiler" superClass="xilinx.gnu.mb.cxx.toolchain.compiler.debug.1310759025"/>

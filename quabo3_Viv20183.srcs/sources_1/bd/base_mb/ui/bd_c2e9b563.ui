@@ -3,37 +3,40 @@
    "commentid":"",
    "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port user_sfp_0_sfp_mod_def2_b -pg 1 -y 2600 -defaultsOSRD
-preplace port clk_125m_gtx_n_i_0 -pg 1 -y 2270 -defaultsOSRD
-preplace port user_falsh_spi_0 -pg 1 -y 2260 -defaultsOSRD
-preplace port flash_dac -pg 1 -y 3100 -defaultsOSRD
-preplace port FRM_CLK_N -pg 1 -y 210 -defaultsOSRD
-preplace port sfp_0 -pg 1 -y 930 -defaultsOSRD
-preplace port user_sfp_0_sfp_los_i -pg 1 -y 2480 -defaultsOSRD
-preplace port user_sfp_0_sfp_mod_def1_b -pg 1 -y 2580 -defaultsOSRD
-preplace port clk_20m_vcxo_i_0 -pg 1 -y 2290 -defaultsOSRD
-preplace port pps_o_0 -pg 1 -y 2420 -defaultsOSRD
-preplace port FRM_CLK_P -pg 1 -y 190 -defaultsOSRD
-preplace port stim_dac -pg 1 -y 1840 -defaultsOSRD
-preplace port uart_quabo -pg 1 -y 1220 -defaultsOSRD
-preplace port stim_drive -pg 1 -y 1770 -defaultsOSRD
-preplace port user_sfp_0_sfp_rxn_i -pg 1 -y 2320 -defaultsOSRD
-preplace port user_sfp_0_sfp_rxp_i -pg 1 -y 2340 -defaultsOSRD
-preplace port user_uart_0 -pg 1 -y 2320 -defaultsOSRD
-preplace port pll20dac_cs_n_o_0 -pg 1 -y 2380 -defaultsOSRD
-preplace port MISO -pg 1 -y 1640 -defaultsOSRD
-preplace port iic_main -pg 1 -y 1640 -defaultsOSRD
 preplace port mgt_clk_0 -pg 1 -y 800 -defaultsOSRD
-preplace port SPI_CK -pg 1 -y 1030 -defaultsOSRD
-preplace port MOSI -pg 1 -y 1050 -defaultsOSRD
-preplace port flash_led_n -pg 1 -y 3140 -defaultsOSRD
+preplace port MISO -pg 1 -y 1640 -defaultsOSRD
+preplace port pps_o_0 -pg 1 -y 2420 -defaultsOSRD
+preplace port user_sfp_0_sfp_rxp_i -pg 1 -y 2340 -defaultsOSRD
+preplace port uart_quabo -pg 1 -y 1220 -defaultsOSRD
+preplace port stim_dac -pg 1 -y 1840 -defaultsOSRD
 preplace port user_sfp_0_sfp_txp_o -pg 1 -y 2280 -defaultsOSRD
 preplace port user_sfp_0_sfp_txn_o -pg 1 -y 2300 -defaultsOSRD
-preplace port flash_led_p -pg 1 -y 3120 -defaultsOSRD
+preplace port stim_drive -pg 1 -y 1770 -defaultsOSRD
+preplace port ss_o_0 -pg 1 -y 2350 -defaultsOSRD
+preplace port MOSI -pg 1 -y 1050 -defaultsOSRD
+preplace port user_uart_0 -pg 1 -y 2160 -defaultsOSRD
+preplace port pll25dac_cs_n_o_0 -pg 1 -y 2440 -defaultsOSRD
+preplace port user_sfp_0_sfp_mod_def2_b -pg 1 -y 2600 -defaultsOSRD
+preplace port clk_20m_vcxo_i_0 -pg 1 -y 2290 -defaultsOSRD
+preplace port FRM_CLK_N -pg 1 -y 210 -defaultsOSRD
+preplace port clk_125m_gtx_n_i_0 -pg 1 -y 2270 -defaultsOSRD
+preplace port FRM_CLK_P -pg 1 -y 190 -defaultsOSRD
+preplace port SPI_CK -pg 1 -y 1030 -defaultsOSRD
+preplace port user_sfp_0_sfp_los_i -pg 1 -y 2480 -defaultsOSRD
+preplace port user_sfp_0_sfp_mod_def1_b -pg 1 -y 2580 -defaultsOSRD
 preplace port onewire_b_0 -pg 1 -y 2400 -defaultsOSRD
-preplace port pll25dac_cs_n_o_0 -pg 1 -y 2360 -defaultsOSRD
+preplace port miso_i_0 -pg 1 -y 2390 -defaultsOSRD
+preplace port pll20dac_cs_n_o_0 -pg 1 -y 2380 -defaultsOSRD
+preplace port iic_main -pg 1 -y 1640 -defaultsOSRD
+preplace port flash_dac -pg 1 -y 3100 -defaultsOSRD
 preplace port clk_125m_gtx_p_i_0 -pg 1 -y 2250 -defaultsOSRD
 preplace port adc_clk_out -pg 1 -y 530 -defaultsOSRD
+preplace port mosi_o_0 -pg 1 -y 2330 -defaultsOSRD
+preplace port flash_led_n -pg 1 -y 3140 -defaultsOSRD
+preplace port spi_sel_0 -pg 1 -y 2370 -defaultsOSRD
+preplace port user_sfp_0_sfp_rxn_i -pg 1 -y 2320 -defaultsOSRD
+preplace port flash_led_p -pg 1 -y 3120 -defaultsOSRD
+preplace port sfp_0 -pg 1 -y 930 -defaultsOSRD
 preplace portBus maroc_trig0_0 -pg 1 -y 270 -defaultsOSRD
 preplace portBus SC_CLK -pg 1 -y 750 -defaultsOSRD
 preplace portBus board_loc -pg 1 -y 1940 -defaultsOSRD
@@ -66,214 +69,329 @@ preplace portBus focus_down_lim -pg 1 -y 3620 -defaultsOSRD
 preplace portBus ADC_DIN_P -pg 1 -y 470 -defaultsOSRD
 preplace portBus step_drive -pg 1 -y 3690 -defaultsOSRD
 preplace portBus focus_limits_on -pg 1 -y 3910 -defaultsOSRD
-preplace inst axi_timebase_wdt_0 -pg 1 -lvl 2 -y 1570 -defaultsOSRD
-preplace inst stim_gen_0 -pg 1 -lvl 13 -y 1830 -defaultsOSRD
-preplace inst Bit_1_1 -pg 1 -lvl 12 -y 2370 -defaultsOSRD
-preplace inst Bit_24_27 -pg 1 -lvl 10 -y 3070 -defaultsOSRD
-preplace inst wrc_board_quabo_Light_0 -pg 1 -lvl 8 -y 2660 -defaultsOSRD
-preplace inst rst_clk_wiz_1_100M_1 -pg 1 -lvl 5 -y 1730 -defaultsOSRD
-preplace inst axi_iic_0 -pg 1 -lvl 12 -y 2150 -defaultsOSRD
-preplace inst Bit_0_0 -pg 1 -lvl 13 -y 1970 -defaultsOSRD
-preplace inst stepper_control_0 -pg 1 -lvl 12 -y 3690 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 8 -y 850 -defaultsOSRD
-preplace inst axi_intc_0 -pg 1 -lvl 4 -y 1750 -defaultsOSRD
-preplace inst SPI_MUX_1 -pg 1 -lvl 14 -y 1040 -defaultsOSRD
-preplace inst Bit_14_14 -pg 1 -lvl 13 -y 1000 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 6 -y 1910 -defaultsOSRD
-preplace inst xadc_wiz_0 -pg 1 -lvl 8 -y 1590 -defaultsOSRD
-preplace inst axi_fifo_mm_s_PH -pg 1 -lvl 13 -y 1600 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m05_couplers -pg 1 -lvl 3 -y 1830 -defaultsOSRD
+preplace inst in_buf_ds_4bit_0 -pg 1 -lvl 8 -y 408 -defaultsOSRD
+preplace inst in_buf_ds_1bit_0 -pg 1 -lvl 8 -y 140 -defaultsOSRD
 preplace inst in_buf_ds_adcbitclk -pg 1 -lvl 1 -y 90 -defaultsOSRD
-preplace inst Bit_0_15 -pg 1 -lvl 11 -y 3510 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 2 -y 2010 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -y 1290 -defaultsOSRD
-preplace inst xlslice_3 -pg 1 -lvl 13 -y 530 -defaultsOSRD
-preplace inst xlconstant_3 -pg 1 -lvl 2 -y 1720 -defaultsOSRD
-preplace inst axi_timer_0 -pg 1 -lvl 8 -y 1260 -defaultsOSRD
-preplace inst in_buf_ds_4bit_0 -pg 1 -lvl 8 -y 480 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m03_couplers -pg 1 -lvl 3 -y 1490 -defaultsOSRD
+preplace inst elapsed_time_gen_0 -pg 1 -lvl 2 -y 1080 -defaultsOSRD
+preplace inst Bit_14_14 -pg 1 -lvl 13 -y 1000 -defaultsOSRD
+preplace inst Bit_10_13 -pg 1 -lvl 12 -y 3070 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -y 1310 -defaultsOSRD
+preplace inst Bit_15_15 -pg 1 -lvl 1 -y 1300 -defaultsOSRD
+preplace inst axi_ethernet_0 -pg 1 -lvl 12 -y 1010 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m07_couplers -pg 1 -lvl 3 -y 2172 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m01_couplers -pg 1 -lvl 3 -y 1150 -defaultsOSRD
+preplace inst SPI_access_0 -pg 1 -lvl 2 -y 1300 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 12 -y 2780 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 1050 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 4 -y 1750 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -y 1860 -defaultsOSRD
+preplace inst stim_gen_0 -pg 1 -lvl 13 -y 1830 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m12_couplers -pg 1 -lvl 3 -y 3030 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m06_couplers -pg 1 -lvl 3 -y 2000 -defaultsOSRD
+preplace inst SPI_STARTUP_0 -pg 1 -lvl 11 -y 2770 -defaultsOSRD
+preplace inst SPI_MUX_1 -pg 1 -lvl 14 -y 1040 -defaultsOSRD
+preplace inst Bit_19_23 -pg 1 -lvl 10 -y 3710 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 6 -y 3730 -defaultsOSRD
+preplace inst Bit_22_22 -pg 1 -lvl 11 -y 3810 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 5 -y 1560 -defaultsOSRD
+preplace inst Bit_16_16 -pg 1 -lvl 11 -y 3610 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 8 -y 1268 -defaultsOSRD
+preplace inst axi_fifo_mm_s_PH -pg 1 -lvl 13 -y 1600 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M_1 -pg 1 -lvl 5 -y 1730 -defaultsOSRD
+preplace inst Bit_16_18 -pg 1 -lvl 10 -y 3810 -defaultsOSRD
+preplace inst axi_gpio_mech -pg 1 -lvl 10 -y 4070 -defaultsOSRD
+preplace inst stepper_control_0 -pg 1 -lvl 12 -y 4490 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|s01_couplers -pg 1 -lvl 1 -y 1760 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m13_couplers -pg 1 -lvl 3 -y 3200 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m02_couplers -pg 1 -lvl 3 -y 1320 -defaultsOSRD
+preplace inst maroc_dc_0 -pg 1 -lvl 12 -y 360 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 12 -y 1310 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m15_couplers -pg 1 -lvl 3 -y 3540 -defaultsOSRD
+preplace inst axi_hwicap_0 -pg 1 -lvl 10 -y 1780 -defaultsOSRD
+preplace inst maroc_slow_control_0 -pg 1 -lvl 12 -y 700 -defaultsOSRD
+preplace inst wrc_board_quabo_Light_0 -pg 1 -lvl 8 -y 2710 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m09_couplers -pg 1 -lvl 3 -y 2520 -defaultsOSRD
+preplace inst GPIO -pg 1 -lvl 8 -y 1866 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m00_couplers -pg 1 -lvl 3 -y 980 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m11_couplers -pg 1 -lvl 3 -y 2860 -defaultsOSRD
+preplace inst Bit_2_9 -pg 1 -lvl 12 -y 3300 -defaultsOSRD
+preplace inst Bit_24_27 -pg 1 -lvl 10 -y 3610 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 8 -y 1038 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 3 -y 1740 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 3 -y 880 -defaultsOSRD
 preplace inst Bit_23_23 -pg 1 -lvl 11 -y 3910 -defaultsOSRD
-preplace inst xlconstant_4 -pg 1 -lvl 7 -y 2390 -defaultsOSRD
-preplace inst axi_ethernet_0_fifo -pg 1 -lvl 8 -y 1000 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 14 -y 590 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|s00_couplers -pg 1 -lvl 1 -y 1450 -defaultsOSRD
+preplace inst Bit_1_1 -pg 1 -lvl 12 -y 3170 -defaultsOSRD
 preplace inst xlconcat_2 -pg 1 -lvl 9 -y 3650 -defaultsOSRD
-preplace inst Bit_16_16 -pg 1 -lvl 11 -y 3610 -defaultsOSRD
-preplace inst xlconstant_5 -pg 1 -lvl 8 -y 2140 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 4 -y 1950 -defaultsOSRD
-preplace inst elapsed_time_gen_0 -pg 1 -lvl 2 -y 1080 -defaultsOSRD
-preplace inst in_buf_ds_1bit_0 -pg 1 -lvl 8 -y 200 -defaultsOSRD
-preplace inst Bit_19_23 -pg 1 -lvl 10 -y 3170 -defaultsOSRD
-preplace inst xlconstant_6 -pg 1 -lvl 12 -y 2760 -defaultsOSRD
-preplace inst Bit_22_22 -pg 1 -lvl 11 -y 3810 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m10_couplers -pg 1 -lvl 3 -y 2690 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|xbar -pg 1 -lvl 2 -y 2040 -defaultsOSRD
 preplace inst Bit_21_21 -pg 1 -lvl 11 -y 3710 -defaultsOSRD
-preplace inst Bit_16_18 -pg 1 -lvl 10 -y 3270 -defaultsOSRD
-preplace inst flash_control_0 -pg 1 -lvl 12 -y 3120 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 5 -y 1560 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 12 -y 1310 -defaultsOSRD
+preplace inst flash_control_0 -pg 1 -lvl 12 -y 3920 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m04_couplers -pg 1 -lvl 3 -y 1660 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 12 -y 1970 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 8 -y 668 -defaultsOSRD
+preplace inst axi_timebase_wdt_0 -pg 1 -lvl 2 -y 1570 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 4 -y 1950 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 6 -y 3850 -defaultsOSRD
+preplace inst Bit_0_0 -pg 1 -lvl 13 -y 1970 -defaultsOSRD
+preplace inst axi_quad_spi_1 -pg 1 -lvl 10 -y 2300 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m14_couplers -pg 1 -lvl 3 -y 3370 -defaultsOSRD
 preplace inst axi_fifo_mm_s_IM -pg 1 -lvl 13 -y 250 -defaultsOSRD
-preplace inst Bit_10_13 -pg 1 -lvl 12 -y 2270 -defaultsOSRD
-preplace inst Bit_2_9 -pg 1 -lvl 12 -y 2500 -defaultsOSRD
-preplace inst SPI_access_0 -pg 1 -lvl 2 -y 1300 -defaultsOSRD
-preplace inst maroc_dc_0 -pg 1 -lvl 12 -y 360 -defaultsOSRD
-preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 3 -y 1740 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 1050 -defaultsOSRD
-preplace inst maroc_slow_control_0 -pg 1 -lvl 12 -y 700 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 2 -y 1860 -defaultsOSRD
-preplace inst GPIO -pg 1 -lvl 8 -y 1810 -defaultsOSRD
-preplace inst axi_ethernet_0 -pg 1 -lvl 12 -y 1010 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 6 -y 1790 -defaultsOSRD
-preplace inst axi_gpio_mech -pg 1 -lvl 10 -y 3530 -defaultsOSRD
-preplace inst Bit_15_15 -pg 1 -lvl 1 -y 1300 -defaultsOSRD
-preplace inst axi_quad_spi_0 -pg 1 -lvl 12 -y 1740 -defaultsOSRD
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 6 6 2790 1110 NJ 1110 NJ 1110 NJ 1110 NJ 1110 4490J
-preplace netloc xlconstant_4_dout 1 7 1 3000
-preplace netloc xlslice_2_Dout 1 12 1 5090J
-preplace netloc flash_control_0_pulse_n 1 12 3 NJ 3140 NJ 3140 NJ
-preplace netloc Bit_16_16_Dout 1 11 1 4500
-preplace netloc axi_timer_0_interrupt 1 2 7 780 990 NJ 990 NJ 990 2330J 800 NJ 800 3000 750 3560
-preplace netloc clk_125m_gtx_n_i_0_1 1 0 8 NJ 2270 NJ 2270 NJ 2270 NJ 2270 NJ 2270 NJ 2270 NJ 2270 3020J
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 6 2 2780 1100 3050
-preplace netloc flash_control_0_pulse_p 1 12 3 NJ 3120 NJ 3120 NJ
-preplace netloc flash_control_0_flash_dac 1 12 3 NJ 3100 NJ 3100 NJ
-preplace netloc Bit_16_19_Dout 1 10 2 4240 3150 N
-preplace netloc clk_20m_vcxo_i_0_1 1 0 8 NJ 2290 NJ 2290 NJ 2290 NJ 2290 NJ 2290 NJ 2290 NJ 2290 3010J
-preplace netloc maroc_dc_0_testpoint 1 12 1 4970J
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 6 6 2730 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ
-preplace netloc mgt_clk_0_1 1 0 12 NJ 800 NJ 800 690J 740 1170J 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 4630J
-preplace netloc xlconcat_2_dout 1 9 2 NJ 3650 4240
-preplace netloc xlconstant_3_dout 1 2 1 N
-preplace netloc axi_iic_0_IIC 1 12 3 5030J 1690 5520J 1640 NJ
-preplace netloc In1_0_1 1 0 12 NJ 3640 NJ 3640 NJ 3640 NJ 3640 NJ 3640 NJ 3640 NJ 3640 NJ 3640 3600J 3550 3910 3630 4250 3980 4620
-preplace netloc SPI_access_0_int_out 1 2 1 720
-preplace netloc in_p_0_1 1 0 8 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 2790J 250 3080J
-preplace netloc microblaze_0_dlmb_1 1 5 1 2330
-preplace netloc microblaze_0_axi_periph_M00_AXI 1 6 6 NJ 1150 3090 1130 N 1130 N 1130 N 1130 4510
-preplace netloc wrc_board_quabo_Light_0_plldac_din_o 1 8 6 3660 1220 NJ 1220 NJ 1220 NJ 1220 4970J 1060 NJ
-preplace netloc axi_quad_spi_0_sck_o 1 12 2 5000 1090 5500J
-preplace netloc rst_clk_wiz_1_100M_1_peripheral_aresetn 1 1 12 370 1460 N 1460 N 1460 N 1460 2390 860 2750 1090 3070J 1480 NJ 1480 3920J 1480 NJ 1480 NJ 1480 5110J
-preplace netloc xlconcat_0_dout 1 3 1 1160
-preplace netloc wrc_board_quabo_Light_0_falsh_spi 1 8 7 3650J 2070 NJ 2070 NJ 2070 4530J 2030 5020J 2250 NJ 2250 5820J
-preplace netloc microblaze_0_M_AXI_DP 1 5 1 2360
-preplace netloc wrc_board_quabo_Light_0_clk_sys_o 1 0 9 -260 1860 320 2070 NJ 2070 NJ 2070 NJ 2070 NJ 2070 NJ 2070 NJ 2070 3590
-preplace netloc axi_quad_spi_0_io0_o 1 12 2 4980 1080 NJ
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 3 2 1170 1590 NJ
-preplace netloc or_trig3_0_1 1 0 12 -260J 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ
-preplace netloc xlslice_3_Dout 1 13 1 5520
-preplace netloc SPI_MUX_1_spi_ck 1 14 1 N
-preplace netloc in_buf_ds_1bit_0_out 1 8 4 N 200 N 200 N 200 4610
-preplace netloc maroc_dc_0_M01_AXIS 1 12 1 5070
-preplace netloc In0_0_1 1 0 12 NJ 3620 NJ 3620 NJ 3620 NJ 3620 NJ 3620 NJ 3620 NJ 3620 NJ 3620 3690J 3560 3900 3620 4260 3970 4630
-preplace netloc xlslice_5_Dout 1 13 1 N
-preplace netloc elapsed_time_gen_0_elapsed_time 1 2 10 700 550 N 550 N 550 N 550 N 550 N 550 3700 450 N 450 N 450 N
-preplace netloc maroc_trig1_0_1 1 0 12 -300J 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 3610J 210 NJ 210 NJ 210 NJ
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 3 3 1190J 1660 1750J 1830 2350
-preplace netloc microblaze_0_axi_periph_M14_AXI 1 6 4 NJ 1430 NJ 1430 NJ 1430 3910
-preplace netloc wrc_board_quabo_Light_0_sfp_txp_o 1 8 7 3630J 2100 NJ 2100 NJ 2100 4580J 2060 4980J 2280 NJ 2280 NJ
-preplace netloc maroc_dc_0_M00_AXIS 1 12 1 5070
-preplace netloc Bit_23_23_Dout 1 11 4 NJ 3910 NJ 3910 NJ 3910 NJ
-preplace netloc xlconstant_5_dout 1 8 1 3580
-preplace netloc wrc_board_quabo_Light_0_pll25dac_cs_n_o 1 8 7 3690J 2110 NJ 2110 NJ 2110 4600J 2070 4970J 2360 NJ 2360 NJ
-preplace netloc microblaze_0_axi_periph_M12_AXI 1 6 7 2770 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 5110J
-preplace netloc microblaze_0_axi_periph_M08_AXI 1 6 6 NJ 1310 3090 1420 N 1420 N 1420 N 1420 4490
-preplace netloc microblaze_0_ilmb_1 1 5 1 2310
-preplace netloc BIT_CLK_P_1 1 0 1 -300
-preplace netloc maroc_dc_0_hold1 1 12 3 5100J 340 NJ 340 5830J
-preplace netloc xlconstant_1_dout 1 6 6 2790 1280 3080 410 N 410 N 410 N 410 N
-preplace netloc xlslice_7_Dout 1 10 2 4270 3170 N
-preplace netloc sfp_rxn_i_0_1 1 0 9 NJ 2320 NJ 2320 NJ 2320 NJ 2320 NJ 2320 NJ 2320 NJ 2320 NJ 2320 3570
-preplace netloc axi_ethernet_0_fifo_interrupt 1 2 7 770 1010 NJ 1010 NJ 1010 2320J 780 NJ 780 N 780 3550
-preplace netloc maroc_dc_0_hold2 1 12 3 5090J 350 NJ 350 5820J
-preplace netloc maroc_slow_control_0_SC_DOUT 1 12 3 NJ 680 NJ 680 5820J
-preplace netloc maroc_trig3_0_1 1 0 12 -280J 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 3700J 250 NJ 250 NJ 250 NJ
-preplace netloc mdm_1_debug_sys_rst 1 2 3 780 1850 NJ 1850 1760
-preplace netloc xlslice_4_Dout 1 12 1 4960
-preplace netloc microblaze_0_axi_periph_M13_AXI 1 1 6 340J 810 710J 750 NJ 750 NJ 750 NJ 750 2710
-preplace netloc xlslice_1_Dout 1 12 1 5070J
-preplace netloc maroc_dc_0_D_R 1 12 3 NJ 400 NJ 400 5790J
-preplace netloc In2_0_1 1 0 9 NJ 3660 NJ 3660 NJ 3660 NJ 3660 NJ 3660 NJ 3660 NJ 3660 NJ 3660 NJ
-preplace netloc axi_timebase_wdt_0_wdt_reset 1 2 1 690
-preplace netloc maroc_dc_0_CK_R 1 12 3 NJ 360 NJ 360 5810J
-preplace netloc microblaze_0_M_AXI_IP 1 5 1 2400
-preplace netloc axi_uartlite_0_UART 1 12 3 4990J 1220 NJ 1220 NJ
-preplace netloc Bit_22_22_Dout 1 11 4 NJ 3810 NJ 3810 NJ 3810 NJ
-preplace netloc axi_gpio_0_gpio_io_o1 1 10 1 4270
-preplace netloc SC_DIN_0_1 1 0 12 -290J 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ
-preplace netloc wrc_board_quabo_Light_0_sfp_txn_o 1 8 7 3620J 2090 NJ 2090 NJ 2090 4570J 2050 4990J 2300 NJ 2300 NJ
-preplace netloc wrc_board_quabo_Light_0_pll20dac_cs_n_o 1 1 14 360 2080 N 2080 N 2080 N 2080 N 2080 N 2080 NJ 2080 3600J 2080 NJ 2080 NJ 2080 4560J 2040 5000J 2260 NJ 2260 5800J
-preplace netloc xlslice_0_Dout 1 13 2 NJ 1970 5810
-preplace netloc microblaze_0_Clk 1 1 12 350 1660 750J 1630 1180 1630 1800 1470 2370 820 N 820 3110 1470 N 1470 3940 1470 N 1470 4540 80 5080
-preplace netloc wrc_board_quabo_Light_0_plldac_sclk_o 1 8 6 3610 800 NJ 800 NJ 800 NJ 800 NJ 800 5500J
-preplace netloc maroc_slow_control_0_SC_CLK 1 12 3 NJ 720 NJ 720 5780J
-preplace netloc axi_ethernet_0_m_axis_rxd 1 7 6 3140J 790 NJ 790 N 790 N 790 N 790 5050
-preplace netloc sfp_los_i_0_1 1 0 9 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 3100J 2420 3560
-preplace netloc BIT_CLK_N_1 1 0 1 -300
-preplace netloc clk_125m_gtx_p_i_0_1 1 0 8 NJ 2250 NJ 2250 NJ 2250 NJ 2250 NJ 2250 NJ 2250 NJ 2250 3030J
-preplace netloc xlconstant_2_dout 1 2 3 770 1640 NJ 1640 1770
-preplace netloc xlslice_6_Dout 1 1 1 N
-preplace netloc or_trig0_0_1 1 0 12 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 4490J
-preplace netloc Net 1 8 7 3700J 2430 NJ 2430 NJ 2430 NJ 2430 4990J 2400 NJ 2400 NJ
-preplace netloc in_buf_ds_4bit_0_out 1 8 4 3610 340 N 340 N 340 4630
-preplace netloc microblaze_0_axi_periph_M10_AXI 1 6 2 N 1350 3050
-preplace netloc microblaze_0_axi_periph_M11_AXI 1 6 7 2750 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 5060J
-preplace netloc In3_0_1 1 0 9 NJ 3680 NJ 3680 NJ 3680 NJ 3680 NJ 3680 NJ 3680 NJ 3680 NJ 3680 NJ
-preplace netloc Bit_19_24_Dout 1 10 2 N 3070 4490
-preplace netloc Net1 1 8 7 3680J 2600 NJ 2600 NJ 2600 NJ 2600 NJ 2600 NJ 2600 NJ
-preplace netloc in_buf_ds_adcbitclk_outp 1 1 11 N 90 N 90 N 90 N 90 N 90 2760 80 N 80 N 80 N 80 N 80 4520
-preplace netloc clk_wiz_1_locked 1 2 3 760 1620 NJ 1620 1780J
-preplace netloc microblaze_0_debug 1 4 1 1790
-preplace netloc microblaze_0_axi_periph_M09_AXI 1 6 2 N 1330 3060
-preplace netloc Net2 1 8 7 3670J 2580 NJ 2580 NJ 2580 NJ 2580 NJ 2580 NJ 2580 NJ
-preplace netloc axi_ethernet_0_mac_irq 1 2 11 780 730 NJ 730 NJ 730 NJ 730 2720J 1160 3100J 1140 NJ 1140 N 1140 N 1140 4520 1210 4960
-preplace netloc maroc_slow_control_0_SC_RSTb 1 12 3 NJ 700 NJ 700 5800J
-preplace netloc axi_ethernet_0_fifo_AXI_STR_TXC 1 8 4 3580 930 N 930 N 930 N
-preplace netloc stepper_control_0_step_drive 1 12 3 NJ 3690 NJ 3690 NJ
-preplace netloc Bit_0_15_Dout 1 11 1 4510
-preplace netloc axi_ethernet_0_interrupt 1 2 11 740 1020 NJ 1020 NJ 1020 2340J 790 NJ 790 3040J 770 NJ 770 N 770 N 770 4620 810 4970
-preplace netloc axi_ethernet_0_fifo_mm2s_prmry_reset_out_n 1 8 4 N 1010 N 1010 N 1010 4520
-preplace netloc axi_ethernet_0_fifo_AXI_STR_TXD 1 8 4 3570 910 N 910 N 910 N
+preplace inst xlconstant_2 -pg 1 -lvl 2 -y 2010 -defaultsOSRD
+preplace inst axi_ethernet_0_fifo -pg 1 -lvl 8 -y 818 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 2 -y 1720 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 13 -y 530 -defaultsOSRD
+preplace inst microblaze_0_axi_periph|m08_couplers -pg 1 -lvl 3 -y 2350 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 7 -y 2390 -defaultsOSRD
+preplace inst Bit_0_15 -pg 1 -lvl 11 -y 3510 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 8 -y 2140 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 8 -y 1500 -defaultsOSRD
+preplace inst xlconstant_6 -pg 1 -lvl 12 -y 3560 -defaultsOSRD
+preplace netloc sfp_rxp_i_0_1 1 0 9 -430J 10 420J 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 5190
+preplace netloc microblaze_0_axi_periph|M04_ACLK_1 1 0 3 2640J 1650 NJ 1650 3410
+preplace netloc microblaze_0_axi_periph|xbar_to_m03_couplers 1 2 1 3380
+preplace netloc microblaze_0_axi_periph_M13_AXI 1 1 6 390J 650 NJ 650 NJ 650 NJ 650 NJ 650 3910
+preplace netloc xlconstant_1_dout 1 6 6 4040 2112 4360 298 N 298 N 298 N 298 6760
+preplace netloc microblaze_0_axi_periph_M08_AXI 1 6 6 4030J 2142 4420 1766 N 1766 5750 1680 N 1680 6670
+preplace netloc microblaze_0_M_AXI_IP 1 5 1 2260
+preplace netloc io0_i_0_1 1 0 13 -490J 0 NJ 0 820J 40 NJ 40 NJ 40 NJ 40 NJ 40 4300J 30 NJ 30 N 30 N 30 N 30 7320
+preplace netloc stepper_control_0_step_drive 1 12 3 7490J 3690 NJ 3690 NJ
+preplace netloc microblaze_0_axi_periph|S00_ARESETN_1 1 0 1 2590
+preplace netloc Bit_21_21_Dout 1 11 4 NJ 3710 NJ 3710 NJ 3710 NJ
+preplace netloc maroc_trig1_0_1 1 0 12 -540J -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 NJ -40 6860J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 3 2 1280 1590 NJ
+preplace netloc microblaze_0_axi_periph_M11_AXI 1 6 7 4070 2152 4440J 1776 5260J 1570 NJ 1570 NJ 1570 NJ 1570 NJ
+preplace netloc SC_DIN_0_1 1 0 12 -440J 498 NJ 498 770J 488 NJ 488 NJ 488 NJ 488 NJ 488 4340J 478 NJ 478 NJ 478 NJ 478 6670J
+preplace netloc microblaze_0_axi_periph|M01_ACLK_1 1 0 3 2540J 1320 NJ 1320 3280
+preplace netloc microblaze_0_dlmb_1 1 5 1 2270
+preplace netloc microblaze_0_axi_periph|m06_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc or_trig2_0_1 1 0 12 -470J 298 NJ 298 NJ 298 NJ 298 NJ 298 NJ 298 NJ 298 4320J 288 5310J 308 NJ 308 NJ 308 6810J
+preplace netloc in_buf_ds_4bit_0_out 1 8 4 5270 338 N 338 N 338 6800
+preplace netloc BIT_CLK_N_1 1 0 1 -450
+preplace netloc In1_0_1 1 0 12 NJ 3640 NJ 3640 NJ 3640 NJ 3640 NJ 3640 2190J 3940 NJ 3940 NJ 3940 5310J 3940 N 3940 6240 4000 6660
 preplace netloc SPI_MUX_1_spi_mosi 1 14 1 N
-preplace netloc in_n_1_1 1 0 8 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ
-preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 3 3 1140J 980 NJ 980 N
-preplace netloc wrc_board_quabo_Light_0_uart 1 8 7 3640J 2060 NJ 2060 NJ 2060 4520J 2020 5010J 2270 NJ 2270 5780J
-preplace netloc microblaze_0_axi_periph_M06_AXI 1 6 2 2790 1210 N
-preplace netloc xlconstant_6_dout 1 8 5 NJ 2640 N 2640 N 2640 N 2640 4960
-preplace netloc sfp_rxp_i_0_1 1 0 9 -280J 2330 NJ 2330 NJ 2330 NJ 2330 NJ 2330 NJ 2330 NJ 2330 NJ 2330 3550
-preplace netloc axi_ethernet_0_fifo_mm2s_cntrl_reset_out_n 1 8 4 N 1030 N 1030 N 1030 4510
-preplace netloc clk_wiz_1_clk_out2 1 2 10 730J 770 1140J 780 NJ 780 2310J 770 2740J 730 N 730 N 730 N 730 N 730 4600
-preplace netloc axi_timebase_wdt_0_wdt_interrupt 1 2 1 710J
-preplace netloc clk_wiz_1_clk_out3 1 2 10 740 1030 NJ 1030 NJ 1030 2350J 840 NJ 840 3040 1720 3550 1730 N 1730 N 1730 N
+preplace netloc wrc_board_quabo_Light_0_plldac_sclk_o 1 8 6 5270 800 NJ 800 NJ 800 NJ 800 NJ 800 7990J
+preplace netloc axi_ethernet_0_fifo_interrupt 1 2 7 860 50 NJ 50 NJ 50 NJ 50 NJ 50 N 50 5180
+preplace netloc microblaze_0_axi_periph|m07_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc wrc_board_quabo_Light_0_sfp_txn_o 1 8 7 NJ 2530 NJ 2530 6250J 2300 NJ 2300 NJ 2300 NJ 2300 NJ
+preplace netloc mdm_1_debug_sys_rst 1 2 3 880 1430 NJ 1430 1660
+preplace netloc clk_125m_gtx_n_i_0_1 1 0 8 -400J 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 4340J
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_ACLK_net 1 0 3 2600 1640 2910 1640 3360
+preplace netloc axi_gpio_0_gpio_io_o 1 0 13 -350 508 N 508 N 508 N 508 N 508 N 508 N 508 4370 528 5320 2090 5730J 2550 NJ 2550 6860J 2530 7370J
+preplace netloc microblaze_0_axi_periph|M05_ARESETN_1 1 0 3 NJ 1880 2890J 1810 3430
+preplace netloc axi_ethernet_0_mac_irq 1 2 11 850 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 N 0 N 0 N 0 7300
+preplace netloc or_trig3_0_1 1 0 12 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 4310J 328 NJ 328 NJ 328 NJ 328 6810J
+preplace netloc microblaze_0_axi_periph|m04_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph|m13_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc clk_wiz_0_clk_320 1 1 11 380 538 N 538 N 538 N 538 N 538 N 538 4390 518 N 518 N 518 N 518 6660
+preplace netloc maroc_dc_0_M01_AXIS 1 12 1 7380
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 6 6 3990 318 NJ 318 NJ 318 NJ 318 NJ 318 6780J
+preplace netloc axi_ethernet_0_fifo_AXI_STR_TXC 1 8 4 N 788 N 788 N 788 6720
+preplace netloc SPI_STARTUP_0_mb_spi_intc 1 2 9 830 498 N 498 N 498 N 498 N 498 N 498 N 498 N 498 6210
+preplace netloc axi_ethernet_0_fifo_AXI_STR_TXD 1 8 4 N 768 N 768 N 768 6730
+preplace netloc microblaze_0_axi_periph|M03_ARESETN_1 1 0 3 2520J 1630 NJ 1630 3350
+preplace netloc microblaze_0_axi_periph|xbar_to_m15_couplers 1 2 1 3260
+preplace netloc xlconstant_6_dout 1 8 5 NJ 2650 N 2650 6230 2640 6680 3360 7300
+preplace netloc xlslice_7_Dout 1 10 2 6270 3980 6850
+preplace netloc microblaze_0_ilmb_1 1 5 1 2230
+preplace netloc xlconstant_5_dout 1 8 1 5170
+preplace netloc axi_quad_spi_1_io0_o 1 10 1 6310
+preplace netloc microblaze_0_axi_periph|M10_ARESETN_1 1 0 3 NJ 2690 NJ 2690 N
+preplace netloc In0_0_1 1 0 12 NJ 3620 NJ 3620 NJ 3620 NJ 3620 NJ 3620 2220J 3930 NJ 3930 NJ 3930 5220J 3930 N 3930 6250 3990 6670
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 6 6 3940J 278 4290 268 N 268 N 268 N 268 6750
+preplace netloc microblaze_0_axi_periph|xbar_to_m14_couplers 1 2 1 3270
+preplace netloc microblaze_0_axi_periph|S01_ACLK_1 1 0 1 2550
+preplace netloc microblaze_0_axi_periph|m15_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc xlslice_0_Dout 1 13 2 NJ 1970 8290
+preplace netloc maroc_slow_control_0_SC_CLK 1 12 3 NJ 720 NJ 720 8260J
+preplace netloc maroc_dc_0_CK_R 1 12 3 NJ 360 NJ 360 8290J
+preplace netloc wrc_board_quabo_Light_0_pll25dac_cs_n_o 1 8 7 5310J 2510 NJ 2510 6260J 2440 NJ 2440 NJ 2440 NJ 2440 NJ
+preplace netloc in_buf_ds_1bit_0_out 1 8 4 N 140 N 140 N 140 6820
+preplace netloc maroc_dc_0_RSTB_R 1 12 3 NJ 380 NJ 380 8280J
+preplace netloc maroc_trig3_0_1 1 0 12 -480J 238 NJ 238 NJ 238 NJ 238 NJ 238 NJ 238 NJ 238 NJ 238 NJ 238 NJ 238 NJ 238 6830J
+preplace netloc microblaze_0_axi_periph|S01_ARESETN_1 1 0 1 2530
+preplace netloc maroc_slow_control_0_SC_DOUT 1 12 3 NJ 680 NJ 680 8300J
+preplace netloc axi_quad_spi_0_io0_o 1 12 2 7350 1080 NJ
+preplace netloc microblaze_0_axi_periph|xbar_to_m13_couplers 1 2 1 3280
+preplace netloc SPI_STARTUP_0_ss_o 1 11 4 6720J 2350 NJ 2350 NJ 2350 NJ
+preplace netloc microblaze_0_axi_periph|M11_ACLK_1 1 0 3 NJ 2840 NJ 2840 N
+preplace netloc microblaze_0_axi_periph|xbar_to_m09_couplers 1 2 1 3330
+preplace netloc axi_timebase_wdt_0_wdt_interrupt 1 2 1 800J
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_ARESETN_net 1 0 3 2560 1850 2920 1780 3370
+preplace netloc wrc_board_quabo_Light_0_spi_mosi_o 1 8 3 5300 2760 NJ 2760 N
+preplace netloc microblaze_0_axi_periph|M11_ARESETN_1 1 0 3 NJ 2860 NJ 2860 N
+preplace netloc xlconstant_4_dout 1 7 1 4280
+preplace netloc axi_ethernet_0_m_axis_rxd 1 7 6 4480J -10 NJ -10 N -10 N -10 N -10 7310
+preplace netloc microblaze_0_axi_periph|m05_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc maroc_trig0_0_1 1 0 12 -530J 20 370J 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 4280J 40 NJ 40 NJ 40 NJ 40 6850J
+preplace netloc microblaze_0_axi_periph|M03_ACLK_1 1 0 3 NJ 1620 NJ 1620 3330
+preplace netloc microblaze_0_axi_periph|m01_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph|xbar_to_m00_couplers 1 2 1 3290
+preplace netloc microblaze_0_axi_periph_M07_AXI 1 6 6 NJ 2172 4480 2080 5260 2100 N 2100 N 2100 6680
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 3 9 1250 1460 NJ 1460 2250 840 N 840 4470 568 N 568 5790 568 N 568 6840
+preplace netloc Bit_19_24_Dout 1 10 2 6260 3450 6720
+preplace netloc or_trig0_0_1 1 0 12 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 4300J 258 5320J 288 NJ 288 NJ 288 6760J
+preplace netloc maroc_dc_0_adc_clk_out 1 12 3 NJ 420 NJ 420 8260J
+preplace netloc microblaze_0_axi_periph|xbar_to_m11_couplers 1 2 1 3310
+preplace netloc axi_ethernet_0_sfp 1 12 3 NJ 910 NJ 910 8290J
+preplace netloc microblaze_0_axi_periph|M09_ACLK_1 1 0 3 NJ 2500 NJ 2500 N
+preplace netloc microblaze_0_axi_periph|xbar_to_m05_couplers 1 2 1 3450
+preplace netloc microblaze_0_axi_periph|M12_ARESETN_1 1 0 3 NJ 3030 NJ 3030 N
+preplace netloc microblaze_0_axi_periph|s01_couplers_to_xbar 1 1 1 2900
+preplace netloc wrc_board_quabo_Light_0_spi_ncs_o 1 8 3 5220 2740 NJ 2740 6240
+preplace netloc wrc_board_quabo_Light_0_pll20dac_cs_n_o 1 1 14 410 690 N 690 N 690 N 690 N 690 4000 598 NJ 598 5240J 2500 NJ 2500 6220J 2380 NJ 2380 NJ 2380 NJ 2380 NJ
+preplace netloc microblaze_0_axi_periph|M01_ARESETN_1 1 0 3 2570J 1330 NJ 1330 3300
+preplace netloc axi_uartlite_0_UART 1 12 3 7360J 1220 NJ 1220 NJ
+preplace netloc SPI_STARTUP_0_mb_eos 1 9 3 5800 2560 N 2560 6650
+preplace netloc wrc_board_quabo_Light_0_sfp_txp_o 1 8 7 5260J 2540 NJ 2540 6240J 2280 NJ 2280 NJ 2280 NJ 2280 NJ
+preplace netloc in_p_0_1 1 0 8 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 4300J
+preplace netloc microblaze_0_axi_periph|M14_ARESETN_1 1 0 3 NJ 3370 NJ 3370 N
+preplace netloc clk_20m_vcxo_i_0_1 1 0 8 -380J 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 4330J
+preplace netloc wrc_board_quabo_Light_0_pps_o 1 1 14 420 700 N 700 N 700 N 700 N 700 N 700 4410 608 5250J 2520 NJ 2520 NJ 2520 6810J 2420 NJ 2420 NJ 2420 NJ
+preplace netloc microblaze_0_axi_periph_M14_AXI 1 6 4 NJ 3370 NJ 3370 NJ 3370 5720
+preplace netloc microblaze_0_M_AXI_DP 1 5 1 2190
+preplace netloc Bit_22_22_Dout 1 11 4 NJ 3810 NJ 3810 NJ 3810 NJ
+preplace netloc axi_intc_0_interrupt 1 4 1 1690
+preplace netloc SPI_STARTUP_0_mosi_o 1 11 4 6710J 2330 NJ 2330 NJ 2330 NJ
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 3 3 1240J 1440 NJ 1440 2240
+preplace netloc microblaze_0_axi_periph|M06_ARESETN_1 1 0 3 NJ 1920 2950J 1830 3390
+preplace netloc microblaze_0_axi_periph|M15_ACLK_1 1 0 3 NJ 3520 NJ 3520 N
+preplace netloc microblaze_0_axi_periph|S00_ACLK_1 1 0 1 2620
+preplace netloc gpio2_io_i_0_1 1 0 9 -510J -50 NJ -50 NJ -50 NJ -50 NJ -50 NJ -50 NJ -50 NJ -50 5210
+preplace netloc microblaze_0_axi_periph|M14_ACLK_1 1 0 3 NJ 3350 NJ 3350 N
+preplace netloc axi_ethernet_0_interrupt 1 2 11 840 -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 N -20 N -20 N -20 7330
 preplace netloc stim_gen_0_stim_dac 1 13 2 NJ 1840 N
-preplace netloc or_trig2_0_1 1 0 12 -270J 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ
-preplace netloc microblaze_0_axi_periph_M04_AXI 1 6 6 2760J 240 3000 130 N 130 N 130 N 130 4600
-preplace netloc or_trig1_0_1 1 0 12 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 4510J
-preplace netloc maroc_trig0_0_1 1 0 12 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 3550J 190 NJ 190 NJ 190 NJ
-preplace netloc maroc_dc_0_adc_clk_out 1 12 3 NJ 420 NJ 420 5780J
-preplace netloc clk_wiz_0_clk_10 1 1 1 320
-preplace netloc maroc_trig2_0_1 1 0 12 -290J 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 3660J 230 NJ 230 NJ 230 NJ
-preplace netloc microblaze_0_axi_periph_M07_AXI 1 6 6 NJ 1290 3100 1410 N 1410 N 1410 N 1410 4510
-preplace netloc xlconstant_0_dout 1 8 4 NJ 850 N 850 N 850 4550
-preplace netloc axi_gpio_0_gpio_io_o 1 0 13 -270 720 N 720 N 720 N 720 N 720 N 720 N 720 N 720 3590 2050 3930J 2050 NJ 2050 4550J 1970 5050J
-preplace netloc in_n_0_1 1 0 8 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 2780J 260 3140J
-preplace netloc clk_wiz_0_clk_320 1 1 11 330 1000 N 1000 1190 740 N 740 N 740 N 740 N 740 N 740 N 740 N 740 4590
-preplace netloc maroc_dc_0_RSTB_R 1 12 3 NJ 380 NJ 380 5800J
-preplace netloc in_p_1_1 1 0 8 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ
-preplace netloc io0_i_0_1 1 0 13 -290J 820 NJ 820 720J 760 1160J 770 NJ 770 2300J 810 2740J 1170 3120J 1150 NJ 1150 N 1150 N 1150 4500 1230 4960
-preplace netloc microblaze_0_axi_periph_M05_AXI 1 3 4 1200J 850 NJ 850 NJ 850 2700
-preplace netloc axi_ethernet_0_sfp 1 12 3 NJ 910 NJ 910 5810J
-preplace netloc Bit_21_21_Dout 1 11 4 4590J 3590 NJ 3590 NJ 3590 5810J
-preplace netloc wrc_board_quabo_Light_0_pps_o 1 1 14 330 2900 N 2900 N 2900 N 2900 N 2900 N 2900 N 2900 3690J 2900 NJ 2900 NJ 2900 4630J 2440 5110J 2420 NJ 2420 NJ
-preplace netloc gpio2_io_i_0_1 1 0 9 NJ 1940 310J 2090 730J 2060 NJ 2060 NJ 2060 NJ 2060 NJ 2060 NJ 2060 3550
-preplace netloc stim_gen_0_stim_drive 1 13 2 5510J 1770 N
-preplace netloc axi_ethernet_0_fifo_s2mm_prmry_reset_out_n 1 8 4 N 1050 N 1050 N 1050 4500
-preplace netloc axi_intc_0_interrupt 1 4 1 1760
-preplace netloc axi_quad_spi_0_ss_o 1 12 3 5040J 1740 NJ 1740 5800J
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 3 9 1150 1420 NJ 1420 2380 830 N 830 3130 1370 N 1370 N 1370 N 1370 4610
-levelinfo -pg 1 -320 180 540 960 1620 2060 2550 2920 3370 3800 4090 4380 4800 5320 5660 5850 -top -390 -bot 4070
+preplace netloc axi_gpio_0_gpio_io_o1 1 10 1 6300
+preplace netloc microblaze_0_axi_periph_M12_AXI 1 6 7 4010 210 NJ 210 5310J 90 NJ 90 NJ 90 NJ 90 7480J
+preplace netloc axi_quad_spi_1_ss_o 1 10 1 6270
+preplace netloc Bit_16_19_Dout 1 10 2 6280 3970 6820
+preplace netloc miso_i_0_1 1 0 11 -370J 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 3930J 568 4400J 538 NJ 538 NJ 538 6290
+preplace netloc or_trig1_0_1 1 0 12 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 4320J 338 5250J 348 NJ 348 NJ 348 6770J
+preplace netloc clk_125m_gtx_p_i_0_1 1 0 8 -390J 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 4320J
+preplace netloc microblaze_0_axi_periph|M08_ARESETN_1 1 0 3 NJ 2350 NJ 2350 N
+preplace netloc in_buf_ds_adcbitclk_outp 1 1 11 410 20 N 20 N 20 N 20 N 20 N 20 N 20 N 20 N 20 N 20 6840
+preplace netloc microblaze_0_axi_periph|M12_ACLK_1 1 0 3 NJ 3010 NJ 3010 N
+preplace netloc flash_control_0_pulse_n 1 12 3 7480J 3140 NJ 3140 NJ
+preplace netloc rst_clk_wiz_1_100M_1_peripheral_aresetn 1 1 12 400 1000 790 1010 N 1010 N 1010 2290 850 N 850 4460J 588 NJ 588 5740J 810 NJ 810 NJ 810 7480J
+preplace netloc flash_control_0_pulse_p 1 12 3 7470J 3120 NJ 3120 NJ
+preplace netloc microblaze_0_axi_periph|M09_ARESETN_1 1 0 3 NJ 2520 NJ 2520 N
+preplace netloc SPI_STARTUP_0_wr_miso_o 1 8 4 N 2750 NJ 2750 6210 2900 6650
+preplace netloc axi_interconnect_0_M01_AXI 1 8 2 NJ 1510 5760
+preplace netloc microblaze_0_axi_periph|M07_ACLK_1 1 0 3 NJ 1940 2870J 2250 3460
+preplace netloc microblaze_0_axi_periph|m10_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph|M05_ACLK_1 1 0 3 NJ 1860 2870J 1800 3440
+preplace netloc microblaze_0_axi_periph|m00_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph|xbar_to_m12_couplers 1 2 1 3290
+preplace netloc microblaze_0_axi_periph|m02_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc wrc_board_quabo_Light_0_spi_sclk_o 1 8 3 N 2770 NJ 2770 6220
+preplace netloc xlslice_6_Dout 1 1 1 N
+preplace netloc microblaze_0_axi_periph|xbar_to_m04_couplers 1 2 1 3420
+preplace netloc microblaze_0_axi_periph|m03_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph|M04_ARESETN_1 1 0 3 2650J 1660 NJ 1660 N
+preplace netloc microblaze_0_axi_periph|M15_ARESETN_1 1 0 3 NJ 3540 NJ 3540 N
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 6 2 4060 788 N
+preplace netloc maroc_dc_0_D_R 1 12 3 NJ 400 NJ 400 8270J
+preplace netloc flash_control_0_flash_dac 1 12 3 7460J 3100 NJ 3100 NJ
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_to_s01_couplers 1 0 1 2630
+preplace netloc In3_0_1 1 0 9 NJ 3680 NJ 3680 NJ 3680 NJ 3680 NJ 3680 2200J 3910 4070J 3680 NJ 3680 NJ
+preplace netloc microblaze_0_axi_periph|M00_ARESETN_1 1 0 3 2520J 1310 NJ 1310 3270
+preplace netloc Net 1 8 7 5320J 2490 NJ 2490 6230J 2400 NJ 2400 NJ 2400 NJ 2400 NJ
+preplace netloc elapsed_time_gen_0_elapsed_time 1 2 10 750 308 N 308 N 308 N 308 N 308 N 308 5290 448 N 448 N 448 6760
+preplace netloc wrc_board_quabo_Light_0_clk_sys_o 1 0 9 -340 1140 370 670 NJ 670 NJ 670 NJ 670 NJ 670 3950J 578 4410J 558 5200
+preplace netloc SPI_access_0_int_out 1 2 1 810
+preplace netloc in_n_1_1 1 0 8 -450J 488 NJ 488 760J 478 NJ 478 NJ 478 NJ 478 NJ 478 4330J
+preplace netloc Bit_0_15_Dout 1 11 1 6710
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 3 3 1270J 1450 NJ 1450 2240
+preplace netloc microblaze_0_axi_periph_M09_AXI 1 6 2 4050 2162 4450
+preplace netloc axi_quad_spi_0_sck_o 1 12 2 7340 1070 7990J
+preplace netloc microblaze_0_axi_periph|xbar_to_m10_couplers 1 2 1 3320
+preplace netloc microblaze_0_axi_periph|m09_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph_M06_AXI 1 6 2 4070 988 N
+preplace netloc xlslice_3_Dout 1 13 1 8010
+preplace netloc xlslice_1_Dout 1 12 1 7420J
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 6 6 3960 288 4310J 278 NJ 278 NJ 278 NJ 278 6720J
+preplace netloc microblaze_0_Clk 1 1 12 420 1480 740J 1640 1290 1640 1710 1470 2280 830 N 830 4430 548 N 548 5770 548 N 548 6740 790 7430
+preplace netloc maroc_dc_0_testpoint 1 12 1 7340J
+preplace netloc microblaze_0_axi_periph|xbar_to_m02_couplers 1 2 1 3340
+preplace netloc axi_timer_0_interrupt 1 2 7 880 528 NJ 528 NJ 528 NJ 528 NJ 528 4380 508 5170
+preplace netloc axi_quad_spi_1_sck_o 1 10 1 6300
+preplace netloc xlconcat_2_dout 1 9 2 5800J 3550 6220
+preplace netloc microblaze_0_axi_periph|xbar_to_m07_couplers 1 2 1 3390
+preplace netloc sfp_los_i_0_1 1 0 9 -420J -10 NJ -10 830J 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 5220
+preplace netloc microblaze_0_axi_periph|M02_ACLK_1 1 0 3 2580J 1340 NJ 1340 3310
+preplace netloc microblaze_0_axi_periph|M06_ACLK_1 1 0 3 NJ 1900 2930J 1820 3400
+preplace netloc microblaze_0_axi_periph|M13_ARESETN_1 1 0 3 NJ 3200 NJ 3200 N
+preplace netloc Bit_23_23_Dout 1 11 4 6690J 4030 7500J 3910 NJ 3910 NJ
+preplace netloc Bit_16_16_Dout 1 11 1 6680
+preplace netloc axi_quad_spi_0_ss_o 1 12 3 7380J 1740 NJ 1740 8280J
+preplace netloc xlconstant_3_dout 1 2 1 N
+preplace netloc microblaze_0_axi_periph|M00_ACLK_1 1 0 3 2510J 1300 NJ 1300 3260
+preplace netloc maroc_dc_0_hold1 1 12 3 7450J 340 NJ 340 8310J
+preplace netloc mgt_clk_0_1 1 0 12 -410J 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 4410J 928 NJ 928 NJ 928 NJ 928 6680J
+preplace netloc maroc_dc_0_hold2 1 12 3 7340J 350 NJ 350 8300J
+preplace netloc axi_ethernet_0_fifo_s2mm_prmry_reset_out_n 1 8 4 N 868 N 868 N 868 6670
+preplace netloc sfp_rxn_i_0_1 1 0 9 -460J -30 NJ -30 NJ -30 NJ -30 NJ -30 NJ -30 NJ -30 NJ -30 5230
+preplace netloc clk_wiz_1_locked 1 2 3 860 1620 NJ 1620 1680J
+preplace netloc microblaze_0_axi_periph|M02_ARESETN_1 1 0 3 2610J 1350 NJ 1350 3330
+preplace netloc axi_hwicap_0_ip2intc_irpt 1 2 9 870 518 NJ 518 NJ 518 NJ 518 NJ 518 4350J 488 NJ 488 NJ 488 6220
+preplace netloc maroc_dc_0_M00_AXIS 1 12 1 7380
+preplace netloc microblaze_0_axi_periph|m08_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc xlslice_4_Dout 1 12 1 7400
+preplace netloc microblaze_0_debug 1 4 1 1700
+preplace netloc microblaze_0_axi_periph|m11_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 6 6 3970J 268 4280 248 5320 150 N 150 N 150 N
+preplace netloc microblaze_0_axi_periph|M10_ACLK_1 1 0 3 NJ 2670 NJ 2670 N
+preplace netloc axi_ethernet_0_fifo_mm2s_cntrl_reset_out_n 1 8 4 5310 850 N 850 N 850 6690
+preplace netloc microblaze_0_axi_periph_M15_AXI 1 6 2 4060J 2132 4400
+preplace netloc microblaze_0_axi_periph|s00_couplers_to_xbar 1 1 1 2940
+preplace netloc axi_iic_0_IIC 1 12 3 7390J 1690 8010J 1640 NJ
+preplace netloc In2_0_1 1 0 9 NJ 3660 NJ 3660 NJ 3660 NJ 3660 NJ 3660 2210J 3920 4060J 3660 NJ 3660 NJ
+preplace netloc SPI_STARTUP_0_mb_miso_o 1 10 2 NJ 2250 6670
+preplace netloc microblaze_0_axi_periph|xbar_to_m08_couplers 1 2 1 3340
+preplace netloc clk_wiz_0_clk_10 1 1 1 360
+preplace netloc xlconstant_2_dout 1 2 3 870 1630 NJ 1630 1670
+preplace netloc xlconcat_0_dout 1 3 1 1260
+preplace netloc xlslice_5_Dout 1 13 1 N
+preplace netloc stim_gen_0_stim_drive 1 13 2 8000J 1770 N
+preplace netloc microblaze_0_axi_periph|M08_ACLK_1 1 0 3 NJ 2330 NJ 2330 N
+preplace netloc microblaze_0_axi_periph|xbar_to_m06_couplers 1 2 1 3460
+preplace netloc axi_interconnect_0_M00_AXI 1 8 2 NJ 1490 5780
+preplace netloc microblaze_0_axi_periph|xbar_to_m01_couplers 1 2 1 3320
+preplace netloc axi_ethernet_0_fifo_mm2s_prmry_reset_out_n 1 8 4 N 828 N 828 N 828 6700
+preplace netloc in_p_1_1 1 0 8 NJ 470 NJ 470 740J 468 NJ 468 NJ 468 NJ 468 NJ 468 4320J
+preplace netloc microblaze_0_axi_periph|microblaze_0_axi_periph_to_s00_couplers 1 0 1 2550
+preplace netloc microblaze_0_axi_periph|m12_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 3 4 1300J 640 NJ 640 NJ 640 3920
+preplace netloc maroc_slow_control_0_SC_RSTb 1 12 3 NJ 700 NJ 700 8280J
+preplace netloc maroc_trig2_0_1 1 0 12 -500J 228 NJ 228 NJ 228 NJ 228 NJ 228 NJ 228 NJ 228 NJ 228 NJ 228 NJ 228 NJ 228 6850J
+preplace netloc spi_sel_0_1 1 0 11 -360J 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 3980J 588 4420J 578 NJ 578 NJ 578 6280
+preplace netloc xlslice_2_Dout 1 12 1 7430J
+preplace netloc xlconstant_0_dout 1 8 4 NJ 668 N 668 N 668 6710
+preplace netloc Net1 1 8 7 NJ 2630 NJ 2630 NJ 2630 6690J 3230 7450J 2600 NJ 2600 NJ
+preplace netloc microblaze_0_axi_periph|M07_ARESETN_1 1 0 3 2580J 1910 2880J 1790 3410
+preplace netloc Net2 1 8 7 NJ 2610 NJ 2610 NJ 2610 6700J 3240 7440J 2580 NJ 2580 NJ
+preplace netloc axi_timebase_wdt_0_wdt_reset 1 2 1 750
+preplace netloc microblaze_0_axi_periph|M13_ACLK_1 1 0 3 NJ 3180 NJ 3180 N
+preplace netloc in_n_0_1 1 0 8 -520J 160 410J 150 NJ 150 NJ 150 NJ 150 NJ 150 NJ 150 NJ
+preplace netloc microblaze_0_axi_periph|m14_couplers_to_microblaze_0_axi_periph 1 3 1 N
+preplace netloc microblaze_0_axi_periph_M10_AXI 1 6 2 4020 2122 4380
+preplace netloc SPI_MUX_1_spi_ck 1 14 1 N
+preplace netloc wrc_board_quabo_Light_0_plldac_din_o 1 8 6 5290 1210 NJ 1210 NJ 1210 NJ 1210 7330J 1060 NJ
+preplace netloc clk_wiz_1_clk_out2 1 2 10 780J 10 NJ 10 NJ 10 NJ 10 NJ 10 N 10 N 10 N 10 N 10 6790
+preplace netloc BIT_CLK_P_1 1 0 1 -450
+preplace netloc clk_wiz_1_clk_out3 1 2 6 820 730 NJ 730 NJ 730 NJ 730 NJ 730 4300
+preplace netloc wrc_board_quabo_Light_0_uart 1 8 7 5280J 2110 NJ 2110 NJ 2110 6670J 2230 7410J 2160 NJ 2160 NJ
+levelinfo -pg 1 -560 230 590 1060 1525 1950 2630 4200 4990 5620 6055 6520 7140 7805 8140 8330 -top -500 -bot 5620
+levelinfo -hier microblaze_0_axi_periph * 2760 3120 3680 *
 "
 }
 {
    "da_aeth_cnt":"1",
-   "da_axi4_cnt":"29",
+   "da_axi4_cnt":"30",
    "da_board_cnt":"4",
-   "da_clkrst_cnt":"2",
+   "da_clkrst_cnt":"3",
    "da_mb_cnt":"1"
 }

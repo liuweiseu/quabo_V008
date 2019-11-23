@@ -67,13 +67,6 @@ CORE_SNMP_SRCS=$(LWIP_DIR)/src/apps/snmp/snmp_asn1.c \
 	$(LWIP_DIR)/src/apps/snmp/snmpv3_mbedtls.c \
 	$(LWIP_DIR)/src/apps/snmp/snmpv3_dummy.c
 
-# TFTP: TFTP agent
-CORE_TFTP_SRCS=$(LWIP_DIR)/src/apps/tftp/tftp_server.c \
-	$(LWIP_DIR)/src/apps/tftp/casper_tftp.c
-
-CORE_TIMEOUTS_SRC = $(LWIP_DIR)/src/core/timeouts.c
-
-CORE_TMR_SRC = $(LWIP_DIR)/src/core/tmrctr.c
 
 CORE_ARP_SRCS  = $(LWIP_DIR)/src/netif/etharp.c
 
@@ -124,7 +117,7 @@ LWIP_INCLUDES = $(LWIP_DIR)/src/include/lwip/autoip.h \
 		$(LWIP_DIR)/src/include/lwip/udp.h \
 		$(LWIP_DIR)/src/include/netif/etharp.h \
 		$(LWIP_DIR)/src/include/netif/ppp/ppp_oe.h \
-		$(LWIP_DIR)/src/include/netif/slipif.h 
+		$(LWIP_DIR)/src/include/netif/slipif.h
 
 
 # create LWIP_SRCS based on configured options
@@ -138,10 +131,6 @@ LWIP_SRCS += $(CORE_IPV6_SRCS)
 LWIP_SRCS += $(CORE_TCP_SRCS)
 LWIP_SRCS += $(CORE_UDP_SRCS)
 LWIP_SRCS += $(CORE_DHCP_SRCS)
-LWIP_SRCS += $(CORE_TFTP_SRCS)
-LWIP_SRCS += $(CORE_TIMEOUTS_SRC)
-LWIP_SRCS += $(CORE_TMR_SRC)
-
 
 ifeq ($(CONFIG_SOCKETS), y)
 LWIP_SRCS += $(API_SOCK_SRCS)
@@ -149,4 +138,3 @@ endif
 
 LWIP_OBJS1 = $(LWIP_SRCS:%.c=%.o)
 LWIP_OBJS = $(notdir $(LWIP_OBJS1))
-

@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7k160tffg676-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,8 +32,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.ipdefs/ip_repo_0
+  /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.ip_user_files/wr_cores_panoseti_no_startup
   /home/wei/Software/Vivado/install/Vivado/ip_repo
-  /media/wei/DATA/LW/Project/Vivado_Project/IP_Cores_PanoSETI/wr_cores_panoseti
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.cache/ip [current_project]
@@ -48,6 +50,7 @@ read_verilog -library xil_defaultlib {
   /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/new/SPI_access.v
   /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/new/flash_control.v
   /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/new/stepper_control.v
+  /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/new/SPI_STARTUP.v
   /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/hdl/base_mb_wrapper.v
 }
 add_files /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/base_mb.bd
@@ -108,6 +111,14 @@ set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/qua
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_xbar_1/base_mb_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/base_mb_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

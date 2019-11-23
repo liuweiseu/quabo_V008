@@ -67,9 +67,17 @@ CORE_SNMP_SRCS=$(LWIP_DIR)/src/apps/snmp/snmp_asn1.c \
 	$(LWIP_DIR)/src/apps/snmp/snmpv3_mbedtls.c \
 	$(LWIP_DIR)/src/apps/snmp/snmpv3_dummy.c
 
-# TFTP: TFTP agent
+# TFTPFILES: TFTP agent
 CORE_TFTP_SRCS=$(LWIP_DIR)/src/apps/tftp/tftp_server.c \
-	$(LWIP_DIR)/src/apps/tftp/casper_tftp.c
+
+# CASPERFILES: CASPER agent
+CORE_CASPER_SRCS=$(LWIP_DIR)/src/casper_src/casper_tapcp.c \
+	$(LWIP_DIR)/src/casper_src/casper_tftp.c \
+	$(LWIP_DIR)/src/casper_src/csl.c \
+	$(LWIP_DIR)/src/casper_src/flash.c \
+	$(LWIP_DIR)/src/casper_src/icap.c \
+	$(LWIP_DIR)/src/casper_src/spi.c \
+	$(LWIP_DIR)/src/casper_src/tmrctr.c
 
 CORE_TIMEOUTS_SRC = $(LWIP_DIR)/src/core/timeouts.c
 
@@ -140,7 +148,7 @@ LWIP_SRCS += $(CORE_UDP_SRCS)
 LWIP_SRCS += $(CORE_DHCP_SRCS)
 LWIP_SRCS += $(CORE_TFTP_SRCS)
 LWIP_SRCS += $(CORE_TIMEOUTS_SRC)
-LWIP_SRCS += $(CORE_TMR_SRC)
+LWIP_SRCS += $(CORE_CASPER_SRCS)
 
 
 ifeq ($(CONFIG_SOCKETS), y)

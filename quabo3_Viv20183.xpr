@@ -23,8 +23,8 @@
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="ExampleProject" Val="TRUE"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/quabo3_Viv20183.ipdefs/ip_repo_0"/>
+    <Option Name="IPRepoPath" Val="$PIPUSERFILESDIR/wr_cores_panoseti_no_startup"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../home/wei/Software/Vivado/install/Vivado/ip_repo"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../Project/Vivado_Project/IP_Cores_PanoSETI/wr_cores_panoseti"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -43,13 +43,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="42"/>
-    <Option Name="WTModelSimExportSim" Val="42"/>
-    <Option Name="WTQuestaExportSim" Val="42"/>
-    <Option Name="WTIesExportSim" Val="42"/>
-    <Option Name="WTVcsExportSim" Val="42"/>
-    <Option Name="WTRivieraExportSim" Val="42"/>
-    <Option Name="WTActivehdlExportSim" Val="42"/>
+    <Option Name="WTXSimExportSim" Val="51"/>
+    <Option Name="WTModelSimExportSim" Val="51"/>
+    <Option Name="WTQuestaExportSim" Val="51"/>
+    <Option Name="WTIesExportSim" Val="51"/>
+    <Option Name="WTVcsExportSim" Val="51"/>
+    <Option Name="WTRivieraExportSim" Val="51"/>
+    <Option Name="WTActivehdlExportSim" Val="51"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -125,6 +125,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/SPI_STARTUP.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/base_mb/base_mb.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../XilinxProjects/PANOSETI/example_proj/example_proj.srcs/sources_1/bd/base_mb/base_mb.bd"/>
@@ -138,6 +145,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../XilinxProjects/PANOSETI/QuadrantBoard/quabo3/quabo3.srcs/sources_1/bd/base_mb/hdl/base_mb_wrapper.v"/>
           <Attr Name="ImportTime" Val="1543458242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axi_quad_spi_0/axi_quad_spi_0.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

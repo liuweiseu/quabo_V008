@@ -7,8 +7,24 @@ set_property SRC_FILE_INFO {cfile:/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.
 set_property SRC_FILE_INFO {cfile:/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc rfile:../../../quabo3_Viv20183.srcs/constrs_1/new/pinout.xdc id:7} [current_design]
 set_property SRC_FILE_INFO {cfile:/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc rfile:../../../quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_0b46_eth_buf_0.xdc id:8 order:LATE scoped_inst:base_mb_i/axi_ethernet_0/inst/eth_buf/U0} [current_design]
 set_property SRC_FILE_INFO {cfile:/media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_clocks.xdc rfile:../../../quabo3_Viv20183.srcs/sources_1/bd/base_mb/ip/base_mb_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_0b46_mac_0_clocks.xdc id:9 order:LATE scoped_inst:base_mb_i/axi_ethernet_0/inst/mac/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:12 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:13 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:14 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:15 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:16 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:17 order:LATE scoped_inst:base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:18 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:19 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:20 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:21 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:22 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:23 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:24 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:25 order:LATE scoped_inst:base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:26 order:LATE scoped_inst:base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../home/wei/Software/Vivado/install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:27 order:LATE scoped_inst:base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst unmanaged:yes} [current_design]
 current_instance base_mb_i/microblaze_0/U0
 set_property src_info {type:SCOPED_XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -quiet -user microblaze -type CDC -id CDC-26 -description "Invalid LUTRAM collision warning" -to [get_pins -quiet "LOCKSTEP_Out_reg\[*\]/R"]
@@ -1009,34 +1025,36 @@ set_property src_info {type:XDC file:7 line:622 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN L22 [get_ports user_sfp_0_sfp_mod_def2_b]
 set_property src_info {type:XDC file:7 line:625 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E25 [get_ports user_sfp_0_sfp_los_i]
-set_property src_info {type:XDC file:7 line:629 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN C23 [get_ports user_falsh_spi_0_spi_ncs_o]
-set_property src_info {type:XDC file:7 line:632 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN B24 [get_ports user_falsh_spi_0_spi_mosi_o]
-set_property src_info {type:XDC file:7 line:635 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN A25 [get_ports user_falsh_spi_0_spi_miso_i]
-set_property src_info {type:XDC file:7 line:638 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN G3 [get_ports user_sfp_0_sfp_rxn_i]
 set_property src_info {type:XDC file:7 line:639 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN G4 [get_ports user_sfp_0_sfp_rxp_i]
-set_property src_info {type:XDC file:7 line:640 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN F1 [get_ports user_sfp_0_sfp_txn_o]
-set_property src_info {type:XDC file:7 line:641 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN F2 [get_ports user_sfp_0_sfp_txp_o]
-set_property src_info {type:XDC file:7 line:644 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN B20 [get_ports pps_o_0]
-set_property src_info {type:XDC file:7 line:646 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN E21 [get_ports user_uart_0_uart_rxd_i]
+set_property PACKAGE_PIN C23 [get_ports ss_o_0]
+set_property src_info {type:XDC file:7 line:642 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B24 [get_ports mosi_o_0]
+set_property src_info {type:XDC file:7 line:645 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A25 [get_ports miso_i_0]
+set_property src_info {type:XDC file:7 line:648 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G3 [get_ports user_sfp_0_sfp_rxn_i]
 set_property src_info {type:XDC file:7 line:649 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN E22 [get_ports user_uart_0_uart_txd_o]
-set_property src_info {type:XDC file:7 line:652 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN C21 [get_ports uart_quabo_rxd]
+set_property PACKAGE_PIN G4 [get_ports user_sfp_0_sfp_rxp_i]
+set_property src_info {type:XDC file:7 line:650 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F1 [get_ports user_sfp_0_sfp_txn_o]
+set_property src_info {type:XDC file:7 line:651 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F2 [get_ports user_sfp_0_sfp_txp_o]
 set_property src_info {type:XDC file:7 line:654 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G24 [get_ports pps_o_0]
+set_property src_info {type:XDC file:7 line:656 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E21 [get_ports user_uart_0_uart_rxd_i]
+set_property src_info {type:XDC file:7 line:659 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E22 [get_ports user_uart_0_uart_txd_o]
+set_property src_info {type:XDC file:7 line:662 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C21 [get_ports uart_quabo_rxd]
+set_property src_info {type:XDC file:7 line:664 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN B21 [get_ports uart_quabo_txd]
-set_property src_info {type:XDC file:7 line:657 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:7 line:667 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K16 [get_ports pll20dac_cs_n_o_0]
-set_property src_info {type:XDC file:7 line:660 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:7 line:670 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN D26 [get_ports pll25dac_cs_n_o_0]
+set_property src_info {type:XDC file:7 line:684 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B20 [get_ports spi_sel_0]
 current_instance base_mb_i/axi_ethernet_0/inst/eth_buf/U0
 set_property src_info {type:SCOPED_XDC file:8 line:46 export:INPUT save:INPUT read:READ} [current_design]
 set_max_delay  -from [get_cells {*TX_PAUSE_FRAME_CROSS_I/clk_a2b_bus_reg[*]}]   -to [get_cells  -hier -regexp {.*TX_PAUSE_FRAME_CROSS_I.*ClkBAxiEthBaEClkCrsBusOut_reg.*} -filter {IS_SEQUENTIAL=="1"}] 8 -datapath_only
@@ -1051,10 +1069,74 @@ current_instance base_mb_i/axi_ethernet_0/inst/mac/inst
 set_property src_info {type:SCOPED_XDC file:9 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_max_delay -from [get_cells {axi4_lite_ipif/axi4_lite_ipif_top_wrapper/axi_lite_top/*/bus2ip_addr_i_reg[*]}] -to [get_clocks -of_objects [get_pins base_mb_i/axi_ethernet_0/inst/mac/inst/gtx_clk]] 6 -datapath_only
 current_instance
-current_instance base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:10 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:11 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:12 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:13 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:14 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/WRFIFO.WRDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:15 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:16 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_hwicap_0/U0/ICAP_NOT_SHARED.HWICAP_CTRL_I/IPIC_IF_I/RD_FIFO.RDDATA_FIFO_I/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:17 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:18 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:19 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:20 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:21 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:22 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:23 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:24 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:25 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:26 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance base_mb_i/maroc_dc_0/inst/USR_LOGIC/CC_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst
+set_property src_info {type:SCOPED_XDC file:27 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -type CDC -id {CDC-6} -user "xpm_cdc" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]

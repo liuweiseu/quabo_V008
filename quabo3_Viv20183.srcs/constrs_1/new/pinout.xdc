@@ -625,15 +625,25 @@ set_property IOSTANDARD LVCMOS33 [get_ports user_sfp_0_sfp_mod_def2_b]
 set_property PACKAGE_PIN E25 [get_ports user_sfp_0_sfp_los_i]
 set_property IOSTANDARD LVCMOS33 [get_ports user_sfp_0_sfp_los_i]
 
-#27 C23
-set_property PACKAGE_PIN C23 [get_ports user_falsh_spi_0_spi_ncs_o]
-set_property IOSTANDARD LVCMOS33 [get_ports user_falsh_spi_0_spi_ncs_o]
-#28 B24
-set_property PACKAGE_PIN B24 [get_ports user_falsh_spi_0_spi_mosi_o]
-set_property IOSTANDARD LVCMOS33 [get_ports user_falsh_spi_0_spi_mosi_o]
+#27 C23 CS
+#set_property PACKAGE_PIN C23 [get_ports user_falsh_spi_0_spi_ncs_o]
+#set_property IOSTANDARD LVCMOS33 [get_ports user_falsh_spi_0_spi_ncs_o]
+#28 B24 
+#set_property PACKAGE_PIN B24 [get_ports user_falsh_spi_0_spi_mosi_o]
+#set_property IOSTANDARD LVCMOS33 [get_ports user_falsh_spi_0_spi_mosi_o]
 #29 A25
-set_property PACKAGE_PIN A25 [get_ports user_falsh_spi_0_spi_miso_i]
-set_property IOSTANDARD LVCMOS33 [get_ports user_falsh_spi_0_spi_miso_i]
+#set_property PACKAGE_PIN A25 [get_ports user_falsh_spi_0_spi_miso_i]
+#set_property IOSTANDARD LVCMOS33 [get_ports user_falsh_spi_0_spi_miso_i]
+
+#27 C23 CS
+set_property PACKAGE_PIN C23 [get_ports ss_o_0]
+set_property IOSTANDARD LVCMOS33 [get_ports ss_o_0]
+#28 B24 
+set_property PACKAGE_PIN B24 [get_ports mosi_o_0]
+set_property IOSTANDARD LVCMOS33 [get_ports mosi_o_0]
+#29 A25
+set_property PACKAGE_PIN A25 [get_ports miso_i_0]
+set_property IOSTANDARD LVCMOS33 [get_ports miso_i_0]
 
 set_property PACKAGE_PIN G3 [get_ports user_sfp_0_sfp_rxn_i]
 set_property PACKAGE_PIN G4 [get_ports user_sfp_0_sfp_rxp_i]
@@ -641,7 +651,7 @@ set_property PACKAGE_PIN F1 [get_ports user_sfp_0_sfp_txn_o]
 set_property PACKAGE_PIN F2 [get_ports user_sfp_0_sfp_txp_o]
 
 set_property IOSTANDARD LVCMOS33 [get_ports pps_o_0]
-set_property PACKAGE_PIN B20 [get_ports pps_o_0]
+set_property PACKAGE_PIN G24 [get_ports pps_o_0]
 
 set_property PACKAGE_PIN E21 [get_ports user_uart_0_uart_rxd_i]
 set_property IOSTANDARD LVCMOS33 [get_ports user_uart_0_uart_rxd_i]
@@ -670,3 +680,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports pll25dac_cs_n_o_0]
 #set_property DIFF_TERM TRUE [get_ports clk_ext_10m_n_i_0]
 #set_property DIFF_TERM TRUE [get_ports clk_ext_10m_p_i_0]
 #set_property PACKAGE_PIN AB16 [get_ports clk_ext_10m_p_i_0]
+set_property IOSTANDARD LVCMOS33 [get_ports spi_sel_0]
+set_property PACKAGE_PIN B20 [get_ports spi_sel_0]
+set_property PULLUP true [get_ports spi_sel_0]

@@ -237,6 +237,24 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_Bit_21_
 # IP: bd/base_mb/ip/base_mb_Bit_22_22_0/base_mb_Bit_22_22_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_Bit_22_22_0 || ORIG_REF_NAME==base_mb_Bit_22_22_0} -quiet] -quiet
 
+# IP: bd/base_mb/ip/base_mb_SPI_STARTUP_0_0/base_mb_SPI_STARTUP_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_SPI_STARTUP_0_0 || ORIG_REF_NAME==base_mb_SPI_STARTUP_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_axi_hwicap_0_0 || ORIG_REF_NAME==base_mb_axi_hwicap_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_xbar_1/base_mb_xbar_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_xbar_1 || ORIG_REF_NAME==base_mb_xbar_1} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_interconnect_0_0/base_mb_axi_interconnect_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_axi_interconnect_0_0 || ORIG_REF_NAME==base_mb_axi_interconnect_0_0} -quiet] -quiet
+
+# IP: bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mb_axi_quad_spi_1_0 || ORIG_REF_NAME==base_mb_axi_quad_spi_1_0} -quiet] -quiet
+
+# IP: ip/axi_quad_spi_0/axi_quad_spi_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axi_quad_spi_0 || ORIG_REF_NAME==axi_quad_spi_0} -quiet] -quiet
+
 # XDC: bd/base_mb/ip/base_mb_microblaze_0_0/base_mb_microblaze_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_microblaze_0_0 || ORIG_REF_NAME==base_mb_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -390,4 +408,36 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/base_mb/ip/base_mb_axi_gpio_0_1/base_mb_axi_gpio_0_1.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_gpio_0_1 || ORIG_REF_NAME==base_mb_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
+# XDC: bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_hwicap_0_0 || ORIG_REF_NAME==base_mb_axi_hwicap_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_hwicap_0_0 || ORIG_REF_NAME==base_mb_axi_hwicap_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_hwicap_0_0/base_mb_axi_hwicap_0_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_xbar_1/base_mb_xbar_1_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_quad_spi_1_0 || ORIG_REF_NAME==base_mb_axi_quad_spi_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_quad_spi_1_0 || ORIG_REF_NAME==base_mb_axi_quad_spi_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0_ooc.xdc
+
+# XDC: bd/base_mb/ip/base_mb_axi_quad_spi_1_0/base_mb_axi_quad_spi_1_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==base_mb_axi_quad_spi_1_0 || ORIG_REF_NAME==base_mb_axi_quad_spi_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
 # XDC: bd/base_mb/base_mb_ooc.xdc
+
+# XDC: ip/axi_quad_spi_0/axi_quad_spi_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==axi_quad_spi_0 || ORIG_REF_NAME==axi_quad_spi_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: ip/axi_quad_spi_0/axi_quad_spi_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==axi_quad_spi_0 || ORIG_REF_NAME==axi_quad_spi_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: ip/axi_quad_spi_0/axi_quad_spi_0_ooc.xdc
+
+# XDC: ip/axi_quad_spi_0/axi_quad_spi_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==axi_quad_spi_0 || ORIG_REF_NAME==axi_quad_spi_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet

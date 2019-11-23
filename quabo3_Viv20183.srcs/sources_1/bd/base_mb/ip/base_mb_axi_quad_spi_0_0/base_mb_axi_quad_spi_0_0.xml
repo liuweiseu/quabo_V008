@@ -1945,7 +1945,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SPI_CLK.FREQ_HZ">10000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SPI_CLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -3375,11 +3375,11 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 24 00:11:08 UTC 2019</spirit:value>
+            <spirit:value>Tue Oct 29 20:56:18 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f9b7df88</spirit:value>
+            <spirit:value>9:6908ee27</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3395,11 +3395,11 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 16 01:07:24 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 05:37:04 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f9b7df88</spirit:value>
+            <spirit:value>9:6908ee27</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3438,11 +3438,11 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 24 00:11:08 UTC 2019</spirit:value>
+            <spirit:value>Tue Oct 29 20:56:18 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:54a04768</spirit:value>
+            <spirit:value>9:b96c4b80</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3458,11 +3458,11 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 16 01:07:24 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 05:37:04 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:54a04768</spirit:value>
+            <spirit:value>9:b96c4b80</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3476,11 +3476,11 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 16 01:07:24 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 05:37:04 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f9b7df88</spirit:value>
+            <spirit:value>9:6908ee27</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5857,7 +5857,7 @@ This bit has no significance in dual or quad mode.
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>Async_Clk</spirit:name>
         <spirit:displayName>Async_Clk</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.Async_Clk" spirit:minimum="0" spirit:maximum="1" spirit:rangeType="long">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.Async_Clk" spirit:minimum="0" spirit:maximum="1" spirit:rangeType="long">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_FAMILY</spirit:name>
@@ -6835,7 +6835,7 @@ This bit has no significance in dual or quad mode.
       <spirit:name>Async_Clk</spirit:name>
       <spirit:displayName>Enable Async Clock Mode</spirit:displayName>
       <spirit:description>This parameter should be set while choosing the core to be used in Standalone mode and if clocks to core are different.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Async_Clk" spirit:choiceRef="choice_pairs_4873554b" spirit:order="2000">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Async_Clk" spirit:choiceRef="choice_pairs_4873554b" spirit:order="2000">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -6951,7 +6951,7 @@ This bit has no significance in dual or quad mode.
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SPI_CLK.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SPI_CLK.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SPI_CLK.PHASE" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Async_Clk" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Async_Clk" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_FIFO_DEPTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUM_SS_BITS" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_S_AXI4_ID_WIDTH" xilinx:valueSource="user"/>

@@ -60,11 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7k160tffg676-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -72,8 +74,8 @@ set rc [catch {
   set_property parent.project_path /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.xpr [current_project]
   set_property ip_repo_paths {
   /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.ipdefs/ip_repo_0
+  /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.ip_user_files/wr_cores_panoseti_no_startup
   /home/wei/Software/Vivado/install/Vivado/ip_repo
-  /media/wei/DATA/LW/Project/Vivado_Project/IP_Cores_PanoSETI/wr_cores_panoseti
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.cache/ip [current_project]
@@ -83,6 +85,7 @@ set rc [catch {
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
   add_files /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/bd/base_mb/base_mb.bd
+  read_ip -quiet /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.srcs/sources_1/ip/axi_quad_spi_0/axi_quad_spi_0.xci
   set_param project.isImplRun false
   add_files /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/Debug/quabo_service.elf
   set_property SCOPED_TO_REF base_mb [get_files -all /media/wei/DATA/LW/quabo_V008/quabo3_Viv20183.sdk/WS3_WR/quabo_service/Debug/quabo_service.elf]
@@ -179,6 +182,27 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+  catch { write_mem_info -force base_mb_wrapper.mmi }
+  catch { write_bmm -force base_mb_wrapper_bd.bmm }
+  write_bitstream -force base_mb_wrapper.bit 
+  catch { write_sysdef -hwdef base_mb_wrapper.hwdef -bitfile base_mb_wrapper.bit -meminfo base_mb_wrapper.mmi -file base_mb_wrapper.sysdef }
+  catch {write_debug_probes -quiet -force base_mb_wrapper}
+  catch {file copy -force base_mb_wrapper.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

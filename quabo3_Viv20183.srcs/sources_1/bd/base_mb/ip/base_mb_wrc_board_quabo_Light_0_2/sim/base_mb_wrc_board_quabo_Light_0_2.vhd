@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: user.org:user:wrc_board_quabo_Light:1.1
--- IP Revision: 43
+-- IP VLNV: user.org:user:wrc_board_quabo_Light:1.2
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -76,6 +76,7 @@ ENTITY base_mb_wrc_board_quabo_Light_0_2 IS
     onewire_b : INOUT STD_LOGIC;
     uart_rxd_i : IN STD_LOGIC;
     uart_txd_o : OUT STD_LOGIC;
+    spi_sclk_o : OUT STD_LOGIC;
     spi_ncs_o : OUT STD_LOGIC;
     spi_mosi_o : OUT STD_LOGIC;
     spi_miso_i : IN STD_LOGIC;
@@ -116,6 +117,7 @@ ARCHITECTURE base_mb_wrc_board_quabo_Light_0_2_arch OF base_mb_wrc_board_quabo_L
       onewire_b : INOUT STD_LOGIC;
       uart_rxd_i : IN STD_LOGIC;
       uart_txd_o : OUT STD_LOGIC;
+      spi_sclk_o : OUT STD_LOGIC;
       spi_ncs_o : OUT STD_LOGIC;
       spi_mosi_o : OUT STD_LOGIC;
       spi_miso_i : IN STD_LOGIC;
@@ -131,9 +133,10 @@ ARCHITECTURE base_mb_wrc_board_quabo_Light_0_2_arch OF base_mb_wrc_board_quabo_L
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF reset_i: SIGNAL IS "XIL_INTERFACENAME reset_i, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF reset_i: SIGNAL IS "xilinx.com:signal:reset:1.0 reset_i RST";
-  ATTRIBUTE X_INTERFACE_INFO OF spi_miso_i: SIGNAL IS "user.org:user:falsh_spi:1.1 falsh_spi spi_miso_i";
-  ATTRIBUTE X_INTERFACE_INFO OF spi_mosi_o: SIGNAL IS "user.org:user:falsh_spi:1.1 falsh_spi spi_mosi_o";
-  ATTRIBUTE X_INTERFACE_INFO OF spi_ncs_o: SIGNAL IS "user.org:user:falsh_spi:1.1 falsh_spi spi_ncs_o";
+  ATTRIBUTE X_INTERFACE_INFO OF spi_miso_i: SIGNAL IS "Wei:user:flash_spi:1.0 flash_spi spi_miso_i";
+  ATTRIBUTE X_INTERFACE_INFO OF spi_mosi_o: SIGNAL IS "Wei:user:flash_spi:1.0 flash_spi spi_mosi_o";
+  ATTRIBUTE X_INTERFACE_INFO OF spi_ncs_o: SIGNAL IS "Wei:user:flash_spi:1.0 flash_spi spi_ncs_o";
+  ATTRIBUTE X_INTERFACE_INFO OF spi_sclk_o: SIGNAL IS "Wei:user:flash_spi:1.0 flash_spi spi_sclk_o";
   ATTRIBUTE X_INTERFACE_INFO OF uart_txd_o: SIGNAL IS "user.org:user:uart:1.0 uart uart_txd_o";
   ATTRIBUTE X_INTERFACE_INFO OF uart_rxd_i: SIGNAL IS "user.org:user:uart:1.0 uart uart_rxd_i";
   ATTRIBUTE X_INTERFACE_INFO OF sfp_los_i: SIGNAL IS "user.org:user:sfp:1.0 sfp sfp_los_i";
@@ -175,6 +178,7 @@ BEGIN
       onewire_b => onewire_b,
       uart_rxd_i => uart_rxd_i,
       uart_txd_o => uart_txd_o,
+      spi_sclk_o => spi_sclk_o,
       spi_ncs_o => spi_ncs_o,
       spi_mosi_o => spi_mosi_o,
       spi_miso_i => spi_miso_i,

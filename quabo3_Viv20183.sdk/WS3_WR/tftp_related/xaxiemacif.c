@@ -672,7 +672,10 @@ casper_netif_status_callback(struct netif *netif)
       xil_printf("TAPCP server ready\n");
     }
   }
-
+#ifdef VERBOSE_ETH_IMPL
+  else print("no ip address, NOT starting TAPCP\n");
+#endif // VERBOSE_ETH_IMPL
+}
 /*
  * xaxiemacif_init():
  *
